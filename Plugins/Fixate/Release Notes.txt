@@ -1,0 +1,11 @@
+October 19, 2006
+
+Fixed reset, which was not providing an argument, although one was defined.
+
+July 20, 2005
+
+Renamed from FixateTask to Fixate
+
+April 28, 2005
+
+Added a color well for fixation spot color selection to the behavior dialog

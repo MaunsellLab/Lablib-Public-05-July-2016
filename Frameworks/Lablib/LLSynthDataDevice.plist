@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LLSynthEyeBreak</key>
+	<real>0.05</real>
+	<key>LLSynthEyeIgnore</key>
+	<real>0.01</real>
+	<key>LLSynthEyeInterval</key>
+	<real>225</real>
+	<key>LLSynthEyeNoise</key>
+	<real>0.1</real>
+	<key>LLSynthLeverBit</key>
+	<integer>0</integer>
+	<key>LLSynthLeverDown</key>
+	<real>0.02</real>
+	<key>LLSynthLeverIgnore</key>
+	<real>0.01</real>
+	<key>LLSynthLeverLatency</key>
+	<integer>250</integer>
+	<key>LLSynthLeverUp</key>
+	<real>0.1</real>
+	<key>LLSynthLM11</key>
+	<real>0.001</real>
+	<key>LLSynthLM12</key>
+	<real>0</real>
+	<key>LLSynthLM21</key>
+	<real>0</real>
+	<key>LLSynthLM22</key>
+	<real>0.001</real>
+	<key>LLSynthSpikes</key>
+	<integer>12</integer>
+	<key>LLSynthSpikesRandom</key>
+	<integer>0</integer>
+	<key>LLSynthLTX</key>
+	<real>0</real>
+	<key>LLSynthLTY</key>
+	<real>0</real>
+	<key>LLSynthRM11</key>
+	<real>0.001</real>
+	<key>LLSynthRM12</key>
+	<integer>0</integer>
+	<key>LLSynthRM21</key>
+	<integer>0</integer>
+	<key>LLSynthRM22</key>
+	<real>0.001</real>
+	<key>LLSynthRTX</key>
+	<integer>0</integer>
+	<key>LLSynthRTY</key>
+	<integer>0</integer>
+	<key>LLSynthVBL</key>
+	<true/>
+	<key>LLSynthVBLRate</key>
+	<real>100</real>
+</dict>
+</plist>

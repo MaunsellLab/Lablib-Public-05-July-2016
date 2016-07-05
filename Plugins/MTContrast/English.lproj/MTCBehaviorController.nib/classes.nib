@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = LLScrollZoomWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scrollView = NSScrollView; zoomButton = NSPopUpButton; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = MTCBehaviorController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = LLScrollZoomWindow; 
+        }
+    ); 
+    IBVersion = 1; 
+}

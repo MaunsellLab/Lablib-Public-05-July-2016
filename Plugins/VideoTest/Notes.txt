@@ -1,0 +1,51 @@
+Should be able to elimiate showDisplayParametersPanel
+from the Stimuli.m files.
+
+
+To convert a stand-alone application to a plug-in:
+
+NB: I have never succeeded in turing an Application target into a bundle (plugin) target.
+You should create a new target of the loadbable bundle type, and move everything into that.
+
+Duplicate the folder, delete no-ITC version (if present), rename headers, .xcode, and .plists to new name.
+Open project.
+Delete references to old file names (marked in red), and add the new ones in their place.
+Edit InfoPlist.strings to reflect new names
+
+Delete the Target Copy File phase that copies Lablib Frameworks into the executable. 
+Select the project, change the target and build product locations to Application Support/Plugins and
+	the project folder, respectively
+Select the target, use inspector to change:
+	Name (if needed)
+	PrefixHeader, Product Name,  Info-plist file,
+	in build settings
+	Change wrapper extension to "plugin"
+	Under properties, change from APPL to BNDL, and change creator and version
+	Change principal class to LLTaskPlugin, delete main NIB file name
+	
+Do a global substitution for header file names
+	You probably need to make the overall
+
+Give all Resources and Class a unique name (with a two-letter prefix)
+
+This will lead to hundreds of build errors.  Use global find and replace to fix the
+	references to objects and nibs
+	
+Get a working version of an LLTaskPlugIn and its header, and add them to the project
+	Do a global substitution for prefix in these files
+	Remove the AppController and its header from the project (but save them)
+		Remove all references to "AppController.h"
+	
+Give all the NSStrings for standardUserDefaults unique names.  This will be painful.
+
+Change all the bindings in the nibs
+
+Outside of headers and the root object:
+
+	change dataDoc to [task dataDoc];	
+	change eyeCalibration to [task eyeCalibrator];
+	change defaults to [task defaults];
+	change [taskMode isIdle] to [task mode] == kTaskIdle
+	change dataSource to [task dataSource];
+	change synthDataSournce to [task synthDataSource];
+	change currentEyeDeg to [task currentEyeDeg];

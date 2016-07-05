@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FTAcquireMS</key>
+	<integer>5000</integer>
+	<key>FTAzimuthDeg</key>
+	<real>0</real>
+	<key>FTDoFixate</key>
+	<true/>
+	<key>FTDoSounds</key>
+	<true/>
+	<key>FTElevationDeg</key>
+	<real>0</real>
+	<key>FTEyeXYDoDotFade</key>
+	<true/>
+	<key>FTEyeXYDoDrawCal</key>
+	<true/>
+	<key>FTEyeXYDoGrid</key>
+	<true/>
+	<key>FTEyeXYDoTicks</key>
+	<true/>
+	<key>FTEyeXYDotSizeDeg</key>
+	<real>0.1</real>
+	<key>FTEyeXYGridDeg</key>
+	<real>5</real>
+	<key>FTEyeXYHScroll</key>
+	<integer>0</integer>
+	<key>FTEyeXYMag</key>
+	<integer>30</integer>
+	<key>FTEyeXYOneInN</key>
+	<integer>1</integer>
+	<key>FTEyeXYSamplesToSave</key>
+	<integer>200</integer>
+	<key>FTEyeXYTickDeg</key>
+	<real>1</real>
+	<key>FTEyeXYVScroll</key>
+	<integer>0</integer>
+	<key>FTEyeXYWindowVisible</key>
+	<true/>
+	<key>FTFixWindowWidthDeg</key>
+	<real>1</real>
+	<key>FTFixateJitterPC</key>
+	<integer>0</integer>
+	<key>FTFixateMS</key>
+	<integer>1000</integer>
+	<key>FTInnerRadiusDeg</key>
+	<real>0.05</real>
+	<key>FTIntertrialMS</key>
+	<integer>1500</integer>
+	<key>FTOuterRadiusDeg</key>
+	<real>0.1</real>
+	<key>FTRewardMS</key>
+	<integer>150</integer>
+	<key>FTSummaryWindowVisible</key>
+	<true/>
+	<key>FTSummaryWindowZoom</key>
+	<integer>100</integer>
+	<key>FTTaskStatus</key>
+	<integer>0</integer>
+</dict>
+</plist>

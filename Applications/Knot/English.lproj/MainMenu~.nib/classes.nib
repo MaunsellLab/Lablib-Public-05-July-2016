@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {setVBL = id; }; 
+            CLASS = App; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSApplication; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeDataSource = id; 
+                changeSettings = id; 
+                doTaskMenu = id; 
+                recordDontRecord = id; 
+                showAboutPanel = id; 
+                showDisplayCalibratorPanel = id; 
+                showEyeCalibratorPanel = id; 
+                showReportPanel = id; 
+            }; 
+            CLASS = KNAppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dataSource = id; recordDontRecordMenuItem = NSMenuItem; taskMenu = NSMenu; }; 
+            SUPERCLASS = NSApplication; 
+        }
+    ); 
+    IBVersion = 1; 
+}

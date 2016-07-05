@@ -1,0 +1,202 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeTarget = 69F368B0056705B9009AED51 /* LablibITC18 */;
+		breakpoints = (
+		);
+		breakpointsGroup = 967B8B2B0D04ABAB00219A02 /* XCBreakpointsBucket */;
+		codeSenseManager = 967B8B130D04A9A600219A02 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					424,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 218645163;
+			PBXWorkspaceStateSaveDate = 218645163;
+		};
+		perUserProjectItems = {
+			967B8B290D04ABAB00219A02 /* PBXTextBookmark */ = 967B8B290D04ABAB00219A02 /* PBXTextBookmark */;
+			967B8B650D04AD6100219A02 /* PBXTextBookmark */ = 967B8B650D04AD6100219A02 /* PBXTextBookmark */;
+			967B8B660D04AD6100219A02 /* PBXTextBookmark */ = 967B8B660D04AD6100219A02 /* PBXTextBookmark */;
+			967B8FCD0D08565E00219A02 /* PBXTextBookmark */ = 967B8FCD0D08565E00219A02 /* PBXTextBookmark */;
+			967B8FCE0D08565E00219A02 /* PBXTextBookmark */ = 967B8FCE0D08565E00219A02 /* PBXTextBookmark */;
+			967B8FCF0D08565E00219A02 /* PBXBookmark */ = 967B8FCF0D08565E00219A02 /* PBXBookmark */;
+			967B8FD00D08565E00219A02 /* PBXTextBookmark */ = 967B8FD00D08565E00219A02 /* PBXTextBookmark */;
+			967B8FD10D08565E00219A02 /* PBXTextBookmark */ = 967B8FD10D08565E00219A02 /* PBXTextBookmark */;
+			967B8FD20D08565E00219A02 /* PBXTextBookmark */ = 967B8FD20D08565E00219A02 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 967B8B120D04A9A600219A02 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	6917B195091EFCC40082A1F4 /* LLITC18DataDevice.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1097, 899}}";
+			sepNavSelRange = "{368, 0}";
+			sepNavVisRect = "{{0, 0}, {1097, 899}}";
+			sepNavWindowFrame = "{{38, 124}, {1136, 1028}}";
+		};
+	};
+	6917B196091EFCC40082A1F4 /* LLITC18DataDevice.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {770, 12390}}";
+			sepNavSelRange = "{9221, 5}";
+			sepNavVisRect = "{{0, 3313}, {693, 808}}";
+		};
+	};
+	697BD6710988415500D9176F /* LablibITC18_Plugin.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {693, 808}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {693, 808}}";
+		};
+	};
+	69941F73097C5E1900FD57B5 /* LablibITC18.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {622, 808}}";
+			sepNavSelRange = "{416, 0}";
+			sepNavVisRect = "{{0, 0}, {622, 808}}";
+		};
+	};
+	69D82C9D0B069FF500E8C369 /* LablibITC18 Plugin */ = {
+		activeExec = 0;
+	};
+	69F368B0056705B9009AED51 /* LablibITC18 */ = {
+		activeExec = 0;
+	};
+	69F368C4056705B9009AED51 /* LablibITC18_Framework.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {693, 808}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {693, 808}}";
+		};
+	};
+	69FBCE84097C1CD6008D9A0E /* LLITC18DataDevice.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {693, 840}}";
+			sepNavSelRange = "{223, 0}";
+			sepNavVisRect = "{{0, 0}, {693, 808}}";
+		};
+	};
+	967B8B120D04A9A600219A02 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	967B8B130D04A9A600219A02 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	967B8B290D04ABAB00219A02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 69FBCE84097C1CD6008D9A0E /* LLITC18DataDevice.plist */;
+		name = LLITC18InvertBit;
+		rLen = 16;
+		rLoc = 186;
+		rType = 0;
+		vrLen = 1678;
+		vrLoc = 0;
+	};
+	967B8B2B0D04ABAB00219A02 /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+	967B8B650D04AD6100219A02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 697BD6710988415500D9176F /* LablibITC18_Plugin.plist */;
+		name = "LablibITC18_Plugin.plist: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 737;
+		vrLoc = 0;
+	};
+	967B8B660D04AD6100219A02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 69F368C4056705B9009AED51 /* LablibITC18_Framework.plist */;
+		name = "LablibITC18_Framework.plist: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 0;
+	};
+	967B8FCD0D08565E00219A02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6917B196091EFCC40082A1F4 /* LLITC18DataDevice.m */;
+		name = NSLog;
+		rLen = 5;
+		rLoc = 9221;
+		rType = 0;
+		vrLen = 2168;
+		vrLoc = 8288;
+	};
+	967B8FCE0D08565E00219A02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 69FBCE84097C1CD6008D9A0E /* LLITC18DataDevice.plist */;
+		name = "LLITC18DataDevice.plist: 6";
+		rLen = 0;
+		rLoc = 223;
+		rType = 0;
+		vrLen = 1739;
+		vrLoc = 0;
+	};
+	967B8FCF0D08565E00219A02 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 69941F73097C5E1900FD57B5 /* LablibITC18.h */;
+	};
+	967B8FD00D08565E00219A02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6917B196091EFCC40082A1F4 /* LLITC18DataDevice.m */;
+		name = NSLog;
+		rLen = 5;
+		rLoc = 9221;
+		rType = 0;
+		vrLen = 2168;
+		vrLoc = 8288;
+	};
+	967B8FD10D08565E00219A02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 69FBCE84097C1CD6008D9A0E /* LLITC18DataDevice.plist */;
+		name = "LLITC18DataDevice.plist: 6";
+		rLen = 0;
+		rLoc = 223;
+		rType = 0;
+		vrLen = 1739;
+		vrLoc = 0;
+	};
+	967B8FD20D08565E00219A02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 69941F73097C5E1900FD57B5 /* LablibITC18.h */;
+		name = "LablibITC18.h: 17";
+		rLen = 0;
+		rLoc = 416;
+		rType = 0;
+		vrLen = 416;
+		vrLoc = 0;
+	};
+}

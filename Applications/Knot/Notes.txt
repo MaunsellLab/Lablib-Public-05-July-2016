@@ -1,0 +1,38 @@
+
+Cursor wants to be visible on the stimWindow when the mouse is the IODevice
+
+• Turn of fixation calibration offset when entering FixateTask, and restore it later
+
+• Saccade and EyeXY windows in Freestim are not registering previous visible states.
+
+•RFMap wants ability to change fix spot color
+
+• It would be good to put an LLScheduleController into Knot so that all modules could use it.
+
+
+_______________
+
+Special note on libraries and plugins:
+
+We want to have a plugin architecture for data devices, but sometimes we have two ITC18s.  Obviously they want the same 
+code, and it's simple enough to make the second instance detect the first and give itself a unique name.  The problem
+is how the libraries need to be arranged.  
+
+Ideally, we'd put the ITC18 libraries into the plugins, to keep them modular from Knot and everything else. But you 
+can't have two copies of the library (one in each copy of the plugin).   You could have just one plugin and a 
+mechanism for telling Knot how many instances to make, but that is awkward.
+
+An alternative is to just relent and put the ITC18 library into Knot (along with the Lablib library), and leave it 
+out of the plugin(s).  That works, but there are complications.  Because Knot doesn't actually use anything in the 
+ITC18 library, the linker will strip it out if allow to.  To prevent this, we make a single, otherwise useless call
+to the library to keep the things we need.  This is what is done in Knot's +initialize code, where we access each
+instance so their code stays in the application.  Apparently this code doesn't even have to be executed to keep the
+linker satisfied.  
+
+For this to work, the definitions of the individual plugins must be in the ITC18 framework (which is loaded into Knot).
+This means, counterintuitively, that the code for the individual plugin principal classes should not be in the 
+individual plugins (LablibITC18DataDevice0 and LablibITC18DataDevice1), only in the framework.  So the plugins
+really just keep copies of the plists and the resources.  
+
+All messy, because it would be nice to keep the ITC18 code compartmentalized, but I couldn't work out a way to do that.
+

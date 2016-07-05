@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" promptedForUpgradeToXcode5="NO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VIBehaviorController">
+            <connections>
+                <outlet property="scrollView" destination="198" id="203"/>
+                <outlet property="window" destination="76" id="202"/>
+                <outlet property="zoomButton" destination="101" id="204"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Behavior" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="V4CANBehaviorWindow" animationBehavior="default" id="76" userLabel="Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="222" y="272" width="801" height="607"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="150" height="150"/>
+            <view key="contentView" id="77">
+                <rect key="frame" x="0.0" y="0.0" width="801" height="607"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="198">
+                        <rect key="frame" x="-5" y="0.0" width="807" height="607"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="Qdx-ax-y57">
+                            <rect key="frame" x="1" y="1" width="790" height="590"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <view id="199">
+                                    <rect key="frame" x="0.0" y="0.0" width="790" height="590"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="208">
+                            <rect key="frame" x="1" y="591" width="790" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="209">
+                            <rect key="frame" x="791" y="1" width="15" height="590"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <popUpButton verticalHuggingPriority="750" id="101">
+                        <rect key="frame" x="696" y="-4" width="98" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <popUpButtonCell key="cell" type="push" title="25%" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="25" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="207">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="104">
+                                <items>
+                                    <menuItem title="25%" state="on" tag="25" id="103"/>
+                                    <menuItem title="50%" tag="50" id="102"/>
+                                    <menuItem title="75%" tag="75" id="100"/>
+                                    <menuItem title="100%" tag="100" id="106"/>
+                                    <menuItem title="125%" tag="125" id="105"/>
+                                    <menuItem title="150%" tag="150" id="108"/>
+                                    <menuItem title="200%" tag="200" id="109"/>
+                                    <menuItem title="400%" tag="400" id="107"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="changeZoom:" target="-2" id="205"/>
+                        </connections>
+                    </popUpButton>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="168"/>
+            </connections>
+        </window>
+    </objects>
+</document>

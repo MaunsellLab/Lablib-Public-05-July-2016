@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LLITCMonitorSettings">
+            <connections>
+                <outlet property="driftLimitField" destination="14" id="99"/>
+                <outlet property="resetButton" destination="94" id="98"/>
+                <outlet property="warnDriftButton" destination="13" id="100"/>
+                <outlet property="window" destination="3" id="4"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="LLIntervalMonitor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="LLIntervalMonitor" animationBehavior="default" id="3" userLabel="Window" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
+            <rect key="contentRect" x="440" y="513" width="408" height="200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="1002"/>
+            <value key="minSize" type="size" width="150" height="200"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="7" y="11" width="408" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button id="13">
+                        <rect key="frame" x="18" y="164" width="286" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Warn on clock drift of more than 1 part in" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="102">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeDoWarnDrift:" target="-2" id="96"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="14">
+                        <rect key="frame" x="310" y="163" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="103">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="24">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="changeDriftLimit:" target="-2" id="95"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="94">
+                        <rect key="frame" x="14" y="106" width="136" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Reset Counters" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="104">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="resetCounters:" target="-2" id="97"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="5"/>
+            </connections>
+        </window>
+    </objects>
+</document>

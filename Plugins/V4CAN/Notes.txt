@@ -1,0 +1,40 @@
+V4CAN V4 Correlation, Attention and Normalization
+
+V4CAN was a plugin for Bram Verhoef's project (2012).  It was used for a while, but his monkey (Tintin) could
+never learn to ignore the distractor stimuli effectively.  We eventually revised the task to use a different
+design with no distractors.  That project was VICAN.  V4CAN was never used to collect neurophysiology data. 
+
+
+Current:
+
+Behavior Window:
+    Detect when the maximum time changes
+    Plot by target index, not time.
+
+Put % of each trial length as display in diagnostics window
+Sector shaped eye windows?
+
+
+
+Need to reinstruct after a given number of errors
+Need to prevent eye samples from getting into the header of data files (starting ITC before trialStart).
+
+
+File header:
+    Missing Eccentricity Polar Angle and Response time
+    Including: spurious eye sample data before first trial
+    
+Eye window calibrator was not being redrawn correctly on the rig
+May want to remove setFrame calls for Gabors, and remove the drawing on intermediate frames
+Need to compute trial length allowing for jitter interstim when computing reward size
+
+Need to add pupil size to the eyeXY Display
+
+CONVERSION TO FOUR GABORS:
+
+Need to make the far stimulus pairs locked to the RF pairs so that they remain fixed across attend locations
+Spikes are not being assigned to the correct histograms and the correct plots
+
+Need to clean up the data events that describe task timing and stimuli (announceEvents)
+
+

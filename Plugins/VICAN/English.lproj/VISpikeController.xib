@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VISpikeController">
+            <connections>
+                <outlet property="histLabel0" destination="202" id="208"/>
+                <outlet property="histLabel1" destination="204" id="209"/>
+                <outlet property="histLabel2" destination="206" id="210"/>
+                <outlet property="histSelectMenu" destination="193" id="201"/>
+                <outlet property="scrollView" destination="176" id="178"/>
+                <outlet property="window" destination="76" id="167"/>
+                <outlet property="zoomButton" destination="101" id="135"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Spikes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="MTANSpikeWindow" animationBehavior="default" id="76" userLabel="Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="905" y="452" width="600" height="300"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <value key="minSize" type="size" width="120" height="50"/>
+            <value key="maxSize" type="size" width="1300" height="1300"/>
+            <view key="contentView" id="77">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="176">
+                        <rect key="frame" x="1" y="1" width="600" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="mBf-A8-sIR">
+                            <rect key="frame" x="1" y="1" width="583" height="283"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view id="177">
+                                    <rect key="frame" x="0.0" y="0.0" width="644" height="654"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <popUpButton verticalHuggingPriority="750" id="193">
+                                            <rect key="frame" x="249" y="243" width="146" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="In/In Histograms" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="196" id="194">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" title="OtherViews" id="195">
+                                                    <items>
+                                                        <menuItem title="In/In Histograms" state="on" id="196"/>
+                                                        <menuItem title="In/Out Histograms" id="197"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="184" name="selectedIndex" keyPath="values.VIHistogramSetIndex" id="200"/>
+                                            </connections>
+                                        </popUpButton>
+                                        <textField verticalHuggingPriority="750" id="202">
+                                            <rect key="frame" x="83" y="195" width="141" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Attend Location 0" id="203">
+                                                <font key="font" metaFont="system" size="15"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" id="204">
+                                            <rect key="frame" x="237" y="195" width="141" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Attend Location 1" id="205">
+                                                <font key="font" metaFont="system" size="15"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" id="206">
+                                            <rect key="frame" x="401" y="195" width="151" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Attend Far Location" id="207">
+                                                <font key="font" metaFont="system" size="15"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="191">
+                            <rect key="frame" x="1" y="284" width="583" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="192">
+                            <rect key="frame" x="584" y="1" width="15" height="283"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <popUpButton verticalHuggingPriority="750" id="101">
+                        <rect key="frame" x="549" y="-4" width="98" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <popUpButtonCell key="cell" type="push" title="100%" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="100" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="106" id="190">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="104">
+                                <items>
+                                    <menuItem title="25%" tag="25" id="103"/>
+                                    <menuItem title="50%" tag="50" id="102"/>
+                                    <menuItem title="75%" tag="75" id="100"/>
+                                    <menuItem title="100%" state="on" tag="100" id="106"/>
+                                    <menuItem title="125%" tag="125" id="105"/>
+                                    <menuItem title="150%" tag="150" id="108"/>
+                                    <menuItem title="200%" tag="200" id="109"/>
+                                    <menuItem title="400%" tag="400" id="107"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="changeZoom:" target="-2" id="188"/>
+                        </connections>
+                    </popUpButton>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="168"/>
+            </connections>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="184" userLabel="Shared Defaults"/>
+    </objects>
+</document>

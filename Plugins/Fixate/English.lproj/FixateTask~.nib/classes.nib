@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {doJuice = id; doReset = id; doRunStop = id; }; 
+            CLASS = FixateTask; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {actionsMenu = NSMenu; runStopMenuItem = NSMenuItem; settingsMenu = NSMenu; }; 
+            SUPERCLASS = LLTaskPlugIn; 
+        }, 
+        {
+            CLASS = LLTaskPlugIn; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dataSource = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,41 @@
+17 November 2005
+
+	added:			RFMap now gives a continuous display of stimulus azimuth and elevation in the control
+					panel
+					
+	added:			RFMap will not post notifications of the stimulus position, so you can get the current
+					mapping position into your plugin.  The posting is handled by a new entry in RFMap's
+					Action menu, Send Position (keyboard command-'=').  This causes a Cocoa NSNotification
+					to be sent.  You need to do four things in your LLPlugin object to receive these positions
+					
+					1) Your plugin will receive this notification if it registers to receive it and has an appropriate 
+					method.  To register to receive the notification, you need the following in your "activate"
+					method of the plugin:
+					
+						[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stimPosition:)
+									name:@"RFMapStimulusPositionDeg" object:nil];
+									
+					2) The selector entry (stimPosition: in the example) should be the name of the method in your
+					plugin that will be called when the notification is posted.  This method should be declared
+					as follows:
+					
+						- (void)stimPosition:(NSNotification *)notification;
+						
+					3) It will receive the notification object, will contain an NSValue containing an NSPoint with the
+					positin in degrees.  For example,
+					
+						- (void)stimPosition:(NSNotification *)notification
+						{
+							NSValue *positionValue = [notification object];
+							NSPoint positionPointDeg = [positionValue pointValue];
+							
+							NSLog(@"received position %f %f", positionPointDeg.x, positionPointDeg.y);
+						}
+					
+					4) You should remove your plugin from the notification center in your inactivate method:
+					
+						[[NSNotificationCenter defaultCenter] removeObserver:self];
+	
+	added:			Ability to display grid lines on the screen
+	
+	added:			Display of current position of the mouse in the control panel

@@ -1,0 +1,10 @@
+----------------------------------------------------
+
+----------------------------------------------------
+
+090915 Fixed random dots so the direction and density change under keypad control
+050618 Added support to change stimulus size, etc. using the keypad
+050616 Changed name from RFMapTask to RFMap
+051116 Gave RFMap the ability to offset the fixation point
+051116 Fixed mouse button control over display
+051117 Gave RFMap optional grid lines on the display

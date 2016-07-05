@@ -1,0 +1,497 @@
+
+OS X Lablib
+
+030104  
+
+Worked on video interrupts today.  Downloaded some sample code from the Apple Developer site (VBL and Cocoa InitGL).  It looks like OpenGL will work well, but it has little provision for finding out whether a particular command has been completed or not.  This might be done in version 2.0, but for now it looks like we have to rely on extensions.  In particular, Apple supports something called fences, which let you check whether a particular point in the OpenGL command stream has been completed.  
+
+For today, I used a modification of the VBL code, which uses glFinish(), which is brute force.  It holds the processor until the commands are all finished.  Quick tests with this suggest that it is pretty easy to get behind.  If I drag windows for other applications, there is a noticeable degradation of the display.  Because there is no other provision, we will probably end up needing to adjust thread priorities.  Apple has ways of doing that, but I have not played with it for now. 
+
+What seems clear is that the best model will be one in which the timing of every display is checked, and a report can be generated on demand to tell how things have been going.  This way, a task could actually re-do a trial if the stimulus presentation was not up to snuff.  A similar approach could be used for responsiveness on scheduling.  This approach would give uses a lot of freedom to take different approaches to stimulus generation and display (OpenGL, CGL, etc.). 
+
+030128  
+
+1) A Lablib Framework.  The documentation suggests that the perferred (and simplest) approach is to link a framework 
+into applications.  This removes any requirement for the framework to be correctly installed on the host.  We'll 
+take this approach.
+
+2) Cleaning Projects:  It seems to be important to clean projects to get some changes to stick. It is probably a good 
+idea to do this frequently.
+
+3) Setting up a framework to be linked into a project, and setting up a project to link the framework.  Both need changes.  
+These are described in the Project Builder documentation. It can be found in the section:
+
+    Creating Frameworks and Libraries:Embedding a Framework in an Application
+
+NB:  These instructions tell you to check the box marked "Copy only when installing", but if you copy only when installing,
+the framework is not available when you try to run during development.  I think this needs to be unchecked.
+
+Prebinding fails if you don't make special arrangements to get the Lablib framework to occupy a prebound address space that 
+does not overlap with that of the executable and all other libraries it contains.  Apparently there is not automatic way to 
+find a safe space. This is discussed at:
+
+    http://developer.apple.com/tools/projectbuilder/Prebinding.html
+    
+Changing the Lablib target Link Settings to include the link flag: "-seg1addr 0x30000000" seems to have worked 
+(but only after cleaning the project).
+
+4) Spaces in Names: Created Lablib Framework in the Labib folder.  There were problems when the project and its dependents had spaces in their names (ld and other unix applications did not interpret the names correctly), so we need to keep spaces out of the names of all files, projects and folders.
+
+030428  
+
+Making good progress.  Made a false start trying to get the on-line windows implemented with OpenGL.  There were problems because the NSScrollView is not well coordinated with OpenGL views.  It seemed like I was doing all the sort of nasty work I had to do under OS9, so I ditched it and went with NS objects.  That was a big improvement, and I'm not sure that it will be a big disadvantage, given that NS ultimately goes through the GPU. 
+
+030513
+
+Good progress on windows and events.  It is much better to implement the windows as NSWindowControllers and build the content in a nib.  It ends up simplifying the interfacing between the application and the window, and it is cleaner overall.  It is very difficult to get NSScrollViews to do what I want when I lay out views, however.  In the end the simplest thing seemed to be to put a dummy CustomView behind the views, defining the borders of the field, and then embed everything in an NSScrollView.  That seems to force the NSScrollView to keep the margins I want around the views.   
+
+030517 
+
+Took a while to figure out how to set scroller to a stored position.  I tried [scroller setFloatValue].  That changes the value,
+but has no other effect, and the value is lost the first time you scroll.  The correct approach is to save the origin of the 
+visible region of the plot, and then use [NSView scrollPoint] to put the origin back.  The scrollPoint function moves the scroller.
+
+030525
+
+Worked for a long time on the eye XT window, trying to use scrolling to get the drawing more efficient.  I had a terrible time, and after a day, I am punting on this. I will come back to it if it is necessary.  The mechanism I ended up with was scrolling on my own (without changing the origin) and doing a setNeedsDisplayInRect on the exposed area.  It should have worked, but it is messy.  Here are things that I learned.
+
+1) You can't do the scrolling within the drawRect method, because Cocoa always erases the invalid rect before calling drawRect.  This is generally useful, but makes scrolling impossible, and I could not find a way to turn it off. 
+
+2) To scroll outside of the drawRect, you must change the clipRect so that the scroll will happen, otherwise it will be clipped to whatever the clipRect happens to be.  Here's how:
+
+            [[NSGraphicsContext currentContext] saveGraphicsState];		// save current clipRect
+            [[NSBezierPath bezierPathWithRect:[self visibleRect]] setClip];
+            [self scrollRect:scrollRect by:NSMakeSize(0, -scrollDist)];
+            [[NSGraphicsContext currentContext] restoreGraphicsState]; 	// restore clipRect
+            // then compute a dirty rect and call setNeedsDisplayInRect
+            
+3) Scrolling should be done in the event loop, because drawRect is called in the event loop.  This way, they never collide.  If they collide, the drawing can happen when the scroll is half complete.  Scrolling in the main event loop is easy if you just do it from within a timer:
+
+            timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self
+                    selector:@selector(checkScroll:) userInfo:nil repeats:YES];
+            [timer retain];
+            
+None of this involves changing the bounds or frame origin.
+
+030531 
+
+Got data files working.  A first pass suggested that I should just use an NSFileWrapper, but it seemed conservative to do some 
+writing to disk before the end of data collection, so I've used an NSFileHandle.  If things look stable, it might make sense
+to go to an NSFileWrapper sometime in the future.
+
+I had to change the data format, so we now have a format 6. It more rigorously respects the need for not specific data file event
+definitions.  Thus, no 'fileEnd' event is forced at the end of a file.  Additionally, not spike tick interval or sample interval
+information is put in the header, because those events may not exist.  Instead, I changed the definition of the standard Lablib
+events to include these as parameters in the zeroSample and zeroSpike events.  Finally, no information at all is included about
+the eye calibration or fixation values or screen calibration.  It must be up to the user to make sure this information gets into
+each data file, because any of that information may not be relevant in a generic data file. 
+
+030604 
+
+Started running a program with data files in the lab (still fake monkey).  This was the first > 1 h testing.  I was getting very
+rare (1/3h) exceptions.  I found that the correct thing is to add a breakpoint with "-[NSException raise]".  This causes every
+exception to hang to the debugger.  
+
+The XT plots were getting in trouble, I think because they were not thread safe.  The data were being written and read while they
+were being drawn.  In particular, old data were getting thrown out while drawing was going on.  I put locks in all the XT files,
+hoping this will solve the (very rare) problem. s
+
+030824
+
+Wored with tones.  It is dead easy to load and play .aiff files.  The issue was where to put the .aiff files.  I had thought the natural home for them would be somewhere in Lablib.  However, the NSSound functions work best if the .aiff files are in the application bundle.  We are currently copying the Lablib.framework into the application, but having the .aiff files in an included framework apparently does not count for NSSound: they have to be in the resources folder of the application bundle.  The path of least resistance is to put them in the application (Experiment Template).  The only down side is that this might encourage users to change the sounds willy-nilly, but presumably this can be kept in check.  The NSSound routines are so good that there was no need for a "Tones" object.  A tone can be called with a single line. 
+
+030917  
+
+Control validation.  I spent a long time trying to get control item validation to work.  My plan was to make LL subclasses 
+of  the most useful controls that obeyed the NSValidatedUserInterfaceItem protocols.  This is a poorly documented protocol, 
+with virtually no useful pointers on the web, and it took me a long time to get it to work.  Even then there was still a 
+problem because I could not figure out how to gracefully get the OS to revalidate the controls in a window when the task 
+mode changed.  The only thing that worked was the brute force approach to making each control value dirty by setting it to 
+zero and then returning it to its correct value.  The obvious things like setViewsNeedDisplay:YES did not work, I think 
+because the NSTextFieldCell is an NSActionCell, which does not do automatic updating.  While I could get it to go in the 
+brute force way, I think the best approach for now is to simply have the WindowControllers enable and disable their controls 
+when the task mode (or file open) changes. 
+
+031115 
+
+Preparing for Distribution
+
+Although we have been leaving the framework in the Lablib directory and embedding it into projects, this is likely to add difficulty 
+for users.  It will probably be best to follow the model of the ITC framework, if for no other reason than users will have to deal with 
+it in any case.  I am changing Lablib to install its framework in /Library/Frameworks for now.  I had it installing in
+"@executable_path/../Frameworks" previously, which is the configuration for letting users embed the framework within applications.
+
+It was tricky to get XCode to put the framework into /Library/Frameworks.  It required setting this as the place for the framework
+in the info panel for Lablib, and also unchecking both 'Deployment Location' and 'Skip Install' in the target info Build panel.
+
+I spent a long time trying to get organized with Debug and non-Debug versions of Lablib, LablibITC18 and Experiment.  Each Xcode project
+can have many targets, and many build styles.  The same settings appear in each, but build styles override target settings. A typical
+configuration would be to have target contain distinct sources and libraries, and build style dictate whether the targets are build for
+debugging or deployment.  
+
+Although it would be possible to use the conventional model, it seemed more transparent to have a different target for development and
+deployment. This is because the current build style is never visible, and I keep forgetting that there are different build styles.  With
+multiple targets, I can build all the targets and get everything done in one pass.  Multiple targets is also useful for LablibITC,
+because the debug and deployment version want different Lablib frameworks (Lablib and LablibDebug).  This could be handled with 
+"Other linker flags" in the build styles (one with "-framework Lablib" for non-debugging, and the other with "-framework LablibDebug"),
+but again, it seems more transparent to have different targets.
+
+The only trick is that the (single) build style wants to override settings in the targets.  The ones that need to be different
+(e.g., "Generate debugging symbols") need to have a setting of '$(value)', which means, 'use the target's setting on this'. 
+
+031210 
+
+XCode bug.  The column in the Detail View for Targets that shows whether headers are project, private, or public sometimes does
+not show, making it impossible to change the header status.  It can be made to reappear by selecting New Target, and then cancelling
+before a target is made.  I tried reinstalling XCode, but that did not help.
+
+040407 
+
+Information on how to set up embedded frameworks can be found at: 
+	http://developer.apple.com/documentation/MacOSX/Conceptual/BPFrameworks/Tasks/CreatingFrameworks.html
+	
+In addition to what they describe there, you need to select your project icon, pull up the inspector, and in the Styles
+panel, select your Build Style, and add the following Framework Search Path:
+
+		/Documents/Lablib/Frameworks/Lablib/build
+		/Documents/Lablib/Frameworks/LablibITC18/build
+		
+If you don't do this, Xcode will not find the framework headers for the build. 		
+
+The final step is to get Xcode to copy the Lablib frameworks into your application when you build:
+
+For each of your targets:
+
+	Select the target in the Targets group (bullseye in the Groups and File column
+
+	In the Project menu, Project:New Build Phase:New Copy Files Build Phase
+
+	If you toggle the disclosure triangle by your target icon you should now see a Copy Files
+	build phase.
+
+	Drag the Lablib.framework icon  and LablibITC18.framework from the Framework folder into this Copy Files build phase
+	(it should still be visible in the Framework folder after you do this. and also to the Frameworks & Libraries part
+	of the target
+
+040430
+
+dealloc()
+
+The dealloc function is not guaranteed to be called. There are circumstances at application termination when objects will
+simply be disposed without calling the dealloc function.  I do not have a complete understanding of the circumstances that
+dictate this.
+
+The correct way to handle clean up that MUST occur, is to use NSApplicationWillTerminateNotification.  Any object can
+register with NSNotificationCenter to receive this notification.  
+
+040617 OpenGL Crashes:
+
+1) You can get an OpenGL crash if you fail to call [NSOpenGLContext makeCurrentContext] before doing 
+OpenGl (gl*()) calls.  The context is thread specific, so you only have to worry within thread, and 
+everyone is responsible for setting their context, so you do not have to save and restore context. 
+Within threads, everyone just sets their context before they go. This requirement does mean that OpenGL
+calls need to be fairly modular.
+
+2) You can also get a crash if you let two different thread compete with gl*() calls.  This can happen
+if you call a stimulus generating thread before its previous incarnation has finished.
+
+040618
+
+Debugging
+
+I had a terrible time tracking down a problem with debugging projects.  I could debug the main project (Experiment),
+but could not get breakpoints to work within Lablib or LablibITC18.  In the end it turned out that I had lost a critical
+build setting in Experiment.  For debugging each project should include the following:
+
+		"Unstripped Product"  (checked)
+		"Generate Debug Symbols (checked)
+		COPY_PHASE_STRIP		NO
+		
+		This last one may also appear as
+		"Strip debug symbols from binary files" (unchecked)
+		
+Unstripped Product is not the same thing as COPY_PHASE_STRIP NO, although I could not find any good documentation on this.
+
+NB: Although the Project settings are supposed to override the Target settings, and the Target settings are written
+with strike-through when they differ from the Project settings, in my experience the Target settings can override the 
+Project settings.  Do both to be sure.
+
+040620 
+
+setNeedsDisplay setViewsNeedDisplay
+
+I had been using [[self window] setViewsNeedDisplay:YES] to try to redraw all the elements in 
+the behavior window.  It was not working as expected.  It worked perfectly when I changed
+it to [[[self window] contentView] setNeedsDisplay:YES].
+
+040702 
+
+Autorelease.  The NSAutoreleasePools we maintain on our own will never flush their contents until they are
+released and reallocated.  This needs to be done periodically for any autorelease pool that stays around for
+a long time (dispatchEvents, schedule, etc.).
+
+040725 
+
+Cursors.  I had a terrible time trying to get cursors to become invisible when they went over the stimulus
+window in RFMap.  I tried cursorRects, which seemed like the logical thing, but eventually discovered that
+cursorRects (and trackingRects) have no effect if the window in question is not active.  We don't want to
+have the stim window active all the time, so that is not the way to go.  Eventually the only thing I got to 
+work was to check where the mouse was before each redraw, and turn it on or off if it entered or exited the 
+display.
+
+One thing that held me up a long time was the behave of becomeKeyWindow and becomeMainWindow.  If you implement
+these, you must call [super becomeKeyWindow] or the window will not change state.  There may be some more direct
+call for making the window change state, but I couldn't find it.
+
+050106 
+
+Crash.  Had a bad problem with a crash that was occurring deep in Cocoa.  It was stochasitic, but always that the
+same place: a line making a change in NSUserDefaults.  It turned out that it came because NSUserDefaults are not 
+thread safe.  I never figured out how to learn what the problem was through the debugger.  I was led to the solution
+only because the stack include calls that were obviously involved with changing default values, and because it occurred
+only when I was doing a lot of changes. I created LLUserDefaults as a thread-safe version to get around this.
+
+050203
+
+Debugging overrelases.  
+
+There is a good mechanism involving Zombies for debugging objects that are getting release and then used after
+the release.  The documentation says that the environment arguments can be set in the Xcode project, but for
+some reason that does not work for me.  It works When I put the following in the start up code.
+You also need to run the debugger and include a breakpoint at [_NSZombie release] to catch the troublesome  
+access.
+
+	NSDebugEnabled = YES;
+	NSZombieEnabled = YES;
+	NSDeallocateZombies = NO;
+	NSHangOnUncaughtException = YES;
+	NSLog(@"NSDebugEnabled: %d", NSDebugEnabled);
+	NSLog(@"NSZombieEnabled: %d", NSZombieEnabled);
+	NSLog(@"NSDeallocateZombies: %d", NSDeallocateZombies);
+	NSLog(@"NSHangOnUncaughtException: %d", NSHangOnUncaughtException);
+	
+050326 
+
+OpenGL
+
+I had a lot of trouble getting Anne Sereno's images to load. First, you can't do any Objective C drawing in 
+an NSOpenGLView -- it has to be done with OpenGL commands.  That means loading them into textures.  That's not
+too bad.  The following code does the trick:
+
+		if ((image = [[[NSImage alloc] initWithContentsOfFile:imagePath] autorelease]) == nil) {
+			break;
+		}
+		bitmap = [[[NSBitmapImageRep alloc] initWithData:[image TIFFRepresentation]] autorelease];
+		[bitMaps addObject:bitmap];						// keep the bitmap around
+		glGenTextures(1, &images[imageCount]);
+		glBindTexture(GL_TEXTURE_2D, images[imageCount]);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+		glPixelStorei(GL_UNPACK_CLIENT_STORAGE_APPLE, 1);
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthPix, heightPix, 0, 
+				([bitmap samplesPerPixel] == 4) ? GL_RGBA : GL_RGB, GL_UNSIGNED_BYTE, [bitmap bitmapData]);
+
+There are undoubtedly other things to worry about, but this works for now.  Second, the image must have pixel
+dimensions that are a power of 2:
+
+		widthPix = [bitmap pixelsWide];
+		heightPix = [bitmap pixelsHigh];
+		for (index = widthSum = heightSum = 0; index < sizeof(unsigned long); index++) {
+			widthSum += ((widthPix >> index) & 0x0001);
+			heightSum += ((heightPix >> index) & 0x0001);
+		}
+		if (widthSum > 1 || heightSum > 1) {
+			NSLog(@"GMTStimuli: \"%@\" does not have dimensions that are a power of 2",
+				imagePath); 
+			exit(0);
+		}
+
+Finally, I had a terrible time with images that were not showing.  The problem was that I was releasing
+the bitmaps because I thought the GPU would make copies.  That does not seem to be guaranteed.  Keeping
+the bitmaps around is probably the best plan (this mode might speed things, but I have a lot to research
+about that.  The code above retains the bitmaps.  Also, it seems that a RED_BIAS, GREEN_BIAS or BLUE_BIAS
+that is non-zero also forces the GPU to copy the texture. 
+
+The other thing that was screwing me up was that images were not showing if LLGabor left one of the 
+non-default texture units active.  To be safe, you should include the following before you start:
+
+    glActiveTextureARB(GL_TEXTURE0_ARB);				// activate texture unit 0
+	glPixelTransferf(GL_RED_BIAS, 0.0);					// return the color bias to 0
+	glPixelTransferf(GL_GREEN_BIAS, 0.0);
+	glPixelTransferf(GL_BLUE_BIAS, 0.0);
+	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);				// NSBitmapImageRep is aligned by bytes 
+
+
+Here are some tidbits I picked up from the web, but I haven't researched them:
+
+The PACK and UNPACK settings are opengl context global state, so if you set it in one place it is used for 
+every imaging operation (every glTexImage, glDrawPixels glReadPixels, etc, a complete list is in the man 
+page, "man glPixelStorei") until you change it again.
+
+I would bet that if they seem to be changing underneath you that it is getting reset somewhere else in your 
+app. Setting a breakpoint with gdb on glPixelStorei and glPixelStoref should be able to tell you that pretty quick.
+
+In general, state that stays with the texture (so it is potentially changed when you bind a new texture to 
+a texture unit) is only set by glTexParameter.
+
+In general, state that stays with the texture unit (doesn't change with a new texture bind) is only set by glTexEnv.
+
+051125
+
+ObjectAlloc was detecting a lot of NSCFDate objects lingering after calls that should have autoreleased
+their contents (e.g., the scheduler routines that put themselves to sleep).  It turned out that this
+was related to using NSZombie monitoring.  It went away after I turned off that debugging feature. 
+
+051229
+
+Frame autosaving does not work for any window that will be run as a modal dialog.  NSApp runModal
+always puts the window in the center of the screen.
+
+060227 Binding
+
+The following use of bind will bind the instance variable to the setting in the defaults.  This means that whenever
+the value in the defaults changes, the instance variable will be updated.  
+
+			[self bind:@"theValue" 
+					toObject:[NSUserDefaultsController sharedUserDefaultsController]
+					withKeyPath:[NSString stringWithFormat:@"values.theValue", theValueKey]
+					options:nil];
+
+This will work only if "self" is key-value compliant, meaning it must have methods for -theValue and -setTheValue.
+NOTE, however, that changing the instance variable will have no effect on the contents of the defaults.  There
+is nothing in this binding that bind defaults to the instance variable.
+
+I tried for a while to come up with a good way to bind NSTextFields in a dialog to instance variable in an LLVisualStimulus
+and also bind those instance variables with NSUserDefaults.  The problem is infinite loops, as -setValue get calls via
+binding and causes a change in other places that result in another call to -setValue.  It might be easier if we didn't
+have to detect changes to 1) the dialog, 2) -setValue and 3) NSUserDefaults, but we have to.  The only solution I saw
+was to have a flag that stopped some of the writing when it was set, but that seems very ugly.  
+
+For now, I think the best solution is to keep the binding with NSUserDefaults, which we need most, and go back to using
+target-action pairing for the dialog(s).
+
+060807 NSTimers
+
+I tried to remove all the calls to the LLScheduler from tasks, using NSTimers instead.  I got in trouble in the
+eye position update in MTContrast.  I never figured out what the problem was, but the NSTimers were not being fired.
+The NSRunLoop for the thread containing the LLState seemed to be loading the NSTimers, but for some reason the fireDate
+or the firing was broken.  I never figured out the reason, so for now I've just put it back to using the scheduler.
+
+It would be good to sort this out in the future.
+
+061109 Binding the contents of an NSTableView to NSUserDefaults
+
+1) In the nib, instantiate an NSArrayController.  Name it. Set its "Object Class Name" attribute to NSMutableArray.
+2) Each NSTableColumn in the NSTableView needs its value to be bound to this new NSArrayController, 
+with the Controller Key set to "arrangedObjects", and the Model Key Path set to a unique key of your choosing.  
+3) The NSArrayController needs its contentArray to be bound to "Shared User Defaults".  The Controller key will be
+"values" and the Model Key Path should be a unique key of your choosing.
+4) Make sure that you check "Handles Content As Compound Values" in the contentArray binding settings. 
+5) Make sure that the attributes of the NSArrayController include keys for each of the Model Key Paths you used 
+in your NSTableColumn bindings.
+
+If you use a property list to register default values for your table, the format should be as follows, where
+theKey is the key you used to bind the NSArrayController to Shared User Defaults, and the other keys are the 
+keys you used to bind the columns to the NSArrayController
+
+	<key>theKey</key>
+	<array>
+		<dict>
+			<key>column1</key>
+			<integer>11</integer>
+			<key>column2</key>
+			<integer>12</integer>
+			<key>column3</key>
+			<integer>13</integer>
+			<key>column4</key>
+			<integer>14</integer>
+			<key>column5</key>
+			<integer>15</integer>
+			<key>column6</key>
+			<integer>16</integer>
+		</dict>
+		<dict>
+			<key>column1</key>
+			<integer>21</integer>
+			<key>column2</key>
+			<integer>22</integer>
+			<key>column3</key>
+			<integer>23</integer>
+			<key>column4</key>
+			<integer>24</integer>
+			<key>column5</key>
+			<integer>25</integer>
+			<key>column6</key>
+			<integer>26</integer>
+		</dict>
+		<dict>
+			<key>column1</key>
+			<integer>33</integer>
+			<key>column2</key>
+			<integer>32</integer>
+			<key>column3</key>
+			<integer>33</integer>
+			<key>column4</key>
+			<integer>34</integer>
+			<key>column5</key>
+			<integer>35</integer>
+			<key>column6</key>
+			<integer>36</integer>
+		</dict>
+	</array>
+
+I found the following warning that I have not tested:
+
+(Tiger only) To insert a new object into the NSArrayController, you must use 
+insertObject:atArrangedObjectIndex: instead of insert:. This is because in Tiger, the default behavior is to 
+run action methods asynchronously, so you cannot rely on insert: to immediately insert the object. This is 
+required, however, because several GUI elements are bound to be enabled only after the insertion of the new 
+object. If the insertion does not take place immediately, you will not be able to enter data for the new 
+object, delete it or choose another object in the pop-up, so you'll be basically stuck.
+
+061112
+
+Projects in which targets want to put their build products in different locations (e.g., one that builds
+both a framework and a plugin.
+
+The only setting that should be changed is the "Per Configuration Build Products Path"
+
+071103
+
+CFString literals. gcc has stopped taking UTF8 characters in CFString literals.  To get around this, do the following:
+
+		NSString *GTE = [NSString stringWithUTF8String:"\xe2\x89\xa5"];
+		NSString *degrees = [NSString stringWithUTF8String:"\xc2\xb0"];
+
+		[reactPlot setTitle:[NSString stringWithFormat:@"Reaction Times (n %@ %d)", GTE, minN]];
+		[hist[level] setTitle:[NSString stringWithFormat: @"%@ %@%@", 
+							@"Dir. Change", [labelArray objectAtIndex:level], degrees]];
+
+
+110619 Copied from another file:
+
+Ghose Requests
+
+
+060621 putEvent:
+
+Anyways, it provides a good stress test of Lablib because there's a lot of data flying around. And the latest 
+snafu is with putEvent. Currently the data acquisition loops call putEvent and everything is usually fine and 
+dandy. But there's a problem if putEvent actually takes a decent amount of time (specifically larger than the 
+sampling interval).  For example, I want to run my 16-bit, 512x512 camera at 40 Hz. It turns out that putEvent 
+is taking about 30 ms to handle a frame, and so the frame rate is down  to 20 Hz. (When I comment out  putEvent, 
+I get the higher rate).
+
+One obvious solution is to detach a thread so that the data collection loop isn't waiting around for the 
+putEvents to complete. The cleanest place to do this would be within LLDataDoc, with eventToBuffer taking an 
+single object with all of the relevant arguments (code, pData,bytes,and writeLength).  Then it would be simply 
+a matter of having all the putEvent methods do something like:
+
+[NSThread detachNewThreadSelector:@selector(eventToBuffer:) toTarget:self withObject:anEvent];
+
+Given the locks it should be safe, but of course I'm little worried about mucking around at this level. The 
+other issue is that all this thread stuff is likely to overkill for most events which are reasonably sized. So 
+I was thinking it might make sense to keep the current methods, and add threaded versions (threadedPutEvent?)
+
+
+120508 Xcode 4.3.2 requires that you use the Download pane in the Preference to install the Command Line Tools to get the Foundation and AppKit headers.

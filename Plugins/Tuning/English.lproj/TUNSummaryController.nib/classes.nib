@@ -1,0 +1,82 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showPreferencePanel = id; }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = BehaviorView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                histView0 = LLHistView; 
+                histView1 = LLHistView; 
+                histView2 = LLHistView; 
+                histView3 = LLHistView; 
+                histView4 = LLHistView; 
+                histView5 = LLHistView; 
+                histView6 = LLHistView; 
+                histView7 = LLHistView; 
+                perfPlot = LLPlotView; 
+                reactPlot = LLPlotView; 
+                scrollView = NSScrollView; 
+                zoomButton = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LLEOTHistoryView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = LLEOTView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = LLHistView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = LLPlotView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = LLScrollZoomWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scrollView = NSScrollView; zoomButton = NSPopUpButton; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = LLXTView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            CLASS = MSSummaryController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dayPlot = LLEOTView; 
+                eotHistory = LLEOTHistoryView; 
+                percentTable = NSTableView; 
+                recentPlot = LLEOTView; 
+                trialTable = NSTableView; 
+            }; 
+            SUPERCLASS = LLScrollZoomWindow; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = SpikeView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scrollView = NSScrollView; zoomButton = NSPopUpButton; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = SummaryView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scrollView = NSScrollView; zoomButton = NSPopUpButton; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = TUNSummaryController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dayPlot = LLEOTView; 
+                eotHistory = LLEOTHistoryView; 
+                percentTable = NSTableView; 
+                recentPlot = LLEOTView; 
+                trialTable = NSTableView; 
+            }; 
+            SUPERCLASS = LLScrollZoomWindow; 
+        }
+    ); 
+    IBVersion = 1; 
+}

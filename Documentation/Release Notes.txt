@@ -1,0 +1,1095 @@
+-----------------------------------------------------------------------------------------------------------
+¥ Version 4.0.1     June 30, 2011
+
+4.0.0 wasn't build completely before it was packaged.
+-----------------------------------------------------------------------------------------------------------
+¥ Version 4.0.0     June 25, 2011
+
+a) LLGabor,LLPlaid
+
+	added			setRadiusLimitSigma to let users make the stimuli draw over large parts of the display
+	
+b) LLPLotView
+
+	changed			drawRect to allow y highlight with a single point being plotted
+	
+c) LLRandomDots
+
+	fixed			made the azimuth, elevation and radius of the stencil class variables so changes by one
+					object would be detected by others
+	
+	fixed			setDirection & directSetDirection to keep direction positive.  It is used for indexing.
+	
+	added			-directSetDotContrast
+					-directSetDensity
+
+d) Updated to XCode 4.0 and OS X 10.6
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 3.1.4		March 7, 2009
+
+a) LLLaserCalibrator
+
+	add				Support for probe attenuation
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 3.1.3		February 28, 2009
+
+a) LLPlaid.nib
+
+	fixed			File owner to LLPlaid from LLGabor
+	
+b) LLPlaid.h
+
+	fixed			Some extra and missing keys
+	changed			kLLPlaidEventDesc from method into macro
+	added			Declarations for many "directSet*" functions, and setAcromatic:
+	
+c) LLPlaid.m
+
+	fixed			Some keys with "KDL" changed to "Kdl"
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 3.1.2		February 19, 2009
+
+a) LLFilterExp	
+
+	created			An object for doing an expontial filtering of data (eye position)
+	
+b) LLStandardDataEvents
+
+	add				eyePData for pupil data as a standard event
+	
+c) LLPlaid
+
+	created
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 3.1.1		October 20, 2008
+
+a) LLPlotAxes		Fixed a bug that prevented y-axis from not being drawn.
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.9		January 11, 2008
+
+a) LLVisualStimulus
+
+	created			directSetRadiusDeg()
+	
+b) LLGabor
+					directSetSigmaDeg()
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.8		November 25, 2007 
+
+a) LLDataDoc		Fixed a bug in dispatchEvent, where the event lock was being set after checking for data
+					but before processing it.  The lock is not set before checking for data.
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.7		October 18, 2007
+
+a) LLNoise			Added a new visual stimulus
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.6		June 14, 2007 
+
+a) Intel Support
+					Changed projects to the following build settings:
+						
+						Architecture to PPC and Intel (determined by building m
+						Deployment Target 10.4 (won't run on older operating systems anymore)
+						Set SDKROOT setting to /Developer/SDKs/MacOSX10.4u.sdk
+						This version will run on an Intel machine, but the data files will not have the
+							correct order (so don't save data on Intel machines).  This should be fixed
+							in the next release. 
+							
+b) LLSettingsController
+
+	fixed			The settings controller had broken when we moved over to key-value bindings.  While fixing
+					this I did a major overhaul of the organization of settings.  The unused settings are now
+					stored in separate files, rather than in NSDictionaries within the single user defaults.
+					This keeps the defaults down in size, and should make it easier to transport settings files
+					between users (should anyone want to do that).
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.5		April 10, 2007
+
+					Various minor changes 
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.4		March 18, 2007
+
+					Various minor changes 
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.3		January 11, 2007
+
+a) LLRandomDots	
+
+	changed			Extensive changes throughout to use the stencil plane to clip the random dots to a 
+					circle (rather than using a circular texture).
+				
+b) LLEyeXYView
+
+	changed			Extensive changes to make the drawing more efficient.  This entails drawing only the
+					portion of the display that has changed -- where eye samples have been added or where
+					they have been removed from the display.  This change follows a suggestion made by
+					Geoff Ghose.
+					
+					This change makes it necessary for "drawables" to inform the LLEyeXYView when a region
+					needs to be redrawn. Because LLEyeXYView inherits from NSView, this can be accomplished 
+					using the NSView method: 
+					
+						- (void)setNeedsDisplayInRect:(NSRect)rectDeg;
+					
+					The argument should be the rectangle that needs to be updated.  For example, your controller
+					might do the following to update whether a fixation window should be drawn filled or
+					not:
+					
+						if (!inWindow && NSPointInRect(currentEyeDeg, eyeWindowRectDeg)) {
+							[eyePlot setNeedsDisplayInRect:[eyePlot pixRectFromDegRect:eyeWindowRectDeg]];
+							inWindow = YES;
+						}
+						else if (inWindow && !NSPointInRect(currentEyeDeg, eyeWindowRectDeg)) {
+							[eyePlot setNeedsDisplayInRect:[eyePlot pixRectFromDegRect:eyeWindowRectDeg]];
+							inWindow = NO;
+						}
+						
+					Note that if you are drawing a rectangle with a broad (multi-pixel) stroke, you will
+					need to make the argument to setNeedsDisplayInRect that much larger than the rectangle
+					you are drawing.  For example:
+					
+						[eyePlot setNeedsDisplayInRect:NSInsetRect(
+							[eyePlot pixRectFromDegRect:eyeWindowRectDeg],
+							-2.5, -2.5)];
+
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.2		December 21, 2006
+
+a) LLGabor	
+
+	fixed			The stencil was not detecting when the scale and offset was changed.  This is now fixed
+	
+b) LLMouseDataDevice	
+
+	fixed			The x-axis got reversed somehow.  This is now fixed.
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.1		December 15, 2006
+
+a) LLGabor			
+
+	changed			Extensive changes throughout to use the stencil plane to clip the gabor to a circle
+					(rather than using a circular texture mask).
+					
+b) LLFixTarget
+
+	added			Diamond and cross shapes added to the possible fix target shapes
+	
+c) LLStateSystem and LLStateSystemController
+
+	changes			Extensive overhaul to LLStateSystem to allow access of states by name.  This was part of
+					a change needed to correct name conflicts between state systems.  A stateSystem instance
+					variable has been added to LLTaskPlugin, and this is now the correct way to access state
+					systems.  Additions to LLStateSystem allow for control of generic state systems.
+					
+					This change requires changes to existing state systems.  See LLStateSystems in Documentation
+					for instructions on upgrading statesystems.
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.3.0		November 15, 2006
+
+a) Fixate Plugin	Changed the behavior dialog to use the LLFixSpot's built in settings dialog
+
+b) LLDataDeviceController
+
+	fixed			- (NSData *)dataOfType:(NSString *)typeName;
+	
+					Put locks around access to sampleData
+
+c) LLHistView
+
+	added			- (void)setYUnit:(double)unitValue index:(long)index;
+					- (void)setData:(double *)histData length:(long)histLength color:(NSColor *)color 
+										yUnit:(double)histUnit
+
+					These provide support for scaling different histograms within one view to different
+					yUnits.  This should have been added when we added support for multiple histograms within
+					one view.  Default behavior is to assign the same scaling to all histograms.
+d) LLDataDoc
+
+	added			Support for putting events in separate threads, if they are too large
+	
+e) SCM				Enabled SCM for Lablib framework
+
+f) Knot
+
+	removed			Removed support for LLDataSource or LLIODevices.  Only LLDataDevices are now supported.
+	
+	removed			LablibITC18 framework from Knot
+	
+					Knot no longer assumes that the ITC.framework will be present, and does not load it for
+					any plugin.  If an LablibITC18 LLDataDevice plugin is install, it will contain the ITC.framework,
+					and the ITC.framework will be loaded in that case.  This is the normal mechanism for using the
+					ITC-18 with Knot.
+					
+					If your LLTaskPlugin references an ITC-18 directly, as when you use an LLITC18StimTrainDevice,
+					you will have to make changes to your plugin.  Specifically, you will need to remove any
+					reference to LablibITC18.framework (which no longer contains LLITC18StimTrainDevice), and 
+					include a new reference to ITC.framework (which your plugin assumes will be present -- if it
+					is not present, Knot will not load your plugin).  You should also copy the source files you need
+					from the LablibITC18 folder, and add them to your project.  When you build, you will now be
+					building with references directly to ITC.framework, rather than indirect references mediated
+					by LablibITC18.framework.
+						
+	added			Support for plugins of type LLDataDevice. 
+				
+					Any plugin in Library/Application Support/Knot with a principal class of LLDataDevice
+					will be loaded by Knot at run time.  This will allow much greater flexibility in adding
+					machine-specific data devices.  
+					
+g) LLITC18
+	
+	added			A new target in the LablibITC18 Xcode project that creates a plugin.
+	
+					The LablibITC18 project in Lablib now contains two targets. One creates a framework, just as 
+					before.  The new target creates a plugin version of the
+					framework, in which the principal class is LLDataDevice.  
+
+h) LLMouseDataDevice
+
+	created			Plugin version for Knot
+	
+i) LLSynthDataDevice
+
+	created			Plugin version for Knot
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.9		August 7, 2006
+
+a) LLStandardFileNames
+
+	changed			Changed the definition of the default directory string to @"/Users/Shared/Data" to reflect
+
+b) LLITC18DataDevice
+
+	fixed			Changed 	timestamp = sampleTimeS / timestampTickS[bitIndex];
+					to			timestamp = round(sampleTimeS / timestampTickS[bitIndex]); 
+					so that timestamps would not get rounded down when they fell incrementally below
+					an integer boundary.
+					
+	fixed			Changed		if (sampleChannel < kLLITC18ADChannels && 
+											sampleTimeS = nextSampleTimeS[sampleChannel]) {
+					to			if (sampleChannel < kLLITC18ADChannels && 
+											sampleTimeS >= nextSampleTimeS[sampleChannel]) {
+					so that samples will be stored when the time is just equal to the next sample time.
+					
+	fixed			Changed		sampleTimeS = 0;
+					to			sampleTimeS = ITCSamplePeriodS;		// one period complete on first sample
+					so that the time is correct when the first sample set is checked.
+					the new policy of keeping the data within the User directory
+
+c) LLSVDSolver
+
+	created			New object to handle inverting matrices for the eye calibration (from Erik Cook).
+					Code taken from Numerical Recipes
+	
+d) LLEyeCalibrator
+
+	changed:		-(void)computeTransformFromOffsets;
+	
+					Now uses the LLSVDSolver to invert the matrix, rather than computing it on its own.
+					
+e) LLEyeCalibrator.nib
+
+	add:			Controls for incrementing or decrementing the xT and yT values.
+--------------------------------------------------------------------------------------------------------
+¥ Version 2.2.8 June 12, 2006
+
+a)	Knot			
+
+	added			Icons for the Knot Task Plugins.  This was not simple, because bundles (like plugins)
+					cannot have their own icons in OS X.  The solution is that the Knot application has
+					to declare the BNDL type with LLTaskPlugIn class as its own, and give it an icon file.
+					Apparently the class is enough to keep the icon specific to Knot's plugins
+
+b)	LLITC18DataDevice
+	LLITC18StimTrainDevice
+	
+	fixed			Changed calls to ITC18_InitializeAcqusition(itc) to ITC18StopAndInitialize(itc, YES, YES).
+					One of the recent ITC framework updates had a change that caused us to get into trouble 
+					when we failed to stop the ITC during analog output (as with stimulus trains).  The new
+					function does both the stop and the initialization in one call.  The two arguments let
+					you select one or both, but we want both all the time.
+
+c) LLDataDoc
+
+	added			- (void)setRetainEvents:(BOOL)state;
+
+					Sets retainEvents, which determines whether the event buffer gets flushed after all
+					the events are dispatched to observers. The default sets the YES, which prevents flushing.
+
+d) LLSVDSolver
+
+	created			Took code from Erik Cook that find the best fitting affine transform for eye calibrations
+	
+e) LLEyeCalibrator
+
+	changed			- (void)computeTranform
+	
+					Changed to use an LLSVDSolver
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.7 May 5, 2006
+
+a) LLStimWindow
+
+	added			- (float)frameRateHz;
+					- (DisplayParam)display;
+					- (NSSize)displaySizeDeg;
+					
+					These were added so that plugins wouldn't have to reach down to the LLDisplays,
+					and could now get all the information they needed from the LLStimWindow
+
+b) LLITC18DataDevice
+
+	changed			Added support to allow it to work with Instrutech's USB-18
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.6 April 30, 2006
+
+a) LLDataFileReader
+
+	fixed			- (NSData *)eventsAsMatlabStrings; 
+
+					The conversion was not allowing the autorelease pools to flush, so all objects
+					created during the conversion were being held until the conversion was completed.
+					I added autorelease pool support to the inner loop of the conversion.
+				
+b) LLDataEventDef
+
+	fixed			- (NSArray *)eventDataAsStrings:(DataEvent *)pEvent prefix:(NSString *)prefix
+								suffix:(NSString *)suffix;
+
+					There was a bug in which stucts within structs were all being read
+					at the start of the data field, rather than the correct byte offset.
+					
+c) LLEyeCalibrator
+
+	changed			"kOffsets" changed to "kLLEyeCalibratorOffsets" to avoid collisions
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.5 April 22, 2006
+
+a) LLDataFileReader
+
+	fixed:			- (void)appendMatlabString:(NSString *)eventString toData:(NSMutableData *)data;
+
+					The method was too aggressively converting [] to ().  Fixed so it recognized Matlab
+					array declarations (e.g., [ 1 2 3 4]).
+					
+	fixed:			- (NSData *)eventsAsMatlabStrings; 
+
+					Made it so it could handle multiple instances of the same event before the first
+					trialStart.  Made it so it would correctly put multiple instances of string events
+					in cell arrays
+
+a) LLDataDef
+	
+	added:			- (BOOL)isStringData; 
+
+					To allow LLDataFileReader to know that it is getting string data returned to 
+					-eventsAsMatlabStrings.
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.4 April 15, 2006
+
+a) LLRandomDots
+
+	fixed:			- (void)makeMovie:(long)durationMS;
+					
+					Xinmiao discovered that frameCoherence and nextCoherence were still longs, when they
+					should be floats. 
+
+b1) LLDataDeviceController
+
+	added:			- (void)readDataFromDevices;
+					
+					This provides a mechanism to force the LLDataDeviceController to drain all the data
+					from all the LLDataDevices.  
+
+b2) LLTaskPlugin
+
+	added:			- (NSTimer *)collectorTimer;
+					
+					This returns a (new) *NSTimer instance variable. This timer should be used to control
+					the polling of the LLDataDeviceController.  Making it accessible provides a convenient
+					way to drain all data from the devices using.  Which should be done at the start of
+					each trial to prevent data from one trial being set after a trialStart event:
+					
+					    [[task dataController] setDataEnabled:[NSNumber numberWithBool:NO]];
+						
+						[[task dataController] readDataFromDevices];
+						[[task collectorTimer] fire];
+						[[task dataDoc] putEvent:@"trialStart" withData:&trial.targetIndex];
+						[[task dataDoc] putEvent:@"trial" withData:&trial];
+						lValue = 0;
+						[[task dataDoc] putEvent:@"sampleZero" withData:&lValue];
+						[[task dataDoc] putEvent:@"spikeZero" withData:&lValue];
+
+						[[task dataController] setDataEnabled:[NSNumber numberWithBool:YES]];
+
+
+c1) LLDataDevice
+					Changes were made to run timestamps off a (float)periodMS rather than a
+					(long)tickPerMS.  The old functions remain, but should be transitioned to
+					the new functions as follows:
+					
+	added:			- (BOOL)setTimestampPeriodMS:(float)newPeriodMS channel:(long)channel;
+					- (float)timestampPeriodMSForChannel:(long)channel;
+					
+					This makes the sampling period for timestamps analogous to the period for samples.
+					This change required small changes to many LLDataDevices in Lablib, and to 
+					LLDataDeviceController.
+					
+	deprecated:		- (BOOL)setTimestampTicksPerMS:(long)ticksPerMS channel:(long)channel;
+					- (long)timestampTicksPerMSForChannel:(long)channel;
+
+c2) LLXTView
+
+	added:			- (void)setSamplePeriodMS:(float)samplePerMS spikeChannels:(short)spikes spikePeriodMS:(float)periodMS;
+					- (void)setSpikePeriodMS:(float)periodMS;
+
+	deprecated:		- (void)setSamplePeriodMS:(float)samplePerMS spikeChannels:(short)spikes spikeTickPerMS:(long)ticksPerMS;
+					- (void)setSpikeTicksPerMS:(long)ticksPerMS;
+
+c3)	LLStandardDataEvents
+
+	changed:		The "dataParam" data event in LLStandardDataEvents is used by Knot to alert plugins
+					when data acquisition settings change.  Its data field contains a DataParam structure
+					containing information about the data settings.  The (float)timing field in DataParam
+					previously was used to send the ticksPerMS value for timestamp entries.  It has been
+					changed to now contain a samplePeriodMS entry for timestamps (as it does for samples).
+					You should make changes accordingly.  For example:
+					
+					- (void)dataParam:(NSData *)eventData eventTime:(NSNumber *)eventTime;
+					{
+						DataParam *pParam = (DataParam *)[eventData bytes];
+						
+						if (strcmp((char *)&pParam->dataName, "spikeData") == 0) {
+							[xtView setSpikeTicksPerMS:pParam->timing];
+						}
+					}
+					
+					should become:
+					
+					- (void)dataParam:(NSData *)eventData eventTime:(NSNumber *)eventTime;
+					{
+						DataParam *pParam = (DataParam *)[eventData bytes];
+						
+						if (strcmp((char *)&pParam->dataName, "spikeData") == 0) {
+							[xtView setSpikePeriodMS:pParam->timing];
+						}
+					}
+					
+					Similarly, if your code has been assuming that timestamps are coming with 1 ms steps,
+					you should generalize it for arbitrary timestamping periods.  For example:
+					
+					binMS = *pSpike - startTime;
+					
+					should become:
+					
+					binMS = *pSpike * spikePeriodMS - startTime;
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.3 March 24, 2006
+
+a) LLITC18 Framework
+
+	fixed:			a bug was causing a crash when switching between task plugins.
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.2 March 22, 2006
+
+a) LLStimWindow
+
+	added:			- (NSPoint)degPointFromPixPoint:(NSPoint)pointPix;
+					- (NSSize)degSizeFromPixSize:(NSSize)sizePix;
+					- (NSPoint)pixPointFromDegPoint:(NSPoint)pointDeg;
+					- (NSSize)pixSizeFromDegSize:(NSSize)sizeDeg;
+					all contributed by Ping Sun
+b) LLDataUtil
+
+	create:			+ (NSArray *)pairXSamples:(NSMutableData *)xSamples withYSamples:(NSMutableData *)ySamples;
+	
+					To assist with handling data in which the x and y values are returned in separate events
+
+c) LLStandardDataEvents
+
+	added:			+ (long)countOfEventsWithDataDefs;
+	
+					Previously we were using +count for events with and without data events, but that is 
+					no longer safe because the definitions might have different numbers of entries.
+
+d) LLHistView
+
+	extended:		Modified several functions to that LLHistView now (transparently) will support plotting 
+					multiple histograms in the same view (like LLPlotView).
+
+e) LLScheduleController
+
+	fixed:			Erik Cook added an NSLock around the method that removes objects from the scheduleArray
+	
+f) LLVisualStimulus
+
+					The LLVisualStimulus class was created to unify visual stimuli and provide support for 
+					changing and saving stimulus settings. LLFixTarget, LLRandomDots, LLBar and LLGabor have been
+					made subclasses of LLVisualStimulus.  This conversion will require that you make the following
+					changes to all calls to these classes.  This list might be incomplete.
+					
+						[myStim setDisplay:display] -> 
+							[myStim setDisplays:[[task stimWindow] displays] displayIndex:[[task stimWindow] displayIndex]];
+
+						setCoherencePC -> setCoherence			[0:1, not 0:100]
+						setContrastPC -> setDotContrast			[0:1, not 0:100]
+						setOrientationDeg -> setDirectionDeg
+						setSF -> setSpatialFreqCPD
+						setTF -> setTemporalFreqHz
+						setSPhaseDeg -> setSpatialPhaseDeg
+						setKdlphi, setKdlPhi -> setKdlPhiDeg
+						setKdltheta, setKdlTheta -> setKdlThetaDeg
+						setTMod -> setTemporalModulation
+						setSMod -> setSpatialModulation
+						setTPhaseDeg -> setTemporalPhaseDeg
+						sPhaseDeg -> spatialPhaseDeg
+						
+						setFixSpotColor -> setFixTargetColor
+						
+g) LLEyeXYView
+
+	fixed:			- (NSPoint)convertPoint:(NSPoint)eyePoint;
+					- (NSRect)convertRect:(NSRect)eyeRect;
+					
+					Geoff Ghose discovered that these methods were non-functions.  I've patched them up,
+					but I'm not sure anyone needs them for anything.
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.1 January 27, 2006
+
+a) LLITC18DataDevice
+
+	fixed:			-loadInstructions was trying to do ITCSetSequence without checking that itc != nil.
+	
+	fixed:			-readData was not storing timestamps correctly.
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.2.0 January 25, 2006
+
+a) LLTaskPlugIn
+
+	changed:		Task plugin version are now checked using +(int)version rather than -(long)pluginVersion.
+					All LLTaskPlugIns will need to be changed to accommodate this.  Each subclass of 
+					LLTaskPlugIn should include the following:
+					
+					+ (int)version;
+					{
+						return kLLPluginVersion;
+					}
+					
+					pluginVersion will be ignored by Knot.
+					
+b) LLPluginController
+
+	created			This object was create to control the loading and unloading of plug ins.
+					This makes it possible for people to share a computer without seeing each other's
+					plugins or having to wait until they load, or letting them tie up resources.
+					It has been incorporated into Knot.  The plan is that this controller will
+					eventually be expanded to cover other types of plugins (eye calibrators, data devices,
+					etc.).
+					
+c) LLDataDeviceController
+
+	added:			- (unsigned long)digitalInputBits;
+		
+					Erik Cook pointed out that I had forgotten this in the transition to LLDataDevices
+					
+	
+d) Many
+
+	several:		(unsigned short)digitalInputWord to (unsigned long)digitalInputBits;
+	
+e) LLXTView
+
+	changed:		float samplePeriodMS;
+	
+					Changed this instance variable from long to float to handle sub-millisecond sampling.
+					
+f) LLITC18
+
+	fixed:			Bug in -readData was causing timestamps to be stored as longs rather than shorts.
+	
+	changed:		Major overhaul to allow LLITC18 to support different sampling rates on different
+					channels.
+					
+g) LLStandardDataEvent
+
+	added:			New event definitions to support eyeData, spikeData and VBLData.  Presumably people
+					who want additional spike channels can add additional events of thier own.
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.1.7 January 5, 2006
+
+This version was prepared using Xcode 2.2 under OS 10.4
+
+It fixes a variety of bugs that were found in the LLDataDevices
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.1.6 January 2, 2006
+
+a) LLMouseDataDevice
+
+	added:			- (void)setMouseState:(long)mouseState;
+	
+					The use of this function made it possible to eliminate the Carbon support that 
+					LLMouseDataDevice was using.  The old LLMouseIODevice still uses Carbon, but
+					we should be able to eliminate that soon, and then Lablib will be Carbon-free.
+
+b) LLSchedule
+
+	fixed:			- (void)run;
+	
+					There was a memory leak with an NSDate that was not getting released (startDate).
+
+c) LLDataFileReader and LLDataEventDef
+
+	extended		Many changes throughout to make provisions for data definitions in which an 
+					indeterminant array occurs as the final entry in a structure.  This was needed
+					to handle the new data events, which have a fixed header describing the source
+					of the data and then a variable number of data entries.
+
+d) LLDataAssignments
+
+	created			This object was created to handle data assignments.  It provides support for
+					accessing data by name (e.g., eyeData or spike0Data).  All plugins should plan
+					on using this approach in the future because it is more intuitive and efficient
+					
+e) LLDataDeviceController
+
+	extended		Extensive changes were made to support data assignments.  In particular, a
+					dialog was created to allow the user to change data assignments on the fly.
+					Part of the revision was the introduction of the Null Data Device
+					
+f) LLNullDataDevice	
+	
+	created			Created the Null data device as an LLDataDevice that responds appropriately
+					to data device methods, but never delivers any data or acts on any output. 
+					LLDataDeviceController ensures that this device is always present, even if 
+					no others are.  This gets around problems that can arise when none of the
+					expected devices exist
+					
+g) LLRandomDots
+
+	created			- (id)initWithDisplay:(DisplayParam)newDisplay;
+
+					This is to allow the display parameter to be initialized with the init.
+					This is the preferred initialization, because display must be set for
+					LLRanddots to work
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.1.5 November 17, 2005
+
+
+a) LLEyeCalibrator
+
+	changed:		Converted from using a calibration structure to using key-value bindings
+	
+	changed:		fixOffsetDeg -> calibrationOffsetDeg
+					setFixOffsetDeg -> setCalibrationOffsetDeg
+					
+					These changes were made to eliminate ambiguity between the small step offset (calibration)
+					and the standing DC offset of the fixation point (fixation offset)
+	
+	added:			- (NSPoint)calibrationOffsetPointDeg;
+	
+					This method returns a point with the current offset for the calibration.  You
+					should change your calls to update the synthetic data device (typically is your
+					startTrial state as follows:
+					
+					Old:
+						[[task synthDataSource] setOffsetDeg:[[task eyeCalibrator] offsetDeg]];
+					New:
+						[[task synthDataSource] setOffsetDeg:[[task eyeCalibrator] calibrationOffsetPointDeg]];	
+					
+					If you don't make this change, the synthetic eye positions won't work with calibration turned
+					on.
+					
+
+	added:			+ (NSBezierPath *)bezierPathForCalibration:(LLEyeCalibrationData)cal;
+
+					This function returns an NSBezierPath suitable for drawing the calibration information,
+					using only the information in cal.  This should be used when an LLEYEXYView wants to
+					display the calibration.  The path returned is autoreleased, so you should retain it
+					if you want it to persist.
+
+
+b) LLControlPanel
+
+	fixed:			Buttons were not displaying correctly because it could not find its resource files
+	
+c) LLTaskPlugin
+	
+	added:			- (void)setHost;
+	
+					To allow access to the host program (Knot).  This was needed for programmatic requests
+					to change to other tasks.
+					
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.1.4	October 5, 2005
+
+a) ITC
+
+	changed:		This version  expects to see the August 2005 version of the ITC drivers
+
+b) LLDataDoc
+
+	changed:		eventToBuffer - moved the eventLock so that the writing to the file was also
+					within the locked zone.  I think this should have been locked all along, but
+					it didn't seem to cause problems.  Files without data definitions were getting
+					in trouble since introducing data definitions.  Perhaps the new arrangement
+					revealed the bug. 
+
+c) LLTaskPlugin
+
+	added:			- (NSNumber *)pluginVersion; 
+					{
+						return [NSNumber numberWithLong:kLLPluginVersion];
+					}
+					
+					This is for versioning.  Knot will only load plugins that are current for its version.
+c) LLRandomDots
+
+	deleted:		All support for a single step of coherence.
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.1.3	September 11, 2005
+
+a) LLRandomDots
+
+	added:			- (void)setBackgroundColorRed:(double)red green:(double)green blue:(double)blue; 
+					This allows the user to draw random dots on a background that is not midlevel gray
+	
+b) LLStimWindow	
+
+	changed:		#define kMidGray is now #define kLLMidGray.  The former was colliding with some users.
+
+c) LLDataEventDef
+
+	changed:		Extensive changes to incorporate explicit offsets of entries in struct definitions 
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.1.2	September 4, 2005
+
+a) LLDataDoc
+
+	added:			Added extensive new methods and changes to support data definitions.  Data files created
+					with data definitions are type 6.1.  Those without are created as 6.0.
+					
+b) LLDataEventDef
+
+	created			Created this new object to be a data definition.  This was needed to support new data 
+					type definitions.  LLDataEventDef works with or without data type definitions, so it
+					is used for all data events
+					
+c) LLDisplayPhysical
+
+	fixed			bug that was allowing only one display calibration to be set, and it was being used for
+					all displays.  
+					
+d) LLDisplays:
+
+	added:			+ (NSString *)displayNameUsingID:(CGDirectDisplayID)displayID;
+					+ (NSString *)displayNameUsingIndex:(long)displayIndex;
+					
+					for getting the names of the displays
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.1.1	July 27, 2005
+
+a)	LLStimWindow:
+
+	added			setDisplayMode to allow changes to the display mode of a captured stimulus display.
+					It has no effect on a stimulus window that is displayed on the main screen.
+				
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.1.0	July 22, 2005
+
+a)	fixed			Changed from LLStimView back to LLStimWindow.  StimView was not capturing the display
+					and all drawing was falling behind for that reason.  With this change, beam synchronization
+					(see 2.0.5) is not needed at all.
+				
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.0.5 July 19, 2005
+
+a) LLSystemUtil
+
+	add:			Added setBeamSynchronization to fix a problem with OS 10.4 in which the default
+					state for beam synchronization was on, destroying stimulus quality.
+
+b) Xcode			Converted all projects to Xcode 2.1
+				
+-----------------------------------------------------------------------------------------------------------
+
+¥ Version 2.0.4 June 6 2005
+
+a) LLGabor:
+
+	fixed:			Extensive changes from Geoff Ghose, fixing in particular a problem in which the local
+					variables were not be loaded into the gabor structure.  Also added support for key value
+					binding.
+					
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.0.3 May 2005
+
+a) LLViewScale:
+
+	fixed:			Yet another bug in the auto rescaling.  There were situations in which the rescaling
+					would get into infinite loops because on one pass the max limit would change, which
+					would push the ymin out of range.  On the next pass the min limit would change, pushing
+					the ymax back out.  I changed this now so that both limits get set whenever either needs
+					to be changed.
+b) Plugins:
+
+	fixed:			There was a problem in which eyeXY windowControllers were not getting released.  They
+					were adding themselves as drawables to their own eyeXYPlots, and this was making it
+					impossible for the objects that created them to get their retainCount to zero.  I added
+					a new methods to all these NSWindowControllers so that they will remove themselves as
+					drawables, making it possible for them to be correctly released.  As a byproduct, there
+					is no longer any need for these controllers to have a method following view changes. 
+					These can be updated in the dealloc method now.
+
+c) LLFixTarget:
+	
+	added:			Support for getting LLFixTarget to bind is exposed values to key with an assigned 
+					prefix.  This is very useful.  It should be extended to LLGabor and LLRandomDots, etc.
+					It means that users don't have to keep updating these objects when they detect that
+					something has changed.
+				
+d) LLEyeCalibrator:
+
+	added:			- (void)setFixOffsetDeg:(float)newOffsetDeg;
+					- (float)fixOffsetDeg;
+					
+					This was needed to let tasks like RFMap set the offsetDeg to 0.0 and restore it afterward.
+					
+	added:			- (void)setDefaults:(NSUserDefaults *)newDefaults;
+	
+					This lets the eye calibrator use the thread-safe version of defaults used by Knot.
+
+e) LLSystemUtil:
+
+	removed:		- (void)tick:(long)tickMS;
+	removed:		- (BOOL)expired;
+	
+					These were deprecated because they caused a memory leak.  They were carried along as
+					a convenience to others, but they have outlived their usefulness and it is time to force
+					people to use the newer method.
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.0.2 February 26 2005
+
+a) LLDataDoc:
+
+	fixed:			Bug in eventToBuffer was causing timestamps on data events to be bad (-1) when
+					running on a machine that had been up for more that ~49 d (2^32 ms).
+					
+b) LLEyeCalibrator:
+
+	fixed:			Bug in parametersChanged.  The offset for the units was not getting included
+					when the offsetUnits[] values were updated, so they were always getting centered
+					on (0,0).  
+					
+c) LLPLotAxes:
+
+	fixed:			Bug in + (void)drawXAxisWithScale: and + (void)drawYAxisWithScale: where
+					getTickLimits was being called with a float coerced to long, causing some
+					tick increments of zero, and subsequent infinite loops.
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.0.1 February 2005
+
+a) LLNormDist:
+		
+	fixed:			Bug in returning 0 rather than mean when the error was not calculated
+					Corrected by Geoff Ghose
+					
+b)	LLTaskStatus:
+	LLTaskStatusImageTransformer:
+	LLTaskStatusTitleTransformer:
+	LLTaskStatusTransformer:
+				
+					All created to act as value transformers for key-value binding.  These
+					transformers keep track of task status (run mode and file open) as
+					reported by a value in standardUserDefaults, and return appropriate values.
+					
+					LLTaskStatus is meant to replace LLTaskMode (which still remains).
+					
+c) Moved Images and Sounds to /Documents/Lablib/Resources
+
+					This means that project using these (typically data collecting projects) will
+					need to include the necessary files in their "Resources" folder in the project.
+					This change cleans up a lot of redundancies that existed in where these resources
+					were loaded.
+
+d) LLGabor:
+	
+	changed:		all "KDL" entries are changed to either kdlSomething or somethingKdl so that
+					they can work with key-value binding.
+
+e) ControlItemValidations:
+
+					Deleted all headers and object files.
+					
+-----------------------------------------------------------------------------------------------------------
+¥ Version 2.0.0 January 2005
+
+a) LLUserDefaults:
+
+	Created this object based on NSUserDefaults to provide thread safe (locked) access to NSUserDefaults
+	It contains thread-safe versions of all the NSUserDefault instance methods.
+
+b) Include Knot and plugins in this distribution, including LLTaskPlugin
+	
+-----------------------------------------------------------------------------------------------------------
+¥ Version 1.0.6 January 4, 2005
+
+a) LLSystemUtil:
+
+	created:		+ (void)preventSleep
+
+b) LLDataDoc:
+
+	created:		- (NSString *)fileName; 
+
+c) LLViewScale:
+
+	fixed:			- (BOOL)autoAdjustYMin:(float)yMin yMax:(float)yMax object:(id)obj;
+						failed to initialize newYMax & newYMin, leding to infinite recursion
+						on autoscaling when both axes were free to change
+						
+d) LLSystemUtil:
+
+	added:			+ (NSTimeInterval)timeFromNow:(long)timeMS;
+					+ (BOOL)timeIsPast:(NSTimeInterval)timer;
+						These are to replace tick and expired, which were causing memory leaks
+						(as discovered by GM Ghose).
+
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 1.0.5 November 3, 2004
+
+a) LLDistribution:
+
+	created:		Created a new protocol for statistical distributions
+	
+b) LLStatValues:
+
+	created:		- (double)lowerError;
+					- (void)setErrorType:(long)errorType;
+					- (double)upperError;
+c) LLPlotView:
+
+	fixed:			- (double)drawRect;		// Per Geoff Ghose: highlighting limits were wrong
+
+d) LLEOTHistoryView:
+
+	created:		New object contributed by Geoff Ghose
+
+-----------------------------------------------------------------------------------------------------------
+¥ Version 1.0.4 September 23, 2004	
+
+a) LLViewScale:
+
+	fixed:		- (BOOL)autoAdjustYMin:(float)yMin yMax:(float)yMax object:(id)obj;
+						rescaling could go into infinite loop
+						
+-----------------------------------------------------------------------------------------------------------
+¥ Version 1.0.3 September 22, 2004
+
+a) LLPlotView:
+
+	created:	- (void)setHighlightYRangeColor:(NSColor *)color; 
+				- (void)setHighlightYRangeFrom:(float)minValue to:(float)maxValue;
+				
+b) LablibITC18:
+
+	changed:	- changed the call to ITC_Start to be compatible with the 040623 ITC OS X drivers.
+	
+c) LLViewScale:
+
+	deleted:	- (BOOL)autoAdjustYMax:(float)yMax object:(id)object;
+	
+	created:	- (BOOL)autoAdjustYMin:(float)yMin yMax:(float)yMax object:(id)obj;
+				- (void) setAutoAdjustYMin:(BOOL)state;
+				- (float)xMin;
+				- (float)yMin;
+
+d) LLPlotAxes:
+
+	create:		+ (void)getTickLimits:(TickSettings *)pTicks style:(long)style 
+												fromValue:(float)v1 toValue:(float)v2 
+				+ (void)getTickLimits:(TickSettings *)pTicks spacing:(float)tickSpacing 
+												fromValue:(float)v1 toValue:(float)v2 
+-----------------------------------------------------------------------------------------------------------
+¥ Version 1.0.2	 August 19, 2004	
+
+a) LLDisplays:
+
+	created:	- (void)hideCursor:(long)displayIndex;
+				- (void)showCursor:(long)displayIndex;
+
+b) LLSystemUtils:
+
+	created:	+ (BOOL)setThreadPriorityPeriodMS:(float)periodMS 
+							computationFraction:(float)computationFraction
+							constraintFraction:(float)constraintFraction;
+
+c) LLIntervalMonitor:
+
+	created:	- (void)setTargetIntervalMS:(double)intervalMS;
+
+d) LLFixTarget:
+
+	created:	- (void)azimuthDeg;
+				- (void)elevationDeg;
+				
+-----------------------------------------------------------------------------------------------------------
+¥ Version 1.0.1		July 22, 2004
+
+a) LLDataDoc:
+
+	eliminated: - (BOOL)createDataFileWithCreator:(OSType)creator type:(OSType)type;
+	created: - (BOOL)createDataFile;
+	create: - (void)clearEvents;
+
+	It seemed like Lablib should specify the creator and data type because only it knows the data type,
+	and the default application for data files should be the Lablib Data Inspector.  The few people who want a
+	different default application can use a batch converter to change the data type.
+	
+	LLDataDoc was not flushing the event buffer - ever.  clearEvents was added for this purpose, and is
+	especially important when a new data file opened.
+
+b) LLStandardFileNames:
+
+	The defaultDirPath was incorrectly constructing the default path.
+	
+c) LLGabor:
+
+	created: - (void)setGaborData:(Gabor)newGabor;
+	removed checks using glGetError in several of the functions
+-----------------------------------------------------------------------------------------------------------
+¥ Version 1.0.0   July 1, 2004
+
+First release.
+
+Made changes to all the functions in Lablib that create their own NSAutoreleasePool so that they will
+periodically release and reallocate their pools.  This is needed to flush the autoreleased objects.
+These include (DataDoc.m, Schedule.m and StateSystem.m, as well as collectData in Experiment).

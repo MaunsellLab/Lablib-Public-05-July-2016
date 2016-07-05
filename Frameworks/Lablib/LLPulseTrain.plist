@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LLPTAmplitude</key>
+	<real>1</real>
+	<key>LLPTDAChannel</key>
+	<integer>0</integer>
+	<key>LLPTDurationMS</key>
+	<integer>250</integer>
+	<key>LLPTFrequencyHz</key>
+	<real>200</real>
+	<key>LLPTGate</key>
+	<true/>
+	<key>LLPTGateBit</key>
+	<integer>1</integer>
+	<key>LLPTMarkerPulses</key>
+	<true/>
+	<key>LLPTPulseBiphasic</key>
+	<true/>
+	<key>LLPTPulseType</key>
+	<integer>0</integer>
+	<key>LLPTMarkPulseBit</key>
+	<integer>0</integer>
+	<key>LLPTPulseWidthUS</key>
+	<integer>200</integer>
+	<key>LLPTUAPerV</key>
+	<integer>1</integer>
+	<key>LLPTVoltageRange</key>
+	<real>10.24</real>
+</dict>
+</plist>

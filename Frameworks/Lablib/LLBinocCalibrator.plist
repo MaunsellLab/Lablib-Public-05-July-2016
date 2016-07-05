@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LLFixCalAzimuthDeg</key>
+	<real>0</real>
+	<key>LLFixCalElevationDeg</key>
+	<real>0</real>
+	<key>LLFixCorrectFactor</key>
+	<real>0.025</real>
+	<key>LLFixCalOffsetDeg</key>
+	<real>1</real>
+	<key>LLFixCalLM11</key>
+	<real>0.001</real>
+	<key>LLFixCalLM12</key>
+	<real>0</real>
+	<key>LLFixCalLM21</key>
+	<real>0</real>
+	<key>LLFixCalLM22</key>
+	<real>0.001</real>
+	<key>LLFixCalLTX</key>
+	<real>0</real>
+	<key>LLFixCalLTY</key>
+	<real>0</real>
+	<key>LLFixCalRM11</key>
+	<real>0.001</real>
+	<key>LLFixCalRM12</key>
+	<integer>0</integer>
+	<key>LLFixCalRM21</key>
+	<integer>0</integer>
+	<key>LLFixCalRM22</key>
+	<real>0.001</real>
+	<key>LLFixCalRTX</key>
+	<integer>0</integer>
+	<key>LLFixCalRTY</key>
+	<integer>0</integer>
+</dict>
+</plist>

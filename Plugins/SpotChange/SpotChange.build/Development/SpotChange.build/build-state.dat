@@ -1,0 +1,1925 @@
+TSpotChange
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Info.plist" Info.plist
+cCpResource SpotChange.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange.h"
+cCpResource SCStimuli.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimuli.h"
+cCpResource SCBehaviorController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBehaviorController.h"
+cCpResource SCEyeXYController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEyeXYController.h"
+cCpResource SCSpikeController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSpikeController.h"
+cCpResource SCSummaryController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSummaryController.h"
+cCpResource SCXTController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCXTController.h"
+cCpResource SCStateSystem.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStateSystem.h"
+cCpResource SCBlockedState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBlockedState.h"
+cCpResource SCEndtrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEndtrialState.h"
+cCpResource SCFixonState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixonState.h"
+cCpResource SCIdleState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIdleState.h"
+cCpResource SCIntertrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIntertrialState.h"
+cCpResource SCStimulate.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimulate.h"
+cCpResource SCReactState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCReactState.h"
+cCpResource SCSaccadeState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSaccadeState.h"
+cCpResource SCStarttrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStarttrialState.h"
+cCpResource SCStopState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStopState.h"
+cCpResource SpotChange_Prefix.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange_Prefix.h"
+cCpResource UtilityFunctions.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UtilityFunctions.h"
+cCpResource SC.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SC.h"
+cCopyStringsFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCopyPlistFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UserDefaults.plist" UserDefaults.plist
+cCpResource SCFixGraceState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixGraceState.h"
+cCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCEyeXYController.xib
+cCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCBehaviorController.xib
+cCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSpikeController.xib
+cCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSummaryController.xib
+cCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCXTController.xib
+cCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib
+cProcessPCH /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h.pth SpotChange_Prefix.h normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIdleState.o /Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSummaryController.o /Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimuli.o /Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBehaviorController.o /Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEyeXYController.o /Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCXTController.o /Users/Shared/Lablib-Plugins/SpotChange/SCXTController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStateSystem.o /Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBlockedState.o /Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEndtrialState.o /Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixonState.o /Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIntertrialState.o /Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimulate.o /Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCReactState.o /Users/Shared/Lablib-Plugins/SpotChange/SCReactState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSaccadeState.o /Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStarttrialState.o /Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStopState.o /Users/Shared/Lablib-Plugins/SpotChange/SCStopState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/main.o /Users/Shared/Lablib-Plugins/SpotChange/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/UtilityFunctions.o /Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixGraceState.o /Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSpikeController.o /Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixateState.o /Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCTooFastState.o /Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCRoundToStimCycle.o /Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCDigitalOut.o /Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCUtilities.o /Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/MacOS/SpotChange" normal i386
+cTouch "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin"
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLBar.h
+c000000005148DE0000000000000002F0
+t1363729920
+s752
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLBinocCalibrator.h
+c000000005148DE0000000000000008C8
+t1363729920
+s2248
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLBinomDist.h
+c000000005148DE000000000000000119
+t1363729920
+s281
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLControlPanel.h
+c000000005148DE0000000000000002ED
+t1363729920
+s749
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataAssignment.h
+c000000005148DE00000000000000026C
+t1363729920
+s620
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataDevice.h
+c000000005148DE0000000000000007B3
+t1363729920
+s1971
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataDeviceController.h
+c0000000051620AF50000000000000CF1
+t1365379829
+s3313
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataDoc.h
+c000000005148DE00000000000000092C
+t1363729920
+s2348
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataEventDef.h
+c000000005148DE0000000000000007CE
+t1363729920
+s1998
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataEvents.h
+c000000005148DE00000000000000070D
+t1363729920
+s1805
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataFileReader.h
+c000000005148DE000000000000000CE7
+t1363729920
+s3303
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataReader.h
+c000000005148DE0000000000000002BC
+t1363729920
+s700
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDataUtil.h
+c000000005148DE000000000000000100
+t1363729920
+s256
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDefaultAboutBox.h
+c000000005148DE00000000000000019D
+t1363729920
+s413
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDisplayEDID.h
+c000000005148DE000000000000000507
+t1363729920
+s1287
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDisplayPhysical.h
+c000000005148DE000000000000000809
+t1363729920
+s2057
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDisplayUtilities.h
+c000000005148DE000000000000000200
+t1363729920
+s512
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDisplays.h
+c000000005148DE000000000000000BF4
+t1363729920
+s3060
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDistribution.h
+c000000005148DE000000000000000266
+t1363729920
+s614
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLDrawable.h
+c000000005148DE00000000000000010F
+t1363729920
+s271
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLEOTHistoryView.h
+c000000005148DE00000000000000015E
+t1363729920
+s350
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLEOTView.h
+c000000005148DE000000000000000110
+t1363729920
+s272
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLEyeCalibrator.h
+c000000005148DE000000000000000A29
+t1363729920
+s2601
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLEyeWindow.h
+c000000005148DE00000000000000073E
+t1363729920
+s1854
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLEyeXYView.h
+c000000005148DE0000000000000007E1
+t1363729920
+s2017
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLFactorToOctaveStepTransformer.h
+c000000005148DE0000000000000000DA
+t1363729920
+s218
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLFilterExp.h
+c000000005148DE01000000000000018D
+t1363729921
+s397
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLFixTarget.h
+c000000005148DE000000000000000441
+t1363729920
+s1089
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLGabor.h
+c000000005148DE00000000000000148A
+t1363729920
+s5258
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLHeatMapView.h
+c000000005148DE000000000000000BEF
+t1363729920
+s3055
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLHistView.h
+c000000005148DE000000000000000BC7
+t1363729920
+s3015
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLIODevice.h
+c000000005148DE000000000000000388
+t1363729920
+s904
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLIODeviceController.h
+c000000005148DE000000000000000441
+t1363729920
+s1089
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLIntervalMonitor.h
+c000000005148DE000000000000000891
+t1363729920
+s2193
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLIntervalMonitorSettings.h
+c000000005148DE000000000000000643
+t1363729920
+s1603
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLLaserCalibrator.h
+c000000005148DE010000000000000298
+t1363729921
+s664
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLMathUtil.h
+c000000005148DE000000000000000162
+t1363729920
+s354
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLMonitor.h
+c000000005148DE000000000000000182
+t1363729920
+s386
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLMonitorController.h
+c000000005148DE0000000000000002F2
+t1363729920
+s754
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLMouseDataDevice.h
+c000000005148DE000000000000000341
+t1363729920
+s833
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLMultiplierTransformer.h
+c000000005148DE00000000000000011C
+t1363729920
+s284
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLNoise.h
+c000000005148DE01000000000000057A
+t1363729921
+s1402
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLNormDist.h
+c000000005148DE000000000000000114
+t1363729920
+s276
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLNumberMatchTransformer.h
+c000000005148DE00000000000000010D
+t1363729920
+s269
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLNumberNonMatchTransformer.h
+c000000005148DE0100000000000000FD
+t1363729921
+s253
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLOldGabor.h
+c000000005148DE0000000000000010CC
+t1363729920
+s4300
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLParameterController.h
+c000000005148DE0000000000000004B2
+t1363729920
+s1202
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLPlaid.h
+c000000005148DE0100000000000021C2
+t1363729921
+s8642
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLPlotColors.h
+c000000005148DE000000000000000193
+t1363729920
+s403
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLPlotView.h
+c000000005148DE000000000000000C01
+t1363729920
+s3073
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLPluginController.h
+c000000005148DE0000000000000002F6
+t1363729920
+s758
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLPointDist.h
+c000000005148DE010000000000000185
+t1363729921
+s389
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLProgressIndicator.h
+c000000005148DE00000000000000027F
+t1363729920
+s639
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLPulseTrain.h
+c000000005148DE0100000000000002D0
+t1363729921
+s720
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLPulseTrainDevice.h
+c000000005148DE010000000000000389
+t1363729921
+s905
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLRandomDots.h
+c000000005148DE00000000000000146A
+t1363729920
+s5226
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSVDSolver.h
+c000000005148DE0000000000000004F9
+t1363729920
+s1273
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLScheduleController.h
+c000000005148DE00000000000000092D
+t1363729920
+s2349
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLScrollZoomWindow.h
+c000000005148DE00000000000000025F
+t1363729920
+s607
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSettingsController.h
+c000000005148DE000000000000000436
+t1363729920
+s1078
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSounds.h
+c000000005148DE00000000000000010D
+t1363729920
+s269
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLStandardDataEvents.h
+c0000000051620D830000000000000722
+t1365380483
+s1826
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLStatValues.h
+c000000005148DE0000000000000000C2
+t1363729920
+s194
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLState.h
+c000000005148DE0000000000000000FA
+t1363729920
+s250
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLStateSystem.h
+c000000005148DE000000000000000218
+t1363729920
+s536
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLStateSystemController.h
+c000000005148DE0000000000000003FF
+t1363729920
+s1023
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLStimTrainDevice.h
+c000000005148DE000000000000000561
+t1363729920
+s1377
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLStimWindow.h
+c000000005148DE000000000000000551
+t1363729920
+s1361
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLStimulusTrain.h
+c000000005148DE000000000000000588
+t1363729920
+s1416
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSynthBinocSaccade.h
+c000000005148DE0000000000000003A9
+t1363729920
+s937
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSynthDataDevice.h
+c000000005148DE000000000000000B64
+t1363729920
+s2916
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSynthDataSettings.h
+c000000005148DE000000000000000184
+t1363729920
+s388
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSynthIODevice.h
+c000000005148DE000000000000000D15
+t1363729920
+s3349
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSynthSaccade.h
+c000000005148DE000000000000000335
+t1363729920
+s821
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLSystemUtil.h
+c000000005148DE000000000000000476
+t1363729920
+s1142
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTaskMode.h
+c000000005148DE0000000000000001E0
+t1363729920
+s480
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTaskModeTransformer.h
+c000000005148DE000000000000000240
+t1363729920
+s576
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTaskPlugIn.h
+c000000005148DE000000000000000A3C
+t1363729920
+s2620
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTaskStatus.h
+c000000005148DE00000000000000019C
+t1363729920
+s412
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTaskStatusImageTransformer.h
+c000000005148DE0000000000000000D1
+t1363729920
+s209
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTaskStatusTitleTransformer.h
+c000000005148DE0000000000000000D1
+t1363729920
+s209
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTaskStatusTransformer.h
+c000000005148DE00000000000000024F
+t1363729920
+s591
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTextUtil.h
+c000000005148DE000000000000000196
+t1363729920
+s406
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLTrialBlock.h
+c000000005148DE000000000000000391
+t1363729920
+s913
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLUserDefaults.h
+c000000005148DE0000000000000000C8
+t1363729920
+s200
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLViewScale.h
+c000000005148DE0000000000000004F2
+t1363729920
+s1266
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLVisualStimulus.h
+c000000005148DE000000000000000B8C
+t1363729920
+s2956
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLXTEventPlot.h
+c000000005148DE0000000000000001BF
+t1363729920
+s447
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLXTEyePlot.h
+c000000005148DE0000000000000002E2
+t1363729920
+s738
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLXTPlot.h
+c000000005148DE00000000000000015F
+t1363729920
+s351
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLXTSpikePlot.h
+c000000005148DE000000000000000189
+t1363729920
+s393
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLXTStimPlot.h
+c000000005148DE000000000000000194
+t1363729920
+s404
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/LLXTView.h
+c000000005148DE0000000000000007EE
+t1363729920
+s2030
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Headers/Lablib.h
+c000000005148DE000000000000000CAB
+t1363729920
+s3243
+
+N/Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework/Lablib
+c0000000051620AF600000000000DCC40
+t1365379830
+s904256
+
+N/Documents/Lablib/Frameworks/LablibITC18/build/Development/LablibITC18.framework/Headers/LLITC18.h
+c000000005148DE65000000000000016A
+t1363730021
+s362
+
+N/Documents/Lablib/Frameworks/LablibITC18/build/Development/LablibITC18.framework/Headers/LLITC18DataDevice.h
+c000000005148DE6500000000000005B9
+t1363730021
+s1465
+
+N/Documents/Lablib/Frameworks/LablibITC18/build/Development/LablibITC18.framework/Headers/LLITCMonitor.h
+c00000000516210490000000000000631
+t1365381193
+s1585
+
+N/Documents/Lablib/Frameworks/LablibITC18/build/Development/LablibITC18.framework/Headers/LLITCMonitorSettings.h
+c000000005148DE650000000000000257
+t1363730021
+s599
+
+N/Documents/Lablib/Frameworks/LablibITC18/build/Development/LablibITC18.framework/Headers/LablibITC18.h
+c000000005148DE650000000000000144
+t1363730021
+s324
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin
+t1372542526
+s102
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Info.plist
+t1372542479
+s1174
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/MacOS/SpotChange
+t1372542526
+s218900
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/InfoPlist.strings
+t1372542479
+s544
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCBehaviorController.nib
+t1372542479
+s6514
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCEyeXYController.nib
+t1372542479
+s23828
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCSpikeController.nib
+t1372542480
+s6688
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCSummaryController.nib
+t1372542480
+s15189
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCXTController.nib
+t1372542480
+s7353
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SpotChange.nib
+t1372542480
+s64637
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/OrientationChange.h
+t1372542479
+s1135
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SC.h
+t1372542479
+s5392
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBehaviorController.h
+t1372542479
+s1513
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBlockedState.h
+t1372542479
+s193
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEndtrialState.h
+t1372542479
+s195
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEyeXYController.h
+t1372542479
+s1253
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixGraceState.h
+t1372542479
+s191
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixonState.h
+t1372542479
+s189
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIdleState.h
+t1372542479
+s159
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIntertrialState.h
+t1372542479
+s221
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCReactState.h
+t1372542479
+s189
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSaccadeState.h
+t1372542479
+s193
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSpikeController.h
+t1372542479
+s1655
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStarttrialState.h
+t1372542479
+s171
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStateSystem.h
+t1372542479
+s604
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimulate.h
+t1372542479
+s187
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimuli.h
+t1372542479
+s998
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStopState.h
+t1372542479
+s160
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSummaryController.h
+t1372542479
+s1360
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCXTController.h
+t1372542479
+s725
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange.h
+t1372542523
+s1135
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange_Prefix.h
+t1372542479
+s150
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UserDefaults.plist
+t1372542479
+s6619
+
+N/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UtilityFunctions.h
+t1372542479
+s457
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c00000000519F43A300000000023F11D0
+t1369392035
+s37687760
+
+N/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c0000000051788423000000000000197F
+t1366852643
+s6527
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c00000000506CC3FE0000000000006730
+t1349305342
+s26416
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000519F44970000000000A22130
+t1369392279
+s10625328
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c0000000051AF2A76000000000002DAD0
+t1370434166
+s187088
+
+N/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/InfoPlist.strings
+c00000000456DA3240000000000000220
+t1164813092
+s544
+
+N/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCBehaviorController.xib
+c0000000051CF54060000000000006064
+t1372541958
+s24676
+
+N/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCEyeXYController.xib
+c0000000051CF44350000000000016D7E
+t1372537909
+s93566
+
+N/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSpikeController.xib
+c0000000051CF543200000000000061EF
+t1372542002
+s25071
+
+N/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSummaryController.xib
+c0000000051CF54290000000000011E0C
+t1372541993
+s73228
+
+N/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCXTController.xib
+c0000000051CF54210000000000006DD5
+t1372541985
+s28117
+
+N/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib
+c0000000051CF54180000000000046E6D
+t1372541976
+s290413
+
+N/Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.h
+c0000000051CF54A3000000000000046F
+t1372542115
+s1135
+
+N/Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m
+c0000000051CF54A40000000000008D17
+t1372542116
+s36119
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SC.h
+c0000000051CF54A30000000000001510
+t1372542115
+s5392
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.h
+c0000000051CF54A300000000000005E9
+t1372542115
+s1513
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.m
+c0000000051CF54A300000000000048F4
+t1372542115
+s18676
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.h
+c0000000051CF52CE00000000000000C1
+t1372541646
+s193
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.m
+c0000000051CF52CE000000000000037C
+t1372541646
+s892
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.h
+c0000000051CF54A40000000000000147
+t1372542116
+s327
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.m
+c0000000051CF54A300000000000004BA
+t1372542115
+s1210
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.h
+c0000000051CF52CF00000000000000C3
+t1372541647
+s195
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.m
+c0000000051CF52CF0000000000000D15
+t1372541647
+s3349
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.h
+c0000000051CF54A300000000000004E5
+t1372542115
+s1253
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.m
+c0000000051CF52CF0000000000003234
+t1372541647
+s12852
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.h
+c0000000051CF54A300000000000000BF
+t1372542115
+s191
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.m
+c0000000051CF54A30000000000000386
+t1372542115
+s902
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.h
+c0000000051CF54A30000000000000133
+t1372542115
+s307
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.m
+c0000000051CF54A300000000000006E0
+t1372542115
+s1760
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.h
+c0000000051CF52D000000000000000BD
+t1372541648
+s189
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.m
+c0000000051CF52D00000000000000489
+t1372541648
+s1161
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.h
+c0000000051CF52D0000000000000009F
+t1372541648
+s159
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.m
+c0000000051CF52D0000000000000026F
+t1372541648
+s623
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.h
+c0000000051CF52D000000000000000DD
+t1372541648
+s221
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.m
+c0000000051CF52D000000000000016FE
+t1372541648
+s5886
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCReactState.h
+c0000000051CF52D000000000000000BD
+t1372541648
+s189
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCReactState.m
+c0000000051CF52D10000000000000481
+t1372541649
+s1153
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.h
+c0000000051CF54A400000000000000C0
+t1372542116
+s192
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.m
+c0000000051CF54A30000000000000345
+t1372542115
+s837
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.h
+c0000000051CF52D100000000000000C1
+t1372541649
+s193
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.m
+c0000000051CF52D1000000000000061A
+t1372541649
+s1562
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.h
+c0000000051CF54A30000000000000677
+t1372542115
+s1655
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.m
+c0000000051CF54A400000000000032A2
+t1372542116
+s12962
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.h
+c0000000051CF52D100000000000000AB
+t1372541649
+s171
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.m
+c0000000051CF52D10000000000000DBF
+t1372541649
+s3519
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.h
+c0000000051CF52D1000000000000025C
+t1372541649
+s604
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.m
+c0000000051CF52D10000000000000F66
+t1372541649
+s3942
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.h
+c0000000051CF52D200000000000000BB
+t1372541650
+s187
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.m
+c0000000051CF54A40000000000000332
+t1372542116
+s818
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.h
+c0000000051CF52D200000000000003E6
+t1372541650
+s998
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.m
+c0000000051CF54A30000000000003A20
+t1372542115
+s14880
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStopState.h
+c0000000051CF52D200000000000000A0
+t1372541650
+s160
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCStopState.m
+c0000000051CF52D20000000000000106
+t1372541650
+s262
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.h
+c0000000051CF52D20000000000000550
+t1372541650
+s1360
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.m
+c0000000051CF52D20000000000004304
+t1372541650
+s17156
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.h
+c0000000051CF52D200000000000000C1
+t1372541650
+s193
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.m
+c0000000051CF52D30000000000000655
+t1372541651
+s1621
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.h
+c0000000051CF52D300000000000001BA
+t1372541651
+s442
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.m
+c0000000051CF54A30000000000001D48
+t1372542115
+s7496
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCXTController.h
+c0000000051CF52D300000000000002D5
+t1372541651
+s725
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SCXTController.m
+c0000000051CF52D3000000000000261D
+t1372541651
+s9757
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/OrientationChange.o
+t2
+s0
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBehaviorController.o
+t1372542524
+s101968
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBlockedState.o
+t1372542524
+s56200
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCDigitalOut.o
+t1372542525
+s57940
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEndtrialState.o
+t1372542482
+s62880
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEyeXYController.o
+t1372542524
+s95104
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixGraceState.o
+t1372542525
+s56508
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixateState.o
+t1372542525
+s60704
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixonState.o
+t1372542524
+s59756
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIdleState.o
+t1372542524
+s54788
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIntertrialState.o
+t1372542524
+s62692
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCReactState.o
+t1372542525
+s56548
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCRoundToStimCycle.o
+t1372542525
+s55580
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSaccadeState.o
+t1372542525
+s59480
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSpikeController.o
+t1372542525
+s92500
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStarttrialState.o
+t1372542525
+s66252
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStateSystem.o
+t1372542524
+s68448
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimulate.o
+t1372542524
+s55952
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimuli.o
+t1372542483
+s85944
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStopState.o
+t1372542525
+s53416
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSummaryController.o
+t1372542524
+s93432
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCTooFastState.o
+t1372542525
+s58364
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCUtilities.o
+t1372542526
+s54364
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCXTController.o
+t1372542482
+s85584
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.LinkFileList
+c0000000051CF563B0000000000000C76
+t1372542523
+s3190
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.o
+t1372542524
+s139088
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/UtilityFunctions.o
+t1372542525
+s69596
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/main.o
+t1372542525
+s51636
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.h
+c0000000051CF54A3000000000000046F
+t1372542115
+s1135
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.m
+c0000000051CF54A40000000000008D17
+t1372542116
+s36119
+
+N/Users/Shared/Lablib-Plugins/SpotChange/SpotChange_Prefix.h
+c0000000051CF54A40000000000000096
+t1372542116
+s150
+i<AppKit/AppKit.h>
+i<Lablib/Lablib.h>
+
+N/Users/Shared/Lablib-Plugins/SpotChange/UserDefaults.plist
+c0000000051CF52D300000000000019DB
+t1372541651
+s6619
+
+N/Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.h
+c0000000051CF52D300000000000001C9
+t1372541651
+s457
+
+N/Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.m
+c0000000051CF54A40000000000001C87
+t1372542116
+s7303
+
+N/Users/Shared/Lablib-Plugins/SpotChange/main.m
+c0000000051CF52D30000000000000077
+t1372541651
+s119
+
+N/var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h.pth
+t1372542482
+s13402700
+
+NInfo.plist
+c0000000051CF54A40000000000000317
+t1372542116
+s791
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCReactState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCStopState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SCXTController.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.m
+r0
+
+CBuild AST from /Users/Shared/Lablib-Plugins/SpotChange/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies740de7c08d7fb741^1cb6e9c08d7fb741^---0#1#0#--18"Check dependencies36"20311BAC-AEF2-4CA2-A3B0-6B763F6FF0D7-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/OrientationChange.o /Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235282.904002
+e394235282.983165
+r0
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/OrientationChange.o
+x/Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m:9:9: fatal error: 'SpotChange.h' file not found
+o#import "SpotChange.h"
+o        ^
+o1 error generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m978ce7928d7fb741^cfa2fb928d7fb741^-160"/Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m:9:9: fatal error: 'SpotChange.h' file not found#import "SpotChange.h"        ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@29"'SpotChange.h' file not found-394235282#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@75"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m0000000000000000^8#8#8#8#106#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation4@75"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m0000000000000000^2736"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/OrientationChange.o OrientationChange.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/OrientationChange.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/OrientationChange.dia -c /Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/OrientationChange.o36"355C4962-0AB2-4304-8876-D59439E5EF27-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBehaviorController.o /Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235323.903000
+e394235324.273121
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBehaviorController.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.m6746e7bb8d7fb741^5c3e46bc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.m0000000000000000^2754"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBehaviorController.o SCBehaviorController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBehaviorController.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBehaviorController.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBehaviorController.o36"BFA42BD4-4ACE-474E-87ED-0060D66388C9-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBlockedState.o /Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.496671
+e394235324.628871
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBlockedState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.me1417fbc8d7fb741^e109a1bc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.m0000000000000000^2718"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBlockedState.o SCBlockedState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBlockedState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBlockedState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCBlockedState.o36"FDA21927-2D1E-4CF8-84DA-8D683D674BFE-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCDigitalOut.o /Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.853252
+e394235325.989445
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCDigitalOut.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.m3690dabd8d7fb741^8658fdbd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.m0000000000000000^2706"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCDigitalOut.o SCDigitalOut.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCDigitalOut.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCDigitalOut.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCDigitalOut.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCDigitalOut.o36"6FD13B64-9B73-45B0-AD09-8FB7B762A894-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEndtrialState.o /Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235282.630636
+e394235282.902757
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEndtrialState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.m2499a1928d7fb741^5d1ae7928d7fb741^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.m0000000000000000^2724"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEndtrialState.o SCEndtrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEndtrialState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEndtrialState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEndtrialState.o36"5F6FC605-CD2E-4E9C-9580-D84073D30B43-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEyeXYController.o /Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.274574
+e394235324.489745
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEyeXYController.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.m7b6946bc8d7fb741^d6e47dbc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.m0000000000000000^2736"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEyeXYController.o SCEyeXYController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEyeXYController.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEyeXYController.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCEyeXYController.o36"39651E46-901D-449A-976F-18AEEE6F06ED-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixGraceState.o /Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.395685
+e394235325.579358
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixGraceState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.m1e6c65bd8d7fb741^375094bd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.m0000000000000000^2724"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixGraceState.o SCFixGraceState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixGraceState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixGraceState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixGraceState.o36"A0E2A646-D3CE-42D0-9464-DCCD3525F3D2-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixateState.o /Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.580665
+e394235325.713386
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixateState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.m10c994bd8d7fb741^3ca2b6bd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.m0000000000000000^2712"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixateState.o SCFixateState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixateState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixateState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCFixateState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixateState.o36"034938A6-A1E9-49B4-891A-A6C852B10262-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixonState.o /Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.631457
+e394235324.772922
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixonState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.mbdc7a1bc8d7fb741^03eac5bc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.m0000000000000000^2706"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixonState.o SCFixonState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixonState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixonState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCFixonState.o36"E82371C3-A089-46F3-8F89-1EEBDAC93834-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIdleState.o /Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.651233
+e394235324.777281
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIdleState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.m5ed8a6bc8d7fb741^e3fbc6bc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.m0000000000000000^2700"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIdleState.o SCIdleState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIdleState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIdleState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIdleState.o36"BE7427C5-C18F-42FE-9FF6-3563FB2CD798-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIntertrialState.o /Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.776376
+e394235324.910001
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIntertrialState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.m08e4c6bc8d7fb741^f700e9bc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.m0000000000000000^2736"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIntertrialState.o SCIntertrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIntertrialState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIntertrialState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCIntertrialState.o36"9CB3B2B2-3468-45DA-A303-468B30A76CF6-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCReactState.o /Users/Shared/Lablib-Plugins/SpotChange/SCReactState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.899093
+e394235325.036697
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCReactState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCReactState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCReactState.m6e4de6bc8d7fb741^416409bd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCReactState.m0000000000000000^2706"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCReactState.o SCReactState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCReactState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCReactState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCReactState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCReactState.o36"FE142F9F-8100-4137-9E91-11E4781FE86D-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCRoundToStimCycle.o /Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.714674
+e394235325.949666
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCRoundToStimCycle.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.mb116b7bd8d7fb741^2233f3bd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.m0000000000000000^2742"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCRoundToStimCycle.o SCRoundToStimCycle.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCRoundToStimCycle.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCRoundToStimCycle.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCRoundToStimCycle.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCRoundToStimCycle.o36"6328CBFC-7EF8-42FB-8C96-005EE2F4519A-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSaccadeState.o /Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.911251
+e394235325.035730
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSaccadeState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.m2a71e9bc8d7fb741^f22409bd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.m0000000000000000^2718"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSaccadeState.o SCSaccadeState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSaccadeState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSaccadeState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSaccadeState.o36"E157257E-FBA9-432A-9885-54775540C983-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSpikeController.o /Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.415806
+e394235325.650162
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSpikeController.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.m3e926abd8d7fb741^3b70a6bd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.m0000000000000000^2736"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSpikeController.o SCSpikeController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSpikeController.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSpikeController.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSpikeController.o36"F63EC11D-2FC4-4892-ADCE-96E86364E4E0-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStarttrialState.o /Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.037177
+e394235325.248200
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStarttrialState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.m0cb211bd8d7fb741^309c3fbd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.m0000000000000000^2736"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStarttrialState.o SCStarttrialState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStarttrialState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStarttrialState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStarttrialState.o36"9E23D18B-38CE-4BBA-9664-910B3E446A24-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStateSystem.o /Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.496068
+e394235324.649986
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStateSystem.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.m8e1e7fbc8d7fb741^0072a6bc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.m0000000000000000^2712"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStateSystem.o SCStateSystem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStateSystem.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStateSystem.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStateSystem.o36"29CE58A7-6E08-40DD-9E32-5CCB5E947752-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimulate.o /Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.778924
+e394235324.897795
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimulate.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.mdbfcc7bc8d7fb741^37e2e5bc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.m0000000000000000^2700"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimulate.o SCStimulate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimulate.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimulate.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimulate.o36"9A1332BA-4441-455D-8F99-E9A19BA961D4-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimuli.o /Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235282.929228
+e394235283.187632
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimuli.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.m9f00ee928d7fb741^4eb433938d7fb741^---0#0#0#-19%DVTDocumentLocation2@67"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.m0000000000000000^2688"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimuli.o SCStimuli.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimuli.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimuli.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStimuli.o36"4E003E62-90C0-4B85-9187-E89EA823A478-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStopState.o /Users/Shared/Lablib-Plugins/SpotChange/SCStopState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.069728
+e394235325.220787
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStopState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCStopState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCStopState.m7fda14bd8d7fb741^848438bd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCStopState.m0000000000000000^2700"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStopState.o SCStopState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStopState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStopState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCStopState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCStopState.o36"8D18067D-3BEE-471A-B6D8-5E059B485044-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSummaryController.o /Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235324.300655
+e394235324.494879
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSummaryController.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.m5d184dbc8d7fb741^e0d57ebc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.m0000000000000000^2748"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSummaryController.o SCSummaryController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSummaryController.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSummaryController.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCSummaryController.o36"6B0520B8-887B-4DCE-A664-DC3E5E3A077A-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCTooFastState.o /Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.651474
+e394235325.851376
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCTooFastState.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.m64e6a6bd8d7fb741^be4edabd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.m0000000000000000^2718"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCTooFastState.o SCTooFastState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCTooFastState.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCTooFastState.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCTooFastState.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCTooFastState.o36"4DFCEDFE-8981-4E1A-9527-28D2FD2A1534-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCUtilities.o /Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.951008
+e394235326.065377
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCUtilities.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.mf695f3bd8d7fb741^6ccb10be8d7fb741^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.m0000000000000000^2700"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCUtilities.o SCUtilities.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCUtilities.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCUtilities.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCUtilities.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCUtilities.o36"412A4941-E759-4519-86D5-76DDF8F19278-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCXTController.o /Users/Shared/Lablib-Plugins/SpotChange/SCXTController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235282.629818
+e394235282.927932
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCXTController.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SCXTController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/Shared/Lablib-Plugins/SpotChange/SCXTController.m0f7fa1928d7fb741^c39fed928d7fb741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SCXTController.m0000000000000000^2718"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCXTController.o SCXTController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCXTController.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCXTController.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SCXTController.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SCXTController.o36"944544D6-D367-4D62-992A-27CC7F6362BE-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235323.901602
+e394235324.299364
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.o
+x/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.m13f1e6bb8d7fb741^8db84cbc8d7fb741^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.m0000000000000000^2694"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.o SpotChange.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.o36"7F233033-6388-4D41-8C0D-29724E19CEB3-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/UtilityFunctions.o /Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.249680
+e394235325.414468
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/UtilityFunctions.o
+x/Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.m8b1640bd8d7fb741^cc246abd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.m0000000000000000^2730"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/UtilityFunctions.o UtilityFunctions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/UtilityFunctions.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/UtilityFunctions.dia -c /Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/UtilityFunctions.o36"CA22F1F4-551C-4B7B-A490-9A0FCE535C54-
+
+CCompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/main.o /Users/Shared/Lablib-Plugins/SpotChange/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235325.222903
+e394235325.394201
+r1
+xCompileC
+xSpotChange.build/Development/SpotChange.build/Objects-normal/i386/main.o
+x/Users/Shared/Lablib-Plugins/SpotChange/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Compile /Users/Shared/Lablib-Plugins/SpotChange/main.m593039bd8d7fb741^b8e864bd8d7fb741^---0#0#0#-19%DVTDocumentLocation2@62"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/main.m0000000000000000^2658"CompileC SpotChange.build/Development/SpotChange.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -include /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h -MMD -MT dependencies -MF /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/main.dia -c /Users/Shared/Lablib-Plugins/SpotChange/main.m -o /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/main.o36"60D29A4A-D81C-4826-B341-57AE84C2E278-
+
+CCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCBehaviorController.xib
+s394235279.836013
+e394235279.906000
+r1
+xCompileXIB
+x/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCBehaviorController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compiling /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCBehaviorController.xib9c14d68f8d7fb741^a9fbe88f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCBehaviorController.xib0000000000000000^545"CompileXIB English.lproj/SCBehaviorController.xib    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCBehaviorController.nib" /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCBehaviorController.xib --sdk ""36"780B41AD-C763-4508-B9FF-0C1B76779598-
+
+CCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCEyeXYController.xib
+s394235279.835762
+e394235280.015615
+r1
+xCompileXIB
+x/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCEyeXYController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compiling /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCEyeXYController.xib6421d68f8d7fb741^8d0a04908d7fb741^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCEyeXYController.xib0000000000000000^536"CompileXIB English.lproj/SCEyeXYController.xib    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCEyeXYController.nib" /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCEyeXYController.xib --sdk ""36"C9EFB6B9-6FDC-4431-9545-B9374188DC1B-
+
+CCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSpikeController.xib
+s394235279.907589
+e394235280.090902
+r1
+xCompileXIB
+x/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSpikeController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compiling /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSpikeController.xib506de88f8d7fb741^844b17908d7fb741^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSpikeController.xib0000000000000000^536"CompileXIB English.lproj/SCSpikeController.xib    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCSpikeController.nib" /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSpikeController.xib --sdk ""36"847EAD76-A947-48BF-9206-2FDC89BAF8C8-
+
+CCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSummaryController.xib
+s394235280.016956
+e394235280.180586
+r1
+xCompileXIB
+x/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSummaryController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compiling /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSummaryController.xib016c04908d7fb741^f0a72e908d7fb741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSummaryController.xib0000000000000000^542"CompileXIB English.lproj/SCSummaryController.xib    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCSummaryController.nib" /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCSummaryController.xib --sdk ""36"7F6ADDD5-D861-455C-B32D-24EFC74E14BF-
+
+CCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCXTController.xib
+s394235280.138744
+e394235280.222831
+r1
+xCompileXIB
+x/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCXTController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compiling /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCXTController.xib859823908d7fb741^981639908d7fb741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCXTController.xib0000000000000000^527"CompileXIB English.lproj/SCXTController.xib    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SCXTController.nib" /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SCXTController.xib --sdk ""36"CC6B1447-1808-4B2D-B83C-4BDCDC49022E-
+
+CCompileXIB /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib
+s394235280.182529
+e394235280.641695
+r1
+xCompileXIB
+x/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib:1362: note: View is clipping its content [13]
+o/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib:1762: note: View is clipping its content [13]
+o/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib:1518: note: View is clipping its content [13]
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compiling /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xibabce2e908d7fb741^af5ba4908d7fb741^-366"/* com.apple.ibtool.document.notices *//Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib:1362: note: View is clipping its content/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib:1762: note: View is clipping its content/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib:1518: note: View is clipping its content3(21%IDEActivityLogMessage2@28"View is clipping its content-394235280#18446744073709551615#0#-0#-23%DVTTextDocumentLocation3@84"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib0000000000000000^1361#18446744073709551615#1361#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-394235280#18446744073709551615#0#-0#-3@84"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib0000000000000000^1761#18446744073709551615#1761#18446744073709551615#18446744073709551615#0#15"Clipped Content--2@28"View is clipping its content-394235280#18446744073709551615#0#-0#-3@84"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib0000000000000000^1517#18446744073709551615#1517#18446744073709551615#18446744073709551615#0#15"Clipped Content--0#0#0#-19%DVTDocumentLocation4@84"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib0000000000000000^515"CompileXIB English.lproj/SpotChange.xib    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/SpotChange.nib" /Users/Shared/Lablib-Plugins/SpotChange/English.lproj/SpotChange.xib --sdk ""36"329345B4-E855-407C-955E-FA20D712C0F8-
+
+CCopyPlistFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UserDefaults.plist" UserDefaults.plist
+s394235279.829836
+e394235279.834560
+r1
+xCopyPlistFile
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UserDefaults.plist
+xUserDefaults.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection23"Copy UserDefaults.plistae82d48f8d7fb741^e1b3d58f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/UserDefaults.plist0000000000000000^338"CopyPlistFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UserDefaults.plist" UserDefaults.plist    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copyPlist --outdir "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources" -- UserDefaults.plist36"4D19F0AC-DCDA-46FA-9DAE-77DC032946F4-
+
+CCopyStringsFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+s394235279.825079
+e394235279.830344
+r1
+xCopyStringsFile
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy English.lproj/InfoPlist.strings4d48d38f8d7fb741^7c9dd48f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/English.lproj/InfoPlist.strings0000000000000000^453"CopyStringsFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copyStrings --validate --inputencoding utf-16 --outputencoding UTF-16 --outdir "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/English.lproj" -- English.lproj/InfoPlist.strings36"DA141447-B624-4982-A4AE-E8B5815D995D-
+
+CCpResource OrientationChange.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/OrientationChange.h"
+s394235279.772816
+e394235279.776760
+r1
+xCpResource
+xOrientationChange.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/OrientationChange.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/OrientationChange.h64ebc58f8d7fb741^a9dac68f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/OrientationChange.h000000000080d041^456"CpResource OrientationChange.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/OrientationChange.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/OrientationChange.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"AA27CD8A-2F51-4A1A-8E8C-30110091CD68-
+
+CCpResource SC.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SC.h"
+s394235279.821645
+e394235279.824671
+r1
+xCpResource
+xSC.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SC.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SC.h6b65d28f8d7fb741^4320d38f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SC.h000000000080d041^411"CpResource SC.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SC.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SC.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"60FB0753-C8CC-48CD-83BF-A80E3CB5F717-
+
+CCpResource SCBehaviorController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBehaviorController.h"
+s394235279.778069
+e394235279.782174
+r1
+xCpResource
+xSCBehaviorController.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBehaviorController.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBehaviorController.hae49c78f8d7fb741^0e69c88f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBehaviorController.h000000000080d041^465"CpResource SCBehaviorController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBehaviorController.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCBehaviorController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"286F6080-F92A-48C4-8AFD-FADE1B34758D-
+
+CCpResource SCBlockedState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBlockedState.h"
+s394235279.793260
+e394235279.796799
+r1
+xCpResource
+xSCBlockedState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBlockedState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBlockedState.hb421cb8f8d7fb741^59fbcb8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBlockedState.h000000000080d041^447"CpResource SCBlockedState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCBlockedState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCBlockedState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"0D9D2EE2-C31D-4265-B0EB-FE54BE3AC91E-
+
+CCpResource SCEndtrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEndtrialState.h"
+s394235279.793686
+e394235279.797218
+r1
+xCpResource
+xSCEndtrialState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEndtrialState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEndtrialState.hd13dcb8f8d7fb741^2e1ccc8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEndtrialState.h000000000080d041^450"CpResource SCEndtrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEndtrialState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCEndtrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"542852AF-13A0-470D-B5CB-0F194E6C75CC-
+
+CCpResource SCEyeXYController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEyeXYController.h"
+s394235279.778690
+e394235279.782426
+r1
+xCpResource
+xSCEyeXYController.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEyeXYController.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEyeXYController.h0668c78f8d7fb741^156fc88f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEyeXYController.h000000000080d041^456"CpResource SCEyeXYController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCEyeXYController.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCEyeXYController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"C562CA75-B44F-43C0-A95A-2013A75D6EF5-
+
+CCpResource SCFixGraceState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixGraceState.h"
+s394235279.832283
+e394235279.835129
+r1
+xCpResource
+xSCFixGraceState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixGraceState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixGraceState.h5721d58f8d7fb741^36cbd58f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixGraceState.h000000000080d041^450"CpResource SCFixGraceState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixGraceState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCFixGraceState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"215E9A16-60A5-4A33-9C83-49A07C2E5D17-
+
+CCpResource SCFixonState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixonState.h"
+s394235279.798184
+e394235279.801827
+r1
+xCpResource
+xSCFixonState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixonState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixonState.h1767cc8f8d7fb741^9e43cd8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixonState.h000000000080d041^441"CpResource SCFixonState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCFixonState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCFixonState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"96974FB6-AC78-4907-B6DE-BE93A34B7A2B-
+
+CCpResource SCIdleState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIdleState.h"
+s394235279.798382
+e394235279.802259
+r1
+xCpResource
+xSCIdleState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIdleState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIdleState.h2673cc8f8d7fb741^2c61cd8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIdleState.h000000000080d041^438"CpResource SCIdleState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIdleState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCIdleState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"3E3C422E-5E66-4043-8A5E-E8EFE32858D6-
+
+CCpResource SCIntertrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIntertrialState.h"
+s394235279.803111
+e394235279.807954
+r1
+xCpResource
+xSCIntertrialState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIntertrialState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIntertrialState.hd6aacd8f8d7fb741^49d9ce8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIntertrialState.h000000000080d041^456"CpResource SCIntertrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCIntertrialState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCIntertrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"F0747191-ECCE-4824-8ADE-0BF8A3D9E16E-
+
+CCpResource SCReactState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCReactState.h"
+s394235279.809276
+e394235279.813858
+r1
+xCpResource
+xSCReactState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCReactState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCReactState.hf73ccf8f8d7fb741^f662d08f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCReactState.h000000000080d041^441"CpResource SCReactState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCReactState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCReactState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"32C875C5-93F8-402B-867C-3869C48E125E-
+
+CCpResource SCSaccadeState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSaccadeState.h"
+s394235279.809732
+e394235279.814107
+r1
+xCpResource
+xSCSaccadeState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSaccadeState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSaccadeState.h3659cf8f8d7fb741^8670d08f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSaccadeState.h000000000080d041^447"CpResource SCSaccadeState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSaccadeState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCSaccadeState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"5D6E0382-9BCF-4FFB-86C9-09FB2CD49D76-
+
+CCpResource SCSpikeController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSpikeController.h"
+s394235279.784332
+e394235279.789227
+r1
+xCpResource
+xSCSpikeController.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSpikeController.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSpikeController.h1bdac88f8d7fb741^ad14ca8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSpikeController.h000000000080d041^456"CpResource SCSpikeController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSpikeController.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCSpikeController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"2C99DCAB-1A4D-4C45-9A5E-9C526361C74A-
+
+CCpResource SCStarttrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStarttrialState.h"
+s394235279.815023
+e394235279.819888
+r1
+xCpResource
+xSCStarttrialState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStarttrialState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStarttrialState.he9b6d08f8d7fb741^2cf0d18f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStarttrialState.h000000000080d041^456"CpResource SCStarttrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStarttrialState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCStarttrialState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"16046C18-CEB6-4924-83DB-DB453FCA114B-
+
+CCpResource SCStateSystem.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStateSystem.h"
+s394235279.790559
+e394235279.793062
+r1
+xCpResource
+xSCStateSystem.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStateSystem.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStateSystem.h0471ca8f8d7fb741^7006cb8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStateSystem.h000000000080d041^444"CpResource SCStateSystem.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStateSystem.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCStateSystem.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"1ACB2BEB-4258-40AC-896C-25FF2673D1D5-
+
+CCpResource SCStimulate.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimulate.h"
+s394235279.803543
+e394235279.808216
+r1
+xCpResource
+xSCStimulate.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimulate.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimulate.h9cc3cd8f8d7fb741^a3e7ce8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimulate.h000000000080d041^438"CpResource SCStimulate.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimulate.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCStimulate.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"6379B6C8-15F0-4035-83B8-BD6469F57BC4-
+
+CCpResource SCStimuli.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimuli.h"
+s394235279.773310
+e394235279.777048
+r1
+xCpResource
+xSCStimuli.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimuli.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimuli.hea06c68f8d7fb741^81ebc68f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimuli.h000000000080d041^432"CpResource SCStimuli.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStimuli.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCStimuli.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"C9D4F142-72F1-41F4-933A-22750FED6D1D-
+
+CCpResource SCStopState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStopState.h"
+s394235279.815483
+e394235279.819886
+r1
+xCpResource
+xSCStopState.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStopState.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStopState.h4ed2d08f8d7fb741^c4ecd18f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStopState.h000000000080d041^438"CpResource SCStopState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCStopState.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCStopState.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"1398C23F-3AC9-4193-BEFA-DEEB6C83D1BF-
+
+CCpResource SCSummaryController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSummaryController.h"
+s394235279.783632
+e394235279.787635
+r1
+xCpResource
+xSCSummaryController.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSummaryController.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSummaryController.h2dafc88f8d7fb741^2aabc98f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSummaryController.h000000000080d041^462"CpResource SCSummaryController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCSummaryController.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCSummaryController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"F2FCCA00-EEC5-4949-A0D4-9007BD2FD033-
+
+CCpResource SCXTController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCXTController.h"
+s394235279.789082
+e394235279.792085
+r1
+xCpResource
+xSCXTController.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCXTController.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCXTController.h4914ca8f8d7fb741^43cbca8f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCXTController.h000000000080d041^447"CpResource SCXTController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SCXTController.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SCXTController.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"27DA8B36-FCA7-4635-8B34-605C6B5F734B-
+
+CCpResource SpotChange.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange.h"
+s394235323.859595
+e394235323.865119
+r1
+xCpResource
+xSpotChange.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange.hcd22dcbb8d7fb741^147addbb8d7fb741^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange.h000000000080d041^435"CpResource SpotChange.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"B2CB62B9-2289-42AF-B87D-5C23A509AACE-
+
+CCpResource SpotChange_Prefix.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange_Prefix.h"
+s394235279.821205
+e394235279.823518
+r1
+xCpResource
+xSpotChange_Prefix.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange_Prefix.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange_Prefix.h024bd28f8d7fb741^03d2d28f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange_Prefix.h000000000080d041^456"CpResource SpotChange_Prefix.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/SpotChange_Prefix.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/SpotChange_Prefix.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"9DA0120B-C7F9-47D0-A0BC-E3AF735B2CF6-
+
+CCpResource UtilityFunctions.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UtilityFunctions.h"
+s394235279.824852
+e394235279.827983
+r1
+xCpResource
+xUtilityFunctions.h
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UtilityFunctions.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UtilityFunctions.h4b39d38f8d7fb741^1ef9d38f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Library/Application%20Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UtilityFunctions.h000000000080d041^453"CpResource UtilityFunctions.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources/UtilityFunctions.h"    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Shared/Lablib-Plugins/SpotChange/UtilityFunctions.h "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Resources"36"4AD9B0BD-DE3E-47D5-A699-871503C2F7FB-
+
+CLd "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/MacOS/SpotChange" normal i386
+s394235326.072888
+e394235326.528946
+r1
+xLd
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/MacOS/SpotChange
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Link /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/MacOS/SpotChange66bf12be8d7fb741^c07b87be8d7fb741^---0#0#0#--968"Ld "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/MacOS/SpotChange" normal i386    cd /Users/Shared/Lablib-Plugins/SpotChange    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -bundle "-L/Library/Application Support/Knot/Plugins/Development" "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -filelist /Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/Objects-normal/i386/SpotChange.LinkFileList -framework Foundation -framework AppKit -fobjc-link-runtime -framework Cocoa -framework OpenGL -framework AppKit -framework Foundation -framework Lablib -o "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/MacOS/SpotChange"36"21613C8A-2AD2-41B0-9952-B6A761BB2FD3-
+
+CProcessInfoPlistFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Info.plist" Info.plist
+s394235279.757801
+e394235279.764459
+r1
+xProcessInfoPlistFile
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Info.plist
+xInfo.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.pliste812c28f8d7fb741^fdbec38f8d7fb741^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/Info.plist0000000000000000^348"ProcessInfoPlistFile "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Info.plist" Info.plist    cd /Users/Shared/Lablib-Plugins/SpotChange    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin/Contents/Info.plist"36"DA64CF68-C503-4FB3-98AD-7CBDCCB8874D-
+
+CProcessPCH /Users/maunsell/Library/Developer/Xcode/DerivedData/Lablib-Plugins-bipouhwnvbvisignbnfmjatevvja/Index/PrecompiledHeaders/SpotChange_Prefix-axegbkbntezzbqdpjlancaaniukd_ast/SpotChange_Prefix.h.pth SpotChange_Prefix.h normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h.pth SpotChange_Prefix.h normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s394235280.650114
+e394235282.622412
+r1
+xProcessPCH
+x/var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h.pth
+xSpotChange_Prefix.h
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection30"Precompile SpotChange_Prefix.hc093a6908d7fb741^04599f928d7fb741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Users/Shared/Lablib-Plugins/SpotChange/SpotChange_Prefix.h0000000000000000^2767"ProcessPCH /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h.pth SpotChange_Prefix.h normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Shared/Lablib-Plugins/SpotChange    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wunknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/SpotChange.hmap "-I/Library/Application Support/Knot/Plugins/Development/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources/i386 -I/Users/Shared/Lablib-Plugins/SpotChange/SpotChange.build/Development/SpotChange.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas "-F/Library/Application Support/Knot/Plugins/Development" -F/Documents/Lablib/Frameworks/Lablib/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development -F/Documents/Lablib/Frameworks/LablibITC18/build/Development --serialize-diagnostics /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h.dia -c /Users/Shared/Lablib-Plugins/SpotChange/SpotChange_Prefix.h -o /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h.pth -MMD -MT dependencies -MF /var/folders/jg/8gy1yksd5kgckqfj0n8qmmh40000gq/C/com.apple.Xcode.503/SharedPrecompiledHeaders/SpotChange_Prefix-cggbskswqczxotbwiaapttwlcghz/SpotChange_Prefix.h.d36"DBC74C2F-DA52-45BD-9C0F-B664CF62B844-
+
+CTouch "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin"
+s394235326.537670
+e394235326.551657
+r1
+xTouch
+x/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Touch /Library/Application Support/Knot/Plugins/Development/SpotChange.plugin85d089be8d7fb741^fd4c8dbe8d7fb741^---0#0#0#--223"Touch "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin"    cd /Users/Shared/Lablib-Plugins/SpotChange    /usr/bin/touch -c "/Library/Application Support/Knot/Plugins/Development/SpotChange.plugin"36"F198B83B-9CFD-4F3F-B640-4E261058B006-
+

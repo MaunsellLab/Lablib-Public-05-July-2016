@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Behavior Window Visible</key>
+	<true/>
+	<key>Behavior Window Zoom</key>
+	<integer>100</integer>
+	<key>Contrasts</key>
+	<integer>8</integer>
+	<key>doDataDirectory</key>
+	<true/>
+	<key>Eye Dot Life</key>
+	<real>1</real>
+	<key>Eye Dot Size</key>
+	<real>0.025</real>
+	<key>Eye XY Do Grid</key>
+	<integer>1</integer>
+	<key>Eye XY Do Ticks</key>
+	<integer>1</integer>
+	<key>Eye XY Draw Calibration</key>
+	<true/>
+	<key>Eye XY Grid Deg</key>
+	<real>5</real>
+	<key>Eye XY Magnification</key>
+	<real>1</real>
+	<key>Eye XY Tick Deg</key>
+	<real>1</real>
+	<key>Eye XY Window Visible</key>
+	<true/>
+	<key>Fade Eye Dots</key>
+	<true/>
+	<key>One In N Eye Dot</key>
+	<integer>1</integer>
+	<key>Preinterval</key>
+	<integer>1000</integer>
+	<key>Spike Window Visible</key>
+	<true/>
+	<key>Spike Window Zoom</key>
+	<integer>100</integer>
+	<key>Summary Window Broke Count</key>
+	<integer>1</integer>
+	<key>Summary Window Computer Count</key>
+	<integer>0</integer>
+	<key>Summary Window Correct Count</key>
+	<integer>12</integer>
+	<key>Summary Window Date Count</key>
+	<real>124751840</real>
+	<key>Summary Window Failed Count</key>
+	<integer>0</integer>
+	<key>Summary Window Ignored Count</key>
+	<integer>0</integer>
+	<key>Summary Window Total Count</key>
+	<integer>13</integer>
+	<key>Summary Window Visible</key>
+	<true/>
+	<key>Summary Window Wrong Count</key>
+	<integer>0</integer>
+	<key>Summary Window Zoom</key>
+	<integer>100</integer>
+	<key>RFAcquireMS</key>
+	<integer>2000</integer>
+	<key>RFBarContrastPC</key>
+	<real>100</real>
+	<key>RFBarKdlPhiDeg</key>
+	<real>0.0</real>
+	<key>RFBarKdlThetaDeg</key>
+	<real>90</real>
+	<key>RFBarLengthDeg</key>
+	<real>5</real>
+	<key>RFBarOrientationDeg</key>
+	<real>0.0</real>
+	<key>RFBarWidthDeg</key>
+	<real>0.5</real>
+	<key>RFDisplayMode</key>
+	<integer>0</integer>
+	<key>RFDisplayUnits</key>
+	<integer>0</integer>
+	<key>RFDoFixate</key>
+	<true/>
+	<key>RFDoGrid</key>
+	<false/>
+	<key>RFDoMouseGate</key>
+	<true/>
+	<key>RFDoSounds</key>
+	<integer>1</integer>
+	<key>RFEyeXYDoDotFade</key>
+	<true/>
+	<key>RFEyeXYDoDrawCal</key>
+	<true/>
+	<key>RFEyeXYDoGrid</key>
+	<true/>
+	<key>RFEyeXYDoTicks</key>
+	<true/>
+	<key>RFEyeXYDotSizeDeg</key>
+	<real>0.1</real>
+	<key>RFEyeXYGridDeg</key>
+	<real>5</real>
+	<key>RFEyeXYHScroll</key>
+	<integer>0</integer>
+	<key>RFEyeXYMag</key>
+	<integer>30</integer>
+	<key>RFEyeXYOneInN</key>
+	<integer>1</integer>
+	<key>RFEyeXYSamplesToSave</key>
+	<integer>200</integer>
+	<key>RFEyeXYTickDeg</key>
+	<real>1</real>
+	<key>RFEyeXYVScroll</key>
+	<integer>0</integer>
+	<key>RFEyeXYWindowVisible</key>
+	<true/>
+	<key>RFFixWindowWidthDeg</key>
+	<real>1</real>
+	<key>RFGaborAzimuthDeg</key>
+	<real>3.0</real>
+	<key>RFGaborContrast</key>
+	<real>1.0</real>
+	<key>RFGaborElevationDeg</key>
+	<real>3.0</real>
+	<key>RFGaborKdlPhiDeg</key>
+	<real>0.0</real>
+	<key>RFGaborKdlThetaDeg</key>
+	<real>90</real>
+	<key>RFGaborDirectionDeg</key>
+	<real>90</real>
+	<key>RFGaborRadiusDeg</key>
+	<real>4.0</real>
+	<key>RFGaborSigmaDeg</key>
+	<real>1.0</real>
+	<key>RFGaborSpatialFreqCPD</key>
+	<real>0.5</real>
+	<key>RFGaborSpatialModulationType</key>
+	<integer>0</integer>
+	<key>RFGaborSpatialPhaseDeg</key>
+	<real>0.0</real>
+	<key>RFGaborTemporalFreqHz</key>
+	<real>0.0</real>
+	<key>RFGaborTemporalModulationParam</key>
+	<integer>0</integer>
+	<key>RFGaborTemporalModulationType</key>
+	<integer>0</integer>
+	<key>RFGaborTemporalPhaseDeg</key>
+	<real>0.0</real>
+	<key>RFGridSpacingDeg</key>
+	<real>5.0</real>
+	<key>RFIntertrialMS</key>
+	<integer>1500</integer>
+	<key>RFMaxFixateMS</key>
+	<integer>2500</integer>
+	<key>RFMeanFixateMS</key>
+	<integer>1000</integer>
+	<key>RFOrientationStepDeg</key>
+	<real>22.5</real>
+	<key>RFRewardMS</key>
+	<integer>100</integer>
+	<key>RFSizeFactor</key>
+	<real>1.25</real>
+	<key>RFStimType</key>
+	<integer>0</integer>
+	<key>RFTaskMode</key>
+	<integer>0</integer>
+	<key>RFWidthFactor</key>
+	<real>1.25</real>
+</dict>
+</plist>

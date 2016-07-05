@@ -1,0 +1,53 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showHeaderInfo = id; showPreferencePanel = id; }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {printSelectType = id; }; 
+            CLASS = DataFile; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                defView = id; 
+                disableButton = NSButton; 
+                enableButton = NSButton; 
+                eventView = id; 
+                hexView = id; 
+                infoDrawer = NSDrawer; 
+                infoView = id; 
+                printSelectPanel = NSView; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {disableAllEvents = id; enableAllEvents = id; }; 
+            CLASS = DefView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {disableButton = NSButton; document = id; enableButton = NSButton; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = EventView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {document = id; hexView = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = HexView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {document = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = InfoView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {document = id; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

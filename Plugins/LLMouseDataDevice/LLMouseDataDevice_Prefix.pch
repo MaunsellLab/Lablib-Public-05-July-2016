@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LLMouseDataDevice' target in the 'LLMouseDataDevice' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

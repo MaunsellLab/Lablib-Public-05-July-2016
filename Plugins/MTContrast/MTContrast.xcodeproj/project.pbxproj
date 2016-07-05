@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		691C4A850B2896F400DA5103 /* Lablib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691C4A840B2896F400DA5103 /* Lablib.framework */; };
+		695982D1080209EB0090B9A6 /* MTCFixGraceState.h in Resources */ = {isa = PBXBuildFile; fileRef = 695982CF080209EB0090B9A6 /* MTCFixGraceState.h */; };
+		695982D2080209EB0090B9A6 /* MTCFixGraceState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695982D0080209EB0090B9A6 /* MTCFixGraceState.m */; };
+		695C12F709B108880021A27D /* MTCPreCueState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695C12F609B108880021A27D /* MTCPreCueState.m */; };
+		695C12FC09B108970021A27D /* MTCCueState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695C12FB09B108970021A27D /* MTCCueState.m */; };
+		69BDCE44098BD2CA00578E91 /* MTCSpikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F13A6004716CF400F95509 /* MTCSpikeController.m */; };
+		69E24E1B07A5C25A00DDC096 /* MTContrast.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247C907A5562500DDC096 /* MTContrast.h */; };
+		69E24E1C07A5C25B00DDC096 /* MTContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E247CA07A5562500DDC096 /* MTContrast.m */; };
+		69E24E1E07A5C25E00DDC096 /* MTCStimuli.h in Resources */ = {isa = PBXBuildFile; fileRef = 69EAD86F04352E4F00F95509 /* MTCStimuli.h */; };
+		69E24E1F07A5C25F00DDC096 /* MTCStimuli.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EAD87004352E4F00F95509 /* MTCStimuli.m */; };
+		69E24E2107A5C27000DDC096 /* MTCBehaviorController.h in Resources */ = {isa = PBXBuildFile; fileRef = 690B798D047ADA9F00A80164 /* MTCBehaviorController.h */; };
+		69E24E2207A5C27100DDC096 /* MTCBehaviorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690B798E047ADA9F00A80164 /* MTCBehaviorController.m */; };
+		69E24E2307A5C27200DDC096 /* MTCEyeXYController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E96F8D0472CC5C00F95509 /* MTCEyeXYController.h */; };
+		69E24E2407A5C27200DDC096 /* MTCEyeXYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E96F8E0472CC5C00F95509 /* MTCEyeXYController.m */; };
+		69E24E2507A5C27300DDC096 /* MTCSpikeController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69F13A5F04716CF400F95509 /* MTCSpikeController.h */; };
+		69E24E2707A5C27400DDC096 /* MTCSummaryController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69B9AE720482FBDD00F95509 /* MTCSummaryController.h */; };
+		69E24E2807A5C27600DDC096 /* MTCSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B9AE730482FBDD00F95509 /* MTCSummaryController.m */; };
+		69E24E2907A5C27700DDC096 /* MTCXTController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69B5A7CA0471DBA300F95509 /* MTCXTController.h */; };
+		69E24E2A07A5C27800DDC096 /* MTCXTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B5A7CB0471DBA300F95509 /* MTCXTController.m */; };
+		69E24E2D07A5C29700DDC096 /* MTCStateSystem.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F10486AA2000FE06D7 /* MTCStateSystem.h */; };
+		69E24E2E07A5C29800DDC096 /* MTCStateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879F20486AA2000FE06D7 /* MTCStateSystem.m */; };
+		69E24E2F07A5C29900DDC096 /* MTCBlockedState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0480486D97300FE06D7 /* MTCBlockedState.h */; };
+		69E24E3007A5C29A00DDC096 /* MTCBlockedState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0490486D97300FE06D7 /* MTCBlockedState.m */; };
+		69E24E3107A5C29B00DDC096 /* MTCEndtrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0400486D3B700FE06D7 /* MTCEndtrialState.h */; };
+		69E24E3207A5C29B00DDC096 /* MTCEndtrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0410486D3B700FE06D7 /* MTCEndtrialState.m */; };
+		69E24E3307A5C29C00DDC096 /* MTCFixonState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A04C0486DB1300FE06D7 /* MTCFixonState.h */; };
+		69E24E3407A5C29D00DDC096 /* MTCFixonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A04D0486DB1300FE06D7 /* MTCFixonState.m */; };
+		69E24E3707A5C29F00DDC096 /* MTCIdleState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879FD0486B06A00FE06D7 /* MTCIdleState.h */; };
+		69E24E3807A5C2A000DDC096 /* MTCIdleState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FE0486B06A00FE06D7 /* MTCIdleState.m */; };
+		69E24E3907A5C2A000DDC096 /* MTCIntertrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 6983253D0486BE9600FE06D7 /* MTCIntertrialState.h */; };
+		69E24E3A07A5C2A100DDC096 /* MTCIntertrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6983253E0486BE9600FE06D7 /* MTCIntertrialState.m */; };
+		69E24E3B07A5C2A200DDC096 /* MTCStimulate.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A05C0486F0A700FE06D7 /* MTCStimulate.h */; };
+		69E24E3C07A5C2A300DDC096 /* MTCStimulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A05D0486F0A700FE06D7 /* MTCStimulate.m */; };
+		69E24E4107A5C2AA00DDC096 /* MTCPrestimState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0580486E0EC00FE06D7 /* MTCPrestimState.h */; };
+		69E24E4207A5C2AB00DDC096 /* MTCPrestimState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0590486E0EC00FE06D7 /* MTCPrestimState.m */; };
+		69E24E4307A5C2AC00DDC096 /* MTCReactState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0640486F23700FE06D7 /* MTCReactState.h */; };
+		69E24E4407A5C2AC00DDC096 /* MTCReactState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0650486F23700FE06D7 /* MTCReactState.m */; };
+		69E24E4507A5C2AD00DDC096 /* MTCSaccadeState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69F443A305DEE56D000705E2 /* MTCSaccadeState.h */; };
+		69E24E4607A5C2AE00DDC096 /* MTCSaccadeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F443A405DEE56D000705E2 /* MTCSaccadeState.m */; };
+		69E24E4907A5C2B000DDC096 /* MTCStarttrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0440486D59800FE06D7 /* MTCStarttrialState.h */; };
+		69E24E4A07A5C2B000DDC096 /* MTCStarttrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0450486D59800FE06D7 /* MTCStarttrialState.m */; };
+		69E24E4B07A5C2B100DDC096 /* MTCStopState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F90486AF9300FE06D7 /* MTCStopState.h */; };
+		69E24E4C07A5C2B200DDC096 /* MTCStopState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FA0486AF9300FE06D7 /* MTCStopState.m */; };
+		69E24E4F07A5C2BB00DDC096 /* MTContrast_Prefix.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247A107A5527C00DDC096 /* MTContrast_Prefix.h */; };
+		69E24E5007A5C2BC00DDC096 /* MTC.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247A207A5527C00DDC096 /* MTC.h */; };
+		69E24E5107A5C2BD00DDC096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		69E24E5207A5C2BD00DDC096 /* UtilityFunctions.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */; };
+		69E24E5307A5C2BE00DDC096 /* UtilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69975550043E645C00F95509 /* UtilityFunctions.m */; };
+		69E24E5407A5C2C300DDC096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		69E24E5507A5C2C400DDC096 /* MTContrast.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MTContrast.nib */; };
+		69E24E5607A5C2C500DDC096 /* MTCBehaviorController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69B5A7C70471D9E400F95509 /* MTCBehaviorController.nib */; };
+		69E24E5707A5C2C500DDC096 /* MTCEyeXYController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69E96F950472CCC300F95509 /* MTCEyeXYController.nib */; };
+		69E24E5807A5C2C700DDC096 /* MTCSpikeController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69F13A6304716D0D00F95509 /* MTCSpikeController.nib */; };
+		69E24E5907A5C2C800DDC096 /* MTCMessageController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69CFF8140476A44400F95509 /* MTCMessageController.nib */; };
+		69E24E5A07A5C2C900DDC096 /* MTCSummaryController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69B9AE6F0482FB9F00F95509 /* MTCSummaryController.nib */; };
+		69E24E5B07A5C2C900DDC096 /* MTCXTController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 690B7991047ADABA00A80164 /* MTCXTController.nib */; };
+		69E24E5C07A5C2D100DDC096 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 696D8C8A075D683B0057453A /* UserDefaults.plist */; };
+		69E24E5E07A5C2E100DDC096 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		69E24E6207A5C2E200DDC096 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */; };
+		69E24E7407A5C34300DDC096 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		69E24F0907A5C34400DDC096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MTContrast.xib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		690B798D047ADA9F00A80164 /* MTCBehaviorController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTCBehaviorController.h; sourceTree = "<group>"; };
+		690B798E047ADA9F00A80164 /* MTCBehaviorController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MTCBehaviorController.m; sourceTree = "<group>"; };
+		690B7992047ADABA00A80164 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MTCXTController.xib; sourceTree = "<group>"; };
+		691C4A840B2896F400DA5103 /* Lablib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lablib.framework; path = ../../Frameworks/Lablib/build/Development/Lablib.framework; sourceTree = SOURCE_ROOT; };
+		694879F10486AA2000FE06D7 /* MTCStateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCStateSystem.h; sourceTree = "<group>"; };
+		694879F20486AA2000FE06D7 /* MTCStateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCStateSystem.m; sourceTree = "<group>"; };
+		694879F90486AF9300FE06D7 /* MTCStopState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCStopState.h; sourceTree = "<group>"; };
+		694879FA0486AF9300FE06D7 /* MTCStopState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCStopState.m; sourceTree = "<group>"; };
+		694879FD0486B06A00FE06D7 /* MTCIdleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCIdleState.h; sourceTree = "<group>"; };
+		694879FE0486B06A00FE06D7 /* MTCIdleState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCIdleState.m; sourceTree = "<group>"; };
+		695982CF080209EB0090B9A6 /* MTCFixGraceState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCFixGraceState.h; sourceTree = "<group>"; };
+		695982D0080209EB0090B9A6 /* MTCFixGraceState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCFixGraceState.m; sourceTree = "<group>"; };
+		695C12F509B108880021A27D /* MTCPreCueState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCPreCueState.h; sourceTree = "<group>"; };
+		695C12F609B108880021A27D /* MTCPreCueState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCPreCueState.m; sourceTree = "<group>"; };
+		695C12FA09B108970021A27D /* MTCCueState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCCueState.h; sourceTree = "<group>"; };
+		695C12FB09B108970021A27D /* MTCCueState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCCueState.m; sourceTree = "<group>"; };
+		6968EA58059DDD1900E33065 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		696D8C8A075D683B0057453A /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
+		6983253D0486BE9600FE06D7 /* MTCIntertrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCIntertrialState.h; sourceTree = "<group>"; };
+		6983253E0486BE9600FE06D7 /* MTCIntertrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCIntertrialState.m; sourceTree = "<group>"; };
+		69975550043E645C00F95509 /* UtilityFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFunctions.m; sourceTree = "<group>"; };
+		69B5A7C80471D9E400F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MTCBehaviorController.xib; sourceTree = "<group>"; };
+		69B5A7CA0471DBA300F95509 /* MTCXTController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTCXTController.h; sourceTree = "<group>"; };
+		69B5A7CB0471DBA300F95509 /* MTCXTController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MTCXTController.m; sourceTree = "<group>"; };
+		69B9AE700482FB9F00F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MTCSummaryController.xib; sourceTree = "<group>"; };
+		69B9AE720482FBDD00F95509 /* MTCSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTCSummaryController.h; sourceTree = "<group>"; };
+		69B9AE730482FBDD00F95509 /* MTCSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MTCSummaryController.m; sourceTree = "<group>"; };
+		69CFF8150476A44400F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MTCMessageController.xib; sourceTree = "<group>"; };
+		69E247A107A5527C00DDC096 /* MTContrast_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTContrast_Prefix.h; sourceTree = "<group>"; };
+		69E247A207A5527C00DDC096 /* MTC.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTC.h; sourceTree = "<group>"; };
+		69E247A907A5529700DDC096 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E247C907A5562500DDC096 /* MTContrast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTContrast.h; sourceTree = "<group>"; };
+		69E247CA07A5562500DDC096 /* MTContrast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTContrast.m; sourceTree = "<group>"; };
+		69E24E1607A5C21F00DDC096 /* MTContrast.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTContrast.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityFunctions.h; sourceTree = "<group>"; };
+		69E8A0400486D3B700FE06D7 /* MTCEndtrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCEndtrialState.h; sourceTree = "<group>"; };
+		69E8A0410486D3B700FE06D7 /* MTCEndtrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCEndtrialState.m; sourceTree = "<group>"; };
+		69E8A0440486D59800FE06D7 /* MTCStarttrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCStarttrialState.h; sourceTree = "<group>"; };
+		69E8A0450486D59800FE06D7 /* MTCStarttrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCStarttrialState.m; sourceTree = "<group>"; };
+		69E8A0480486D97300FE06D7 /* MTCBlockedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCBlockedState.h; sourceTree = "<group>"; };
+		69E8A0490486D97300FE06D7 /* MTCBlockedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCBlockedState.m; sourceTree = "<group>"; };
+		69E8A04C0486DB1300FE06D7 /* MTCFixonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCFixonState.h; sourceTree = "<group>"; };
+		69E8A04D0486DB1300FE06D7 /* MTCFixonState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCFixonState.m; sourceTree = "<group>"; };
+		69E8A0580486E0EC00FE06D7 /* MTCPrestimState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCPrestimState.h; sourceTree = "<group>"; };
+		69E8A0590486E0EC00FE06D7 /* MTCPrestimState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCPrestimState.m; sourceTree = "<group>"; };
+		69E8A05C0486F0A700FE06D7 /* MTCStimulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCStimulate.h; sourceTree = "<group>"; };
+		69E8A05D0486F0A700FE06D7 /* MTCStimulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCStimulate.m; sourceTree = "<group>"; };
+		69E8A0640486F23700FE06D7 /* MTCReactState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCReactState.h; sourceTree = "<group>"; };
+		69E8A0650486F23700FE06D7 /* MTCReactState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCReactState.m; sourceTree = "<group>"; };
+		69E96F8D0472CC5C00F95509 /* MTCEyeXYController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTCEyeXYController.h; sourceTree = "<group>"; };
+		69E96F8E0472CC5C00F95509 /* MTCEyeXYController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MTCEyeXYController.m; sourceTree = "<group>"; };
+		69E96F960472CCC300F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MTCEyeXYController.xib; sourceTree = "<group>"; };
+		69EAD86F04352E4F00F95509 /* MTCStimuli.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTCStimuli.h; sourceTree = "<group>"; };
+		69EAD87004352E4F00F95509 /* MTCStimuli.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MTCStimuli.m; sourceTree = "<group>"; };
+		69F13A5F04716CF400F95509 /* MTCSpikeController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTCSpikeController.h; sourceTree = "<group>"; };
+		69F13A6004716CF400F95509 /* MTCSpikeController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MTCSpikeController.m; sourceTree = "<group>"; };
+		69F13A6404716D0D00F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MTCSpikeController.xib; sourceTree = "<group>"; };
+		69F443A305DEE56D000705E2 /* MTCSaccadeState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MTCSaccadeState.h; sourceTree = "<group>"; };
+		69F443A405DEE56D000705E2 /* MTCSaccadeState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MTCSaccadeState.m; sourceTree = "<group>"; };
+		E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69E24E1407A5C21F00DDC096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E5E07A5C2E100DDC096 /* Cocoa.framework in Frameworks */,
+				69E24E6207A5C2E200DDC096 /* OpenGL.framework in Frameworks */,
+				69E24E7407A5C34300DDC096 /* AppKit.framework in Frameworks */,
+				69E24F0907A5C34400DDC096 /* Foundation.framework in Frameworks */,
+				691C4A850B2896F400DA5103 /* Lablib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				696D3833059E19DE0018E5D5 /* Controllers */,
+				694879ED0486A83B00FE06D7 /* On-line Display */,
+				694879EE0486A85E00FE06D7 /* State System */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				691C4A840B2896F400DA5103 /* Lablib.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69E24E1607A5C21F00DDC096 /* MTContrast.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* terstes */ = {
+			isa = PBXGroup;
+			children = (
+				6968EA58059DDD1900E33065 /* Notes.txt */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				69C1CC640827E43C00A71FDE /* Plists */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = terstes;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				69E247A107A5527C00DDC096 /* MTContrast_Prefix.h */,
+				69E247A207A5527C00DDC096 /* MTC.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */,
+				69975550043E645C00F95509 /* UtilityFunctions.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MTContrast.nib */,
+				69B5A7C70471D9E400F95509 /* MTCBehaviorController.nib */,
+				69E96F950472CCC300F95509 /* MTCEyeXYController.nib */,
+				69CFF8140476A44400F95509 /* MTCMessageController.nib */,
+				69F13A6304716D0D00F95509 /* MTCSpikeController.nib */,
+				69B9AE6F0482FB9F00F95509 /* MTCSummaryController.nib */,
+				690B7991047ADABA00A80164 /* MTCXTController.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		694879ED0486A83B00FE06D7 /* On-line Display */ = {
+			isa = PBXGroup;
+			children = (
+				690B798D047ADA9F00A80164 /* MTCBehaviorController.h */,
+				690B798E047ADA9F00A80164 /* MTCBehaviorController.m */,
+				69E96F8D0472CC5C00F95509 /* MTCEyeXYController.h */,
+				69E96F8E0472CC5C00F95509 /* MTCEyeXYController.m */,
+				69F13A5F04716CF400F95509 /* MTCSpikeController.h */,
+				69F13A6004716CF400F95509 /* MTCSpikeController.m */,
+				69B9AE720482FBDD00F95509 /* MTCSummaryController.h */,
+				69B9AE730482FBDD00F95509 /* MTCSummaryController.m */,
+				69B5A7CA0471DBA300F95509 /* MTCXTController.h */,
+				69B5A7CB0471DBA300F95509 /* MTCXTController.m */,
+			);
+			name = "On-line Display";
+			sourceTree = "<group>";
+		};
+		694879EE0486A85E00FE06D7 /* State System */ = {
+			isa = PBXGroup;
+			children = (
+				694879F10486AA2000FE06D7 /* MTCStateSystem.h */,
+				694879F20486AA2000FE06D7 /* MTCStateSystem.m */,
+				69E8A0480486D97300FE06D7 /* MTCBlockedState.h */,
+				69E8A0490486D97300FE06D7 /* MTCBlockedState.m */,
+				695C12FA09B108970021A27D /* MTCCueState.h */,
+				695C12FB09B108970021A27D /* MTCCueState.m */,
+				69E8A0400486D3B700FE06D7 /* MTCEndtrialState.h */,
+				69E8A0410486D3B700FE06D7 /* MTCEndtrialState.m */,
+				695982CF080209EB0090B9A6 /* MTCFixGraceState.h */,
+				695982D0080209EB0090B9A6 /* MTCFixGraceState.m */,
+				69E8A04C0486DB1300FE06D7 /* MTCFixonState.h */,
+				69E8A04D0486DB1300FE06D7 /* MTCFixonState.m */,
+				694879FD0486B06A00FE06D7 /* MTCIdleState.h */,
+				694879FE0486B06A00FE06D7 /* MTCIdleState.m */,
+				6983253D0486BE9600FE06D7 /* MTCIntertrialState.h */,
+				6983253E0486BE9600FE06D7 /* MTCIntertrialState.m */,
+				695C12F509B108880021A27D /* MTCPreCueState.h */,
+				695C12F609B108880021A27D /* MTCPreCueState.m */,
+				69E8A0580486E0EC00FE06D7 /* MTCPrestimState.h */,
+				69E8A0590486E0EC00FE06D7 /* MTCPrestimState.m */,
+				69E8A0640486F23700FE06D7 /* MTCReactState.h */,
+				69E8A0650486F23700FE06D7 /* MTCReactState.m */,
+				69F443A305DEE56D000705E2 /* MTCSaccadeState.h */,
+				69F443A405DEE56D000705E2 /* MTCSaccadeState.m */,
+				69E8A0440486D59800FE06D7 /* MTCStarttrialState.h */,
+				69E8A0450486D59800FE06D7 /* MTCStarttrialState.m */,
+				69E8A05C0486F0A700FE06D7 /* MTCStimulate.h */,
+				69E8A05D0486F0A700FE06D7 /* MTCStimulate.m */,
+				694879F90486AF9300FE06D7 /* MTCStopState.h */,
+				694879FA0486AF9300FE06D7 /* MTCStopState.m */,
+			);
+			name = "State System";
+			sourceTree = "<group>";
+		};
+		696D3833059E19DE0018E5D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69E247C907A5562500DDC096 /* MTContrast.h */,
+				69E247CA07A5562500DDC096 /* MTContrast.m */,
+				69EAD86F04352E4F00F95509 /* MTCStimuli.h */,
+				69EAD87004352E4F00F95509 /* MTCStimuli.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		69C1CC640827E43C00A71FDE /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				696D8C8A075D683B0057453A /* UserDefaults.plist */,
+				69E247A907A5529700DDC096 /* Info.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69E24E1507A5C21F00DDC096 /* MTContrast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B8D0E9088DAADA002FCFD4 /* Build configuration list for PBXNativeTarget "MTContrast" */;
+			buildPhases = (
+				69E24E1207A5C21F00DDC096 /* Resources */,
+				69E24E1307A5C21F00DDC096 /* Sources */,
+				69E24E1407A5C21F00DDC096 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTContrast;
+			productName = MTContrast;
+			productReference = 69E24E1607A5C21F00DDC096 /* MTContrast.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 69B8D0ED088DAADA002FCFD4 /* Build configuration list for PBXProject "MTContrast" */;
+			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* terstes */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69E24E1507A5C21F00DDC096 /* MTContrast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69E24E1207A5C21F00DDC096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E1B07A5C25A00DDC096 /* MTContrast.h in Resources */,
+				69E24E1E07A5C25E00DDC096 /* MTCStimuli.h in Resources */,
+				69E24E2107A5C27000DDC096 /* MTCBehaviorController.h in Resources */,
+				69E24E2307A5C27200DDC096 /* MTCEyeXYController.h in Resources */,
+				69E24E2507A5C27300DDC096 /* MTCSpikeController.h in Resources */,
+				69E24E2707A5C27400DDC096 /* MTCSummaryController.h in Resources */,
+				69E24E2907A5C27700DDC096 /* MTCXTController.h in Resources */,
+				69E24E2D07A5C29700DDC096 /* MTCStateSystem.h in Resources */,
+				69E24E2F07A5C29900DDC096 /* MTCBlockedState.h in Resources */,
+				69E24E3107A5C29B00DDC096 /* MTCEndtrialState.h in Resources */,
+				69E24E3307A5C29C00DDC096 /* MTCFixonState.h in Resources */,
+				69E24E3707A5C29F00DDC096 /* MTCIdleState.h in Resources */,
+				69E24E3907A5C2A000DDC096 /* MTCIntertrialState.h in Resources */,
+				69E24E3B07A5C2A200DDC096 /* MTCStimulate.h in Resources */,
+				69E24E4107A5C2AA00DDC096 /* MTCPrestimState.h in Resources */,
+				69E24E4307A5C2AC00DDC096 /* MTCReactState.h in Resources */,
+				69E24E4507A5C2AD00DDC096 /* MTCSaccadeState.h in Resources */,
+				69E24E4907A5C2B000DDC096 /* MTCStarttrialState.h in Resources */,
+				69E24E4B07A5C2B100DDC096 /* MTCStopState.h in Resources */,
+				69E24E4F07A5C2BB00DDC096 /* MTContrast_Prefix.h in Resources */,
+				69E24E5007A5C2BC00DDC096 /* MTC.h in Resources */,
+				69E24E5207A5C2BD00DDC096 /* UtilityFunctions.h in Resources */,
+				69E24E5407A5C2C300DDC096 /* InfoPlist.strings in Resources */,
+				69E24E5507A5C2C400DDC096 /* MTContrast.nib in Resources */,
+				69E24E5607A5C2C500DDC096 /* MTCBehaviorController.nib in Resources */,
+				69E24E5707A5C2C500DDC096 /* MTCEyeXYController.nib in Resources */,
+				69E24E5807A5C2C700DDC096 /* MTCSpikeController.nib in Resources */,
+				69E24E5907A5C2C800DDC096 /* MTCMessageController.nib in Resources */,
+				69E24E5A07A5C2C900DDC096 /* MTCSummaryController.nib in Resources */,
+				69E24E5B07A5C2C900DDC096 /* MTCXTController.nib in Resources */,
+				69E24E5C07A5C2D100DDC096 /* UserDefaults.plist in Resources */,
+				695982D1080209EB0090B9A6 /* MTCFixGraceState.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69E24E1307A5C21F00DDC096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E1C07A5C25B00DDC096 /* MTContrast.m in Sources */,
+				69E24E1F07A5C25F00DDC096 /* MTCStimuli.m in Sources */,
+				69E24E2207A5C27100DDC096 /* MTCBehaviorController.m in Sources */,
+				69E24E2407A5C27200DDC096 /* MTCEyeXYController.m in Sources */,
+				69E24E2807A5C27600DDC096 /* MTCSummaryController.m in Sources */,
+				69E24E2A07A5C27800DDC096 /* MTCXTController.m in Sources */,
+				69E24E2E07A5C29800DDC096 /* MTCStateSystem.m in Sources */,
+				69E24E3007A5C29A00DDC096 /* MTCBlockedState.m in Sources */,
+				69E24E3207A5C29B00DDC096 /* MTCEndtrialState.m in Sources */,
+				69E24E3407A5C29D00DDC096 /* MTCFixonState.m in Sources */,
+				69E24E3807A5C2A000DDC096 /* MTCIdleState.m in Sources */,
+				69E24E3A07A5C2A100DDC096 /* MTCIntertrialState.m in Sources */,
+				69E24E3C07A5C2A300DDC096 /* MTCStimulate.m in Sources */,
+				69E24E4207A5C2AB00DDC096 /* MTCPrestimState.m in Sources */,
+				69E24E4407A5C2AC00DDC096 /* MTCReactState.m in Sources */,
+				69E24E4607A5C2AE00DDC096 /* MTCSaccadeState.m in Sources */,
+				69E24E4A07A5C2B000DDC096 /* MTCStarttrialState.m in Sources */,
+				69E24E4C07A5C2B200DDC096 /* MTCStopState.m in Sources */,
+				69E24E5107A5C2BD00DDC096 /* main.m in Sources */,
+				69E24E5307A5C2BE00DDC096 /* UtilityFunctions.m in Sources */,
+				695982D2080209EB0090B9A6 /* MTCFixGraceState.m in Sources */,
+				69BDCE44098BD2CA00578E91 /* MTCSpikeController.m in Sources */,
+				695C12F709B108880021A27D /* MTCPreCueState.m in Sources */,
+				695C12FC09B108970021A27D /* MTCCueState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MTContrast.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MTContrast.nib;
+			sourceTree = "<group>";
+		};
+		690B7991047ADABA00A80164 /* MTCXTController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				690B7992047ADABA00A80164 /* English */,
+			);
+			name = MTCXTController.nib;
+			sourceTree = "<group>";
+		};
+		69B5A7C70471D9E400F95509 /* MTCBehaviorController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69B5A7C80471D9E400F95509 /* English */,
+			);
+			name = MTCBehaviorController.nib;
+			sourceTree = "<group>";
+		};
+		69B9AE6F0482FB9F00F95509 /* MTCSummaryController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69B9AE700482FB9F00F95509 /* English */,
+			);
+			name = MTCSummaryController.nib;
+			sourceTree = "<group>";
+		};
+		69CFF8140476A44400F95509 /* MTCMessageController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69CFF8150476A44400F95509 /* English */,
+			);
+			name = MTCMessageController.nib;
+			sourceTree = "<group>";
+		};
+		69E96F950472CCC300F95509 /* MTCEyeXYController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E96F960472CCC300F95509 /* English */,
+			);
+			name = MTCEyeXYController.nib;
+			sourceTree = "<group>";
+		};
+		69F13A6304716D0D00F95509 /* MTCSpikeController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69F13A6404716D0D00F95509 /* English */,
+			);
+			name = MTCSpikeController.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69B8D0EA088DAADA002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../Frameworks/Lablib/build/Development\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MTContrast_Prefix.h;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MTContrast;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				UNSTRIPPED_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		69B8D0EB088DAADA002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Documents/Lablib/Frameworks/Lablib/build,
+					/Documents/Lablib/Frameworks/LablibITC18/build,
+					"$(SRCROOT)/../../Frameworks/Lablib/build/Development",
+					"$(SRCROOT)/../../Frameworks/LablibITC18/build/Development",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MTContrast_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MTContrast;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Deployment;
+		};
+		69B8D0EC088DAADA002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Documents/Lablib/Frameworks/Lablib/build,
+					/Documents/Lablib/Frameworks/LablibITC18/build,
+					"$(SRCROOT)/../../Frameworks/Lablib/build/Development",
+					"$(SRCROOT)/../../Frameworks/LablibITC18/build/Development",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MTContrast_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MTContrast;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Default;
+		};
+		69B8D0EE088DAADA002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Development;
+		};
+		69B8D0EF088DAADA002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Deployment;
+		};
+		69B8D0F0088DAADA002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69B8D0E9088DAADA002FCFD4 /* Build configuration list for PBXNativeTarget "MTContrast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D0EA088DAADA002FCFD4 /* Development */,
+				69B8D0EB088DAADA002FCFD4 /* Deployment */,
+				69B8D0EC088DAADA002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		69B8D0ED088DAADA002FCFD4 /* Build configuration list for PBXProject "MTContrast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D0EE088DAADA002FCFD4 /* Development */,
+				69B8D0EF088DAADA002FCFD4 /* Deployment */,
+				69B8D0F0088DAADA002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

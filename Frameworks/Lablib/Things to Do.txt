@@ -1,0 +1,110 @@
+111230 Knot crashing on quit.  Something deep in the DisplayAPI? (message) or _createDocMenu? (message).
+
+______________________________________
+
+When Knot doesn't load a plugin it should give the user the option of deleting it (and all others).
+
+LLRandomDots needs a makeFrame function to complement the makeMovie function so RFMap can call for the next
+frame and be sure that it will be up to date with settings if they change.
+
+Need to document VisualStimuli and check that all values are being set and recorded
+
+There needs to be a better way to access the configuration of data devices
+
+• Knot is not saving the data rate settings for Microcontrast (and all others?)
+
+•TimestampPeriodMS is now only legal for values of 1.0 and less (1kHz or higher).  There is no reason
+that lower sampling rates could not be allowed.
+
+LLGabor need to work on different backgrounds
+Need LLDataController control to:
+
+Read all available data
+Stop adding to local buffers
+    Allow the read from all buffers
+Re-enable adding to local buffers
+
+• Need a way for Erik to simply substitute his eye calibrator --- couldn't we just have a Knot method for this
+		switch?  We could even have a method to return the old one.
+		
+• RESCALING has broken.  It looks like the OS clears everyone's needsDisplay at the end of a pass through
+the subview list, rather than after each subview is drawn, and this clears some flags without drawing.
+
+_________________________________________________
+
+• Widespread:
+
+Need to get all devices etc, using the thread-safe defaults
+______________________________
+
+• LLStimView has been set up to allow switching between a window and different monitors on the fly
+	It would be good to make a dialog to handle this.
+	
+• Should be able to change monitor framerate and resolution from the display calibration settings.
+	
+• Erik notes that XT plot has a long dead time after reset
+
+• Need a circular drawing mask for RandomDots, if possible.
+
+• Need to put labels above the various columns in the trial window.  This is a bit of a challenge, because the
+LLXTView is the only thing that knows about its composition, and yet the drawing clearly wants to be done outside
+the LLXTView (above it).  Furthermore, the LLXTView would need to work out it current scaling, and it is not clear where
+to find that.
+
+• LLXTView scrolling:  
+
+I worked for some time to see if I could smooth the scrolling of the LLXTView.  It is not a simple matter.  scrollRect:by: works ok, but it does not solve the problem.  scrollRect:by: acts on the backscreen buffer, so its effects are not visible immediately.  Probably a flushBuffer would make it appear, but it is probably better to use setNeedsDisplayInRect to bring the backscreen buffer to the screen.  If the InRect is just the new bit exposed, then the call to drawRect will be clipped to the InRect, and it will draw very quickly.
+
+Scrolling needs to be done carefully, however.  Scrolling must be by an integer number of pixels.   This means that the scroll amount should be rounded down to an integer.  Furthermore, drawRect is not called for every scrollRect/setNeedsDisplayInRect.  This is important to understand, because the scrolling routine needs to account for all the scrolling that was done before the drawRect occurs.  If the same InRect is passed each time (because scrolling is by the same amount each time), then the scroll will get out of synch.  The simplest way to do this is to set a flag that will block further scrolling until the next drawRect is completed.  
+
+There is a further complication is that the amount of scrolling needs to take into account the current magnification of the view.  This is something I never pursued, but it will be a bit of extra work.
+
+Even with the scrolling, however, scrolling is not particularly smooth.  It seems to take an appreciable amount of time to do the scrolling and updating.  Even when the drawing takes ~25 ms and occurs every ~50 ms (20 Hz), the display looks jerky.  This might improved by reducing the magnification of time, but it will probably remain a problem until machines get appreciably faster. 
+
+An alternative approach that might work would be to draw, without redrawing, into an extended view, which is then scrolled onto the display (without scrollbars).  This would be done by using scrollPointTo: and moveOrigin:, or something like that.  When time hit a the bottom of the view, or a useful stopping point, the whole display would be redrawn, moved up enough to make more room for drawing.
+
+• Need to have Lablib put the data files in the recommended location
+
+• ITC18
+
+	Should show in the display how the alarms are set to trigger and whether they are enabled
+
+	Should have some provision for the ITC to tweak its sampling rate to match that of the CPU's clock.
+
+• Should make a monitor for the task that shows how big the buffer is, uptime, etc.
+
+---------------
+
+• Need to get the random routines into some sort of utility object, so that each instance of a 
+LLRandomDot, etc can have its own random number and be a little immune to the order in which different
+objects do their drawing.
+
+• STATISTICS:
+
+	Need to make LLNormDist and LLBinomDist work with 95% confidence intervals
+	
+From Ghose:
+
+There is a bug in the Configuration Settings. Basically no matter what entry is loaded on startup, the first entry 
+is always highlighted. Can make things a little confusing.
+
+Ghose's suggestions for speeding up XY Windows:
+
+I played with dirtyRects, but even that is relatively inefficient. The vast majority of time the only
+ thing that is changing in the entire view is a few points: the eye samples. So my change was to avoid
+  clear the entire view with a fillRect unless necessary. The only time it's necessary is at the 
+  beginning of a trial, and when you move the scroll or zoom. So I added an eyePlot clear method 
+  which set a clearAll flag to do the full fillRect under these circumstances.
+
+For the eye samples, all I do is keep the last rect list alive and fill it with the background color.
+
+On the application side, I went the extra step of only changing the eye windows and their highlighting 
+when necessary as well.
+
+As long as the application's windows are running off a crappy PCI card (and a huge monitor mine's 
+1600x1200), there's the danger of the eye window being dragged to big and lots of frame drops for the 
+stimulus. With my modifications, it really doesn't matter how big the window is, because the full 
+fillRect is almost never called.
+
+I haven't yet modified my website code yet, because I'm still verifying my merges with your new Data 
+Device stuff. But if you're interested here's my new LLEyeXYView.

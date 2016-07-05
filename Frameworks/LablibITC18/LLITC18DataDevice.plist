@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LLITC18InvertBit00</key>
+	<integer>0</integer>
+	<key>LLITC18InvertBit15</key>
+	<integer>0</integer>
+	<key>LLITC18SamplePeriodMS0</key>
+	<real>5.0</real>
+	<key>LLITC18SamplePeriodMS1</key>
+	<real>5.0</real>
+	<key>LLITC18SamplePeriodMS2</key>
+	<real>5.0</real>
+	<key>LLITC18SamplePeriodMS3</key>
+	<real>5.0</real>
+	<key>LLITC18SamplePeriodMS4</key>
+	<real>5.0</real>
+	<key>LLITC18SamplePeriodMS5</key>
+	<real>5.0</real>
+	<key>LLITC18SamplePeriodMS6</key>
+	<real>5.0</real>
+	<key>LLITC18SamplePeriodMS7</key>
+	<real>5.0</real>
+	<key>LLITC18SamplePeriodMS8</key>
+	<real>5.0</real>
+	<key>LLITC18TimestampPeriodMS00</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS01</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS02</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS03</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS04</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS05</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS06</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS07</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS08</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS09</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS10</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS11</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS12</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS13</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS14</key>
+	<integer>1</integer>
+	<key>LLITC18TimestampPeriodMS15</key>
+	<integer>1</integer>
+</dict>
+</plist>

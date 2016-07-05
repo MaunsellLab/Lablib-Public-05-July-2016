@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:Frameworks/Lablib/Lablib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/Lablib/../LablibITC18/LablibITC18.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Applications/Knot/Knot.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Applications/DataConvert/DataConvert.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Plugins/LLMouseDataDevice/LLMouseDataDevice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Plugins/LLSynthDataDevice/LLSynthDataDevice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Plugins/LablibEyeLinkPlugin/LablibEyeLinkPlugin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Plugins/Fixate/Fixate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Plugins/RFMap/RFMap.xcodeproj">
+   </FileRef>
+</Workspace>

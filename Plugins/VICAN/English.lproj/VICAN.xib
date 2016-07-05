@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VICAN">
+            <connections>
+                <outlet property="actionsMenu" destination="813" id="821"/>
+                <outlet property="rewardAverageField" destination="1945" id="2683"/>
+                <outlet property="rewardTrialField" destination="2886" id="2891"/>
+                <outlet property="runStopMenuItem" destination="816" id="823"/>
+                <outlet property="settingsMenu" destination="818" id="822"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <userDefaultsController representsSharedInstance="YES" id="498" userLabel="Shared Defaults"/>
+        <window title="Behavior Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="BehaviorSettingsWindow" animationBehavior="default" id="425" userLabel="Behavior Settings" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="155" y="191" width="569" height="545"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="449">
+                <rect key="frame" x="0.0" y="0.0" width="569" height="545"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField toolTip="Intertrial interval" verticalHuggingPriority="750" id="436">
+                        <rect key="frame" x="158" y="393" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2386">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="441">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIIntertrialMS" id="2775"/>
+                            <outlet property="nextKeyView" destination="464" id="2317"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="442">
+                        <rect key="frame" x="51" y="395" width="102" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Intertrial (ms):" id="2388">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="431">
+                        <rect key="frame" x="39" y="367" width="114" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Acquire (ms):" id="2385">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="476">
+                        <rect key="frame" x="311" y="367" width="136" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Response Time (ms):" id="2401">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="443">
+                        <rect key="frame" x="333" y="339" width="114" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Too Fast (ms):" id="2389">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="429">
+                        <rect key="frame" x="78" y="505" width="75" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Blocks:" id="2384">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="445">
+                        <rect key="frame" x="61" y="185" width="92" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Reward (ms):" id="2390">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2832"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Time to fixate after fix spot appears" verticalHuggingPriority="750" id="464">
+                        <rect key="frame" x="158" y="365" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2395">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="437">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIAcquireMS" id="2776"/>
+                            <outlet property="nextKeyView" destination="1095" id="2318"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Time to respond after targets appear" verticalHuggingPriority="750" id="426">
+                        <rect key="frame" x="452" y="365" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2382">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="455">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIRespTimeMS" id="2791"/>
+                            <outlet property="nextKeyView" destination="468" id="2328"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Minimum allowable response time" verticalHuggingPriority="750" id="468">
+                        <rect key="frame" x="452" y="337" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2398">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="453">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VITooFastMS" id="2792"/>
+                            <outlet property="nextKeyView" destination="427" id="2329"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Number of blocks to complete" verticalHuggingPriority="750" id="440">
+                        <rect key="frame" x="158" y="503" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2387">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="432">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="1"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIBlockLimit" id="2772"/>
+                            <outlet property="nextKeyView" destination="1303" id="2313"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Reward duration" verticalHuggingPriority="750" id="462">
+                        <rect key="frame" x="158" y="183" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2394">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="434">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2830"/>
+                            <binding destination="498" name="value" keyPath="values.VIRewardMS" id="2795"/>
+                            <outlet property="nextKeyView" destination="459" id="2332"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Fixation window width" verticalHuggingPriority="750" id="459">
+                        <rect key="frame" x="452" y="156" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2392">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="435">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIFixWindowWidthDeg" id="2796"/>
+                            <outlet property="nextKeyView" destination="1573" id="2333"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Width and height of fixation window" verticalHuggingPriority="750" id="446">
+                        <rect key="frame" x="284" y="158" width="163" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Fix Window Width  (deg):" id="2391">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Fixation window width" verticalHuggingPriority="750" id="1573">
+                        <rect key="frame" x="452" y="128" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2422">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1577">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIRespWindowWidthDeg" id="2797"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Width and height of fixation window" verticalHuggingPriority="750" id="1574">
+                        <rect key="frame" x="272" y="128" width="175" height="19"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Resp Window Width  (deg):" id="2423">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button toolTip="Toggles fixation requirement" id="469">
+                        <rect key="frame" x="312" y="224" width="133" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Fixation Required" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="2399">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIFixate" id="2780"/>
+                        </connections>
+                    </button>
+                    <button toolTip="Toggles whether sounds are played during trial" id="473">
+                        <rect key="frame" x="312" y="244" width="97" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Play Sounds" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="2400">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIDoSounds" id="2781"/>
+                        </connections>
+                    </button>
+                    <textField toolTip="Time to complete saccade to target" verticalHuggingPriority="750" id="427">
+                        <rect key="frame" x="452" y="309" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2383">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="454">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VISaccadeTimeMS" id="2793"/>
+                            <outlet property="nextKeyView" destination="1102" id="2330"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="461">
+                        <rect key="frame" x="333" y="311" width="114" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Saccade (ms):" id="2393">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Delay after fix window entry before monitoring fixation" verticalHuggingPriority="750" id="1095">
+                        <rect key="frame" x="158" y="337" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2402">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1097">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIFixGraceMS" id="2777"/>
+                            <outlet property="nextKeyView" destination="1346" id="2319"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1096">
+                        <rect key="frame" x="17" y="339" width="136" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Fix Grace Time (ms):" id="2403">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1101">
+                        <rect key="frame" x="311" y="283" width="136" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Break Punish (ms):" id="2404">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Extra intertrial time after break" verticalHuggingPriority="750" id="1102">
+                        <rect key="frame" x="452" y="281" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2405">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1103">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIBreakPunishMS" id="2794"/>
+                            <outlet property="nextKeyView" destination="462" id="2331"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1302">
+                        <rect key="frame" x="24" y="449" width="129" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Instruction Trials:" id="2406">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of blocks to complete" verticalHuggingPriority="750" id="1303">
+                        <rect key="frame" x="158" y="447" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2407">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1307">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VINumInstructTrials" id="2773"/>
+                            <outlet property="nextKeyView" destination="2931" id="2952"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1318">
+                        <rect key="frame" x="17" y="477" width="136" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Stim Reps Per Block:" id="2408">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of blocks to complete" verticalHuggingPriority="750" id="1319">
+                        <rect key="frame" x="158" y="475" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2409">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1322">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="1"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIStimRepsPerBlock" id="2774"/>
+                            <outlet property="nextKeyView" destination="1303" id="2951"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1324">
+                        <rect key="frame" x="318" y="505" width="129" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Mean Target (ms):" id="2410">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of blocks to complete" verticalHuggingPriority="750" id="1325">
+                        <rect key="frame" x="452" y="503" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2411">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1329">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIMeanTargetMS" id="2787"/>
+                            <outlet property="nextKeyView" destination="1331" id="2325"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1330">
+                        <rect key="frame" x="318" y="477" width="129" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Max Target (ms):" id="2412">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of blocks to complete" verticalHuggingPriority="750" id="1331">
+                        <rect key="frame" x="452" y="475" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2413">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1334">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIMaxTargetMS" id="2788"/>
+                            <outlet property="nextKeyView" destination="1337" id="2326"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1336">
+                        <rect key="frame" x="284" y="449" width="163" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Mean Distractor (ms):" id="2414">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of blocks to complete" verticalHuggingPriority="750" id="1337">
+                        <rect key="frame" x="452" y="447" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2415">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1338">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIMeanDistractorMS" id="2789"/>
+                            <outlet property="nextKeyView" destination="426" id="2327"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2684">
+                        <rect key="frame" x="318" y="422" width="129" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Catch Trials (%):" id="2688">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of blocks to complete" verticalHuggingPriority="750" id="2685">
+                        <rect key="frame" x="452" y="419" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2686">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="2687">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VICatchTrialPC" id="2790"/>
+                            <outlet property="nextKeyView" destination="426" id="2690"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Delay after fix window entry before monitoring fixation" verticalHuggingPriority="750" id="1346">
+                        <rect key="frame" x="158" y="309" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2416">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1357">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIPrecueMS" id="2778"/>
+                            <outlet property="nextKeyView" destination="1350" id="2320"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1348">
+                        <rect key="frame" x="17" y="311" width="136" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Pre-Cue Time (ms):" id="2417">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Delay after fix window entry before monitoring fixation" verticalHuggingPriority="750" id="2920">
+                        <rect key="frame" x="158" y="253" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2923">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="2924">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIPreStimMS" id="2927"/>
+                            <outlet property="nextKeyView" destination="1350" id="2925"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2921">
+                        <rect key="frame" x="17" y="255" width="136" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Pre-Stim Time (ms):" id="2922">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Delay after fix window entry before monitoring fixation" verticalHuggingPriority="750" id="1350">
+                        <rect key="frame" x="158" y="281" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2418">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1351">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VICueMS" id="2779"/>
+                            <outlet property="nextKeyView" destination="1939" id="2321"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1352">
+                        <rect key="frame" x="17" y="283" width="136" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Cue Time (ms):" id="2419">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="1360">
+                        <rect key="frame" x="269" y="58" width="133" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Fix Settings" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="2420">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doFixSettings:" target="-2" id="1361"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="1364">
+                        <rect key="frame" x="403" y="58" width="133" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Cue Settings" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="2421">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doCueSettings:" target="-2" id="1366"/>
+                        </connections>
+                    </button>
+                    <button id="1938">
+                        <rect key="frame" x="56" y="207" width="131" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Variable Rewards" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="2424">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIDoVarRewards" id="2782"/>
+                        </connections>
+                    </button>
+                    <textField toolTip="Delay after fix window entry before monitoring fixation" verticalHuggingPriority="750" id="1939">
+                        <rect key="frame" x="158" y="183" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2425">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1957">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2835">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="498" name="value" keyPath="values.VIVarRewardTCMS" id="2783"/>
+                            <outlet property="nextKeyView" destination="1940" id="2322"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Delay after fix window entry before monitoring fixation" verticalHuggingPriority="750" id="1940">
+                        <rect key="frame" x="158" y="155" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2426">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1955">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2841">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="498" name="value" keyPath="values.VIVarRewardMinMS" id="2784"/>
+                            <outlet property="nextKeyView" destination="1941" id="2323"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Delay after fix window entry before monitoring fixation" verticalHuggingPriority="750" id="1941">
+                        <rect key="frame" x="158" y="127" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2427">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1953">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2847">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="498" name="value" keyPath="values.VIVarRewardMaxMS" id="2785"/>
+                            <outlet property="nextKeyView" destination="1325" id="2324"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1942">
+                        <rect key="frame" x="94" y="187" width="59" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="right" title="Tau (ms):" id="2428">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2838">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1943">
+                        <rect key="frame" x="46" y="151" width="107" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="right" title="Min Reward (ms):" id="2429">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2844">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1944">
+                        <rect key="frame" x="51" y="131" width="102" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="right" title="Max Reward (ms):" id="2430">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2850">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1945">
+                        <rect key="frame" x="55" y="72" width="271" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Mean" id="2431">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2853">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="498" name="value" keyPath="values.VIVarRewardMean" id="2786"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2886">
+                        <rect key="frame" x="55" y="50" width="210" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Reward" id="2887">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="hidden" keyPath="values.VIDoVarRewards" id="2888">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="498" name="value" keyPath="values.VIVarRewardSizeMS" id="2890"/>
+                        </connections>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" id="2859">
+                        <rect key="frame" x="433" y="189" width="100" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <popUpButtonCell key="cell" type="push" title="Both Eyes" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="2864" id="2862">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="2863">
+                                <items>
+                                    <menuItem title="Left Eye" id="2866"/>
+                                    <menuItem title="Right Eye" id="2865"/>
+                                    <menuItem title="Both Eyes" state="on" id="2864"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="498" name="selectedIndex" keyPath="values.VIEyeToUse" id="2868"/>
+                        </connections>
+                    </popUpButton>
+                    <textField verticalHuggingPriority="750" id="2860">
+                        <rect key="frame" x="374" y="195" width="57" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Require:" id="2861">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button id="2928">
+                        <rect key="frame" x="56" y="231" width="82" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Error Cue" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="2929">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIDoErrorCue" id="2930"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="2931">
+                        <rect key="frame" x="54" y="422" width="31" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="2932">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="2948">
+                                <real key="minimum" value="0.0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VINumExtraInstructTrials" id="2942"/>
+                            <outlet property="nextKeyView" destination="2937" id="2950"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2933">
+                        <rect key="frame" x="21" y="425" width="32" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Give" id="2934">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2935">
+                        <rect key="frame" x="84" y="425" width="121" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="instruction(s) after" id="2936">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2937">
+                        <rect key="frame" x="205" y="422" width="32" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="2938">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="2949">
+                                <real key="minimum" value="0.0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VINumMistakesForExtraInstructions" id="2947"/>
+                            <outlet property="nextKeyView" destination="436" id="2953"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2939">
+                        <rect key="frame" x="237" y="425" width="69" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="mistake(s)" id="2940">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2962">
+                        <rect key="frame" x="452" y="392" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="2963">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="2969">
+                                <real key="minimum" value="0.0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VINumRepsAfterIncorrect" id="2972"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2964">
+                        <rect key="frame" x="284" y="392" width="165" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="N Reps. after incorrect:" id="2965">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2973">
+                        <rect key="frame" x="158" y="97" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="2974">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="0.00" negativeFormat="-0.00" localizesFormat="NO" usesGroupingSeparator="NO" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="2" maximumFractionDigits="2" decimalSeparator="." groupingSeparator="," id="2979">
+                                <real key="minimum" value="0.0"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIDistractorRewardFactor" id="3007"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2975">
+                        <rect key="frame" x="12" y="96" width="160" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Proportion reward invalid:" id="2976">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2980">
+                        <rect key="frame" x="287" y="100" width="165" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Extra difficult Stim Reps:" id="2981">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2984">
+                        <rect key="frame" x="452" y="95" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="2985">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="2986">
+                                <real key="minimum" value="0.0"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIExtraDifficultStimReps" id="2989"/>
+                        </connections>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="Stimulus Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="StimulusSettingsWindow" animationBehavior="default" id="594" userLabel="Stimulus Settings" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="157" y="279" width="539" height="349"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" toolTip="Target Spot &amp; Change Persist" id="591">
+                <rect key="frame" x="0.0" y="0.0" width="539" height="349"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField toolTip="Eccentricity of Gabors" verticalHuggingPriority="750" id="1184">
+                        <rect key="frame" x="441" y="307" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2439">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1185">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIEccentricityDeg" id="2755"/>
+                            <outlet property="nextKeyView" destination="1187" id="1228"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1186">
+                        <rect key="frame" x="319" y="309" width="117" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Eccentricity (deg):" id="2440">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Polar angle (right = 0°)" verticalHuggingPriority="750" id="1187">
+                        <rect key="frame" x="441" y="279" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2441">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1188">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="-360"/>
+                                <decimal key="maximum" value="360"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIAngleRF0Deg" id="2808"/>
+                            <outlet property="nextKeyView" destination="1211" id="1229"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1189">
+                        <rect key="frame" x="319" y="281" width="117" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="RF 0 Angle (deg):" id="2442">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="2827">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="-360"/>
+                                <decimal key="maximum" value="360"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Polar angle (right = 0°)" verticalHuggingPriority="750" id="2809">
+                        <rect key="frame" x="441" y="251" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2812">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="2813">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="-360"/>
+                                <decimal key="maximum" value="360"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIAngleRF1Deg" id="2816"/>
+                            <outlet property="nextKeyView" destination="1211" id="2814"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2810">
+                        <rect key="frame" x="319" y="253" width="117" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="RF 1 Angle (deg):" id="2811">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="2826">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="-360"/>
+                                <decimal key="maximum" value="360"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Polar angle (right = 0°)" verticalHuggingPriority="750" id="2817">
+                        <rect key="frame" x="441" y="223" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2820">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="2821">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="-360"/>
+                                <decimal key="maximum" value="360"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIAngleRFOutDeg" id="2824"/>
+                            <outlet property="nextKeyView" destination="1211" id="2822"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2818">
+                        <rect key="frame" x="307" y="223" width="129" height="19"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="RF Out Angle (deg):" id="2819">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Sigma (width) of the Gabor" verticalHuggingPriority="750" id="1190">
+                        <rect key="frame" x="441" y="110" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2443">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.00" negativeFormat="-0.00" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1191">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.00"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VISigmaDeg" id="2761"/>
+                            <outlet property="nextKeyView" destination="1194" id="1218"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1192">
+                        <rect key="frame" x="319" y="112" width="117" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Sigma (deg):" id="2444">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1193">
+                        <rect key="frame" x="319" y="86" width="117" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Radius (deg):" id="2445">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Radius (limit) of the Gabor" verticalHuggingPriority="750" id="1194">
+                        <rect key="frame" x="441" y="82" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2446">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.00" negativeFormat="-0.00" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1195">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.00"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIRadiusDeg" id="2762"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1196">
+                        <rect key="frame" x="287" y="140" width="149" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Spatial Freq. (cyc/deg):" id="2447">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Spatial frequency of Gabor" verticalHuggingPriority="750" id="1209">
+                        <rect key="frame" x="441" y="138" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2448">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="#,##0.000" negativeFormat="-#,##0.000" localizesFormat="NO" hasThousandSeparators="NO" id="2877">
+                                <real key="minimum" value="0.0"/>
+                                <decimal key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VISpatialFreqCPD" id="2760"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Orientation of the stimulus Gabor" verticalHuggingPriority="750" id="1211">
+                        <rect key="frame" x="441" y="168" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2449">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1212">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="-180"/>
+                                <decimal key="maximum" value="360"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIDirectionDeg" id="2758"/>
+                            <outlet property="nextKeyView" destination="1190" id="1234"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1213">
+                        <rect key="frame" x="319" y="170" width="117" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Direction (deg):" id="2450">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2517">
+                        <rect key="frame" x="48" y="138" width="135" height="19"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Rel. Distr. Contrast:" id="2521">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Factor used for each step in current" verticalHuggingPriority="750" id="2518">
+                        <rect key="frame" x="188" y="138" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2519">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="0" negativeFormat="-0" numberStyle="decimal" generatesDecimalNumbers="YES" alwaysShowsDecimalSeparator="YES" usesGroupingSeparator="NO" paddingCharacter="" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="1" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyCode="USD" currencySymbol="$" internationalCurrencySymbol="USD" currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="2520">
+                                <real key="minimum" value="0.0"/>
+                                <real key="maximum" value="1"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIRelDistContrast" id="2754"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2878">
+                        <rect key="frame" x="24" y="95" width="159" height="34"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Min. Contrast Change:" id="2882">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Factor used for each step in current" verticalHuggingPriority="750" id="2879">
+                        <rect key="frame" x="188" y="110" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2880">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" minimumIntegerDigits="0" maximumIntegerDigits="42" id="2881">
+                                <real key="minimum" value="0.0"/>
+                                <real key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIMinContrastChange" id="2885"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1241">
+                        <rect key="frame" x="69" y="225" width="114" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Interstim (ms):" id="2453">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Duration of each of the two intervals" verticalHuggingPriority="750" id="1243">
+                        <rect key="frame" x="188" y="223" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2454">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIInterstimMS" id="2750">
+                                <dictionary key="options">
+                                    <bool key="NSConditionallySetsEnabled" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Time between fixation and first interval" verticalHuggingPriority="750" id="1245">
+                        <rect key="frame" x="188" y="307" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2455">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIStimDurationMS" id="2747"/>
+                            <outlet property="nextKeyView" destination="1243" id="1252"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1247">
+                        <rect key="frame" x="51" y="309" width="132" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Stim. Duration (ms):" id="2456">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Time between fixation and first interval" verticalHuggingPriority="750" id="1286">
+                        <rect key="frame" x="188" y="251" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2459">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIStimLeadMS" id="2749"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1287">
+                        <rect key="frame" x="51" y="253" width="132" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Stim. Lead (ms):" id="2460">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1290">
+                        <rect key="frame" x="24" y="180" width="159" height="34"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Interstim Jitter Tau (ms):" id="2461">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Duration of each of the two intervals" verticalHuggingPriority="750" id="1291">
+                        <rect key="frame" x="188" y="195" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2462">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1301">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIInterstimJitterTauMS" id="2825"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Time between fixation and first interval" verticalHuggingPriority="750" id="1292">
+                        <rect key="frame" x="188" y="279" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2463">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1300">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIStimJitterPC" id="2748"/>
+                            <outlet property="nextKeyView" destination="1291" id="1295"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1293">
+                        <rect key="frame" x="51" y="281" width="132" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Dur. Jitter (%):" id="2464">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="1362">
+                        <rect key="frame" x="389" y="12" width="136" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Gabor Settings" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="2465">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doGaborSettings:" target="-2" id="1363"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="2869">
+                        <rect key="frame" x="136" y="12" width="136" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Target Settings" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="2870">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doTargetSpotSettings" target="-2" id="2872"/>
+                        </connections>
+                    </button>
+                    <button toolTip="All 100% contrast, Change persists" id="2576">
+                        <rect key="frame" x="147" y="58" width="114" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Training Mode" bezelStyle="regularSquare" imagePosition="right" alignment="left" inset="2" id="2584">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VITrainingMode" id="2763"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="2954">
+                        <rect key="frame" x="4" y="86" width="180" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rel. Distr. Contrast Change:" id="2955">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2956">
+                        <rect key="frame" x="188" y="83" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2957">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="0" negativeFormat="-0" numberStyle="decimal" generatesDecimalNumbers="YES" alwaysShowsDecimalSeparator="YES" usesGroupingSeparator="NO" paddingCharacter="" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="1" maximumFractionDigits="2" id="2958">
+                                <real key="minimum" value="0.0"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIRelDistContrastChange" id="2961"/>
+                        </connections>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <menu title="Menu" autoenablesItems="NO" id="813" userLabel="Actions">
+            <items>
+                <menuItem title="Run" keyEquivalent="r" id="816">
+                    <connections>
+                        <action selector="doRunStop:" target="-2" id="974"/>
+                        <binding destination="498" name="title" keyPath="values.VITaskStatus" id="2806">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">TaskStatusTitleTransformer</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </menuItem>
+                <menuItem title="Juice" keyEquivalent="j" id="814">
+                    <connections>
+                        <action selector="doJuice:" target="-2" id="975"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="815">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Switch to RFMap" keyEquivalent="M" id="1129">
+                    <connections>
+                        <action selector="doRFMap:" target="-2" id="1131"/>
+                        <binding destination="498" name="enabled" keyPath="values.VITaskStatus" id="2876">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="1130">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Reset" keyEquivalent="-" id="817">
+                    <connections>
+                        <action selector="doReset:" target="-2" id="976"/>
+                        <binding destination="498" name="enabled" keyPath="values.VITaskStatus" id="2875">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">TaskStatusNoFileTransformer</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <menu title="Menu" autoenablesItems="NO" id="818" userLabel="Settings">
+            <items>
+                <menuItem title="Behavior Settings…" keyEquivalent="1" id="819">
+                    <connections>
+                        <action selector="makeKeyAndOrderFront:" target="425" id="824"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Stimulus Settings…" keyEquivalent="2" id="820">
+                    <connections>
+                        <action selector="makeKeyAndOrderFront:" target="594" id="825"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Staircase Settings…" keyEquivalent="3" id="1811">
+                    <connections>
+                        <action selector="makeKeyAndOrderFront:" target="2894" id="2918"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Alpha Settings…" keyEquivalent="4" id="3002">
+                    <connections>
+                        <action selector="doStimSettings:" target="-2" id="3004"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="Staircase Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="StaircaseSettingsWindow" animationBehavior="default" id="1790" userLabel="QUEST Settings" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="100" y="331" width="258" height="124"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="1791">
+                <rect key="frame" x="0.0" y="0.0" width="258" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="1795">
+                        <rect key="frame" x="34" y="84" width="121" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Test Jitter (%):" id="2471">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of tries on each condition in a block before it is skipped" verticalHuggingPriority="750" id="1794">
+                        <rect key="frame" x="160" y="82" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2470">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="1803">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIQuestJitterPC" id="2764"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1793">
+                        <rect key="frame" x="-1" y="52" width="156" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Threshold Guess:" id="2469">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of tries on each condition in a block before it is skipped" verticalHuggingPriority="750" id="1792">
+                        <rect key="frame" x="160" y="50" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2468">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" hasThousandSeparators="NO" thousandSeparator="," id="1806">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <real key="maximum" value="1"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIQuestGuessContrast" id="2874"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2585">
+                        <rect key="frame" x="17" y="20" width="138" height="19"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Performance Target:" id="2589">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of tries on each condition in a block before it is skipped" verticalHuggingPriority="750" id="2586">
+                        <rect key="frame" x="160" y="20" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2587">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.00" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="2588">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.00">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="smallSystem"/>
+                                            <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <real key="minimum" value="0.0"/>
+                                <real key="maximum" value="1"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIQuestCriterion" id="2893"/>
+                        </connections>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="Staircase Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="StaircaseSettingsWindow" animationBehavior="default" id="2894" userLabel="Staircase Settings" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="100" y="331" width="276" height="151"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="2895">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="2901">
+                        <rect key="frame" x="17" y="104" width="156" height="24"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Contrast Step Down (%):" id="2902">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of tries on each condition in a block before it is skipped" verticalHuggingPriority="750" id="2900">
+                        <rect key="frame" x="178" y="109" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2903">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="#.#" localizesFormat="NO" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="1" id="2904">
+                                <decimal key="minimum" value="0"/>
+                                <real key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIStepDownPC" id="2916"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2899">
+                        <rect key="frame" x="17" y="79" width="156" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Staircase Start (%):" id="2905">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Number of tries on each condition in a block before it is skipped" verticalHuggingPriority="750" id="2898">
+                        <rect key="frame" x="178" y="77" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="2906">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="#.#" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="1" id="2907">
+                                <decimal key="minimum" value="0"/>
+                                <real key="maximum" value="100"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VIStartContrastPC" id="2917"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="2914">
+                        <rect key="frame" x="136" y="19" width="120" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundRect" title="Set to Start Values" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2915">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="cellTitle"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doStaircaseReset:" target="-2" id="2919"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="2990">
+                        <rect key="frame" x="59" y="52" width="114" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="N Correct For Up:" id="2991">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2992">
+                        <rect key="frame" x="178" y="47" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="2993">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" minimumIntegerDigits="0" maximumIntegerDigits="42" id="3000">
+                                <real key="minimum" value="1"/>
+                                <real key="maximum" value="4"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="498" name="value" keyPath="values.VINumCorrectStaircaseUp" id="2999"/>
+                        </connections>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+</document>

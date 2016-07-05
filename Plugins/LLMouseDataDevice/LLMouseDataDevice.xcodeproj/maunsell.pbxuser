@@ -1,0 +1,149 @@
+// !$*UTF8*$!
+{
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Development;
+		activeTarget = 8D5B49AC048680CD000E48DA /* LLMouseDataDevice */;
+		addToTargets = (
+			8D5B49AC048680CD000E48DA /* LLMouseDataDevice */,
+		);
+		codeSenseManager = 69473FF80B096208005DE552 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					554,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					374,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 321382897;
+			PBXWorkspaceStateSaveDate = 321382897;
+		};
+		perUserProjectItems = {
+			694740140B09637B005DE552 /* PBXTextBookmark */ = 694740140B09637B005DE552 /* PBXTextBookmark */;
+			694740150B09637B005DE552 /* PBXTextBookmark */ = 694740150B09637B005DE552 /* PBXTextBookmark */;
+			69BBEFD01327EA2F004F9278 /* PBXTextBookmark */ = 69BBEFD01327EA2F004F9278 /* PBXTextBookmark */;
+			69D6E2F20F62C2AA006F159E /* PBXTextBookmark */ = 69D6E2F20F62C2AA006F159E /* PBXTextBookmark */;
+		};
+		sourceControlManager = 69473FF70B096208005DE552 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	32DBCF630370AF2F00C91783 /* LLMouseDataDevice_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {673, 871}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {673, 871}}";
+		};
+	};
+	69473FF70B096208005DE552 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "Lablib Plugins";
+			};
+		};
+		scmType = "";
+	};
+	69473FF80B096208005DE552 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6947400B0B096310005DE552 /* LLMouseDataDevicePIugin.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {673, 871}}";
+			sepNavSelRange = "{118, 0}";
+			sepNavVisRect = "{{0, 0}, {673, 871}}";
+		};
+	};
+	6947400C0B096310005DE552 /* LLMouseDataDevicePIugin.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {732, 411}}";
+			sepNavSelRange = "{141, 321}";
+			sepNavVisRange = "{0, 467}";
+			sepNavVisRect = "{{0, 0}, {752, 417}}";
+		};
+	};
+	694740140B09637B005DE552 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32DBCF630370AF2F00C91783 /* LLMouseDataDevice_Prefix.pch */;
+		name = "LLMouseDataDevice_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 166;
+		vrLoc = 0;
+	};
+	694740150B09637B005DE552 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6947400B0B096310005DE552 /* LLMouseDataDevicePIugin.h */;
+		name = "LLMouseDataDevicePIugin.h: 6";
+		rLen = 0;
+		rLoc = 118;
+		rType = 0;
+		vrLen = 239;
+		vrLoc = 0;
+	};
+	69BBEFD01327EA2F004F9278 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6947400C0B096310005DE552 /* LLMouseDataDevicePIugin.m */;
+		name = "LLMouseDataDevicePIugin.m: 7";
+		rLen = 321;
+		rLoc = 141;
+		rType = 0;
+		vrLen = 467;
+		vrLoc = 0;
+	};
+	69D6E2F20F62C2AA006F159E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6947400C0B096310005DE552 /* LLMouseDataDevicePIugin.m */;
+		name = "LLMouseDataDevicePIugin.m: 7";
+		rLen = 321;
+		rLoc = 141;
+		rType = 0;
+		vrLen = 467;
+		vrLoc = 0;
+	};
+	8D5B49AC048680CD000E48DA /* LLMouseDataDevice */ = {
+		activeExec = 0;
+	};
+}

@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LLDataDevice; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {doOKButton = id; }; 
+            CLASS = LLITC18DataDevice; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {configureWindow = NSWindow; }; 
+            SUPERCLASS = LLDataDevice; 
+        }, 
+        {
+            ACTIONS = {ok = id; }; 
+            CLASS = LLITC18DataSettings; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

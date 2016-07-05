@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SpikeController">
+            <connections>
+                <outlet property="histView0" destination="137" id="150"/>
+                <outlet property="histView1" destination="138" id="151"/>
+                <outlet property="histView2" destination="139" id="152"/>
+                <outlet property="histView3" destination="140" id="153"/>
+                <outlet property="histView4" destination="143" id="154"/>
+                <outlet property="histView5" destination="144" id="155"/>
+                <outlet property="histView6" destination="142" id="156"/>
+                <outlet property="histView7" destination="141" id="157"/>
+                <outlet property="responsePlot" destination="145" id="162"/>
+                <outlet property="scrollView" destination="176" id="178"/>
+                <outlet property="window" destination="76" id="167"/>
+                <outlet property="zoomButton" destination="101" id="135"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Spikes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="SpikeWindow" animationBehavior="default" id="76" userLabel="Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="40" y="144" width="661" height="671"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1152" height="848"/>
+            <value key="minSize" type="size" width="137.85300000000001" height="130"/>
+            <value key="maxSize" type="size" width="661" height="671"/>
+            <view key="contentView" id="77">
+                <rect key="frame" x="7" y="11" width="661" height="671"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="176">
+                        <rect key="frame" x="0.0" y="0.0" width="661" height="671"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="74p-jZ-M29">
+                            <rect key="frame" x="1" y="1" width="659" height="669"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view id="177">
+                                    <rect key="frame" x="0.0" y="0.0" width="644" height="654"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <customView id="175">
+                                            <rect key="frame" x="0.0" y="0.0" width="644" height="654"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="137" customClass="LLHistView">
+                                            <rect key="frame" x="10" y="168" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="138" customClass="LLHistView">
+                                            <rect key="frame" x="168" y="168" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="139" customClass="LLHistView">
+                                            <rect key="frame" x="326" y="168" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="140" customClass="LLHistView">
+                                            <rect key="frame" x="484" y="168" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="141" customClass="LLHistView">
+                                            <rect key="frame" x="484" y="10" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="142" customClass="LLHistView">
+                                            <rect key="frame" x="326" y="10" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="143" customClass="LLHistView">
+                                            <rect key="frame" x="10" y="10" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="144" customClass="LLHistView">
+                                            <rect key="frame" x="168" y="10" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                        <customView id="145" customClass="LLPlotView">
+                                            <rect key="frame" x="10" y="326" width="308" height="318"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </customView>
+                                    </subviews>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="182">
+                            <rect key="frame" x="1" y="655" width="644" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="181">
+                            <rect key="frame" x="645" y="1" width="15" height="654"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <popUpButton verticalHuggingPriority="750" id="101">
+                        <rect key="frame" x="549" y="-4" width="98" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <popUpButtonCell key="cell" type="push" title="150%" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="150" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="108" id="180">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="104">
+                                <items>
+                                    <menuItem title="25%" tag="25" id="103"/>
+                                    <menuItem title="50%" tag="50" id="102"/>
+                                    <menuItem title="75%" tag="75" id="100"/>
+                                    <menuItem title="100%" tag="100" id="106"/>
+                                    <menuItem title="125%" tag="125" id="105"/>
+                                    <menuItem title="150%" state="on" tag="150" id="108"/>
+                                    <menuItem title="200%" tag="200" id="109"/>
+                                    <menuItem title="400%" tag="400" id="107"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="changeZoom:" target="-2" id="166"/>
+                        </connections>
+                    </popUpButton>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="168"/>
+            </connections>
+        </window>
+    </objects>
+</document>

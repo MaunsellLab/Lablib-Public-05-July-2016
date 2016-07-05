@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>20CB29D6-B9A9-4AB3-9F22-5D5B37C6CD0B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lablib</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0634CA05CF4383FAD4A0829E44B80D7692DC2E3B</key>
+		<string>https://github.com/MaunsellLab/Lablib.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lablib.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0634CA05CF4383FAD4A0829E44B80D7692DC2E3B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MaunsellLab/Lablib.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0634CA05CF4383FAD4A0829E44B80D7692DC2E3B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0634CA05CF4383FAD4A0829E44B80D7692DC2E3B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lablib</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>LablibITC18 0</string>
+	<key>CFBundleIconFile</key>
+	<string>KnotPlugin</string>
+	<key>CFBundleIdentifier</key>
+	<string>lablib.lablibITC18-0</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>LLpi</string>
+	<key>CFBundleVersion</key>
+	<string>4.2.0</string>
+	<key>NSPrincipalClass</key>
+	<string>LLITC18DataDevice0</string>
+	<key>Principal Class</key>
+	<string>LLITC18DataDevice0</string>
+</dict>
+</plist>

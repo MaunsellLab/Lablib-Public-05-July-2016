@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VIStimuli">
+            <connections>
+                <outlet property="stimSettingsWindow" destination="3" id="418"/>
+                <outlet property="window" destination="3" id="134"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <userDefaultsController representsSharedInstance="YES" id="137"/>
+        <arrayController objectClassName="NSMutableArray" id="162" userLabel="Change Alpha Table">
+            <declaredKeys>
+                <string>Change Table</string>
+                <string>changes</string>
+                <string>repetitions</string>
+                <string>change</string>
+                <string>VIChangeScale</string>
+                <string>validReps</string>
+                <string>invalidReps</string>
+                <string>VIInstructionTrials</string>
+                <mutableString>arrangedObjects</mutableString>
+            </declaredKeys>
+            <connections>
+                <binding destination="137" name="contentArray" keyPath="values.VIAlphaChangeArray" id="412">
+                    <dictionary key="options">
+                        <bool key="NSHandlesContentAsCompoundValue" value="YES"/>
+                    </dictionary>
+                </binding>
+            </connections>
+        </arrayController>
+        <window title="Stimulus Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="VIStimulusSettingsWindow" animationBehavior="default" id="3" userLabel="Stimulus Settings" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="88" y="362" width="373" height="426"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="4">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="426"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="26">
+                        <rect key="frame" x="136" y="359" width="132" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Max. Change:" id="70">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField toolTip="Time between fixation and first interval" verticalHuggingPriority="750" id="22">
+                        <rect key="frame" x="275" y="356" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="75">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="0.00" negativeFormat="-0.00" localizesFormat="NO" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="2" maximumFractionDigits="2" groupingSeparator="," id="76">
+                                <nil key="negativeInfinitySymbol"/>
+                                <nil key="positiveInfinitySymbol"/>
+                                <real key="minimum" value="0.0"/>
+                                <real key="maximum" value="1"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="137" name="value" keyPath="values.VIMaxAlphaChange" id="414"/>
+                            <binding destination="137" name="enabled" keyPath="values.VITaskStatus" id="273">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                                </dictionary>
+                            </binding>
+                            <outlet property="nextKeyView" destination="15" id="218"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="21">
+                        <rect key="frame" x="95" y="370" width="173" height="34"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Num Alpha Changes:" id="77">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="20">
+                        <rect key="frame" x="275" y="384" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="78">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="79">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <integer key="minimum" value="1"/>
+                                <decimal key="maximum" value="12"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="137" name="value" keyPath="values.VIAlphaChanges" id="413"/>
+                            <binding destination="137" name="enabled" keyPath="values.VITaskStatus" id="272">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                                </dictionary>
+                            </binding>
+                            <outlet property="nextKeyView" destination="22" id="217"/>
+                        </connections>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" id="19">
+                        <rect key="frame" x="224" y="289" width="130" height="26"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <popUpButtonCell key="cell" type="push" title="Linear" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="82" id="80">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="81">
+                                <items>
+                                    <menuItem title="Linear" state="on" id="82"/>
+                                    <menuItem title="Logarithmic" id="83"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="137" name="selectedIndex" keyPath="values.VIChangeAlphaScale" id="416"/>
+                            <binding destination="137" name="enabled" keyPath="values.VITaskStatus" id="276">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </popUpButton>
+                    <textField verticalHuggingPriority="750" id="18">
+                        <rect key="frame" x="136" y="296" width="86" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Scale:" id="84">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="448">
+                        <rect key="frame" x="133" y="292" width="39" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="449">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="0.00" negativeFormat="-0.00" localizesFormat="NO" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="2" maximumFractionDigits="2" id="450">
+                                <real key="minimum" value="0.0"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="137" name="value" keyPath="values.VILoc3AlphaFactor" id="452"/>
+                        </connections>
+                    </textField>
+                    <scrollView horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="16">
+                        <rect key="frame" x="20" y="20" width="333" height="253"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <clipView key="contentView" id="apU-oH-FQY">
+                            <rect key="frame" x="1" y="17" width="316" height="220"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveName="VIChangeArrayTable" headerView="87" id="90">
+                                    <rect key="frame" x="0.0" y="0.0" width="316" height="19"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn identifier="change" width="87" minWidth="40" maxWidth="1000" id="93">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Alpha Change">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" id="94">
+                                                <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="0.00" negativeFormat="-0.00" localizesFormat="NO" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="2" maximumFractionDigits="2" id="95">
+                                                    <integer key="minimum" value="0"/>
+                                                    <integer key="maximum" value="1"/>
+                                                </numberFormatter>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="162" name="value" keyPath="arrangedObjects.change" id="182"/>
+                                                <binding destination="137" name="enabled" keyPath="values.VITaskStatus" id="438">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn identifier="validReps" width="85.91455078125" minWidth="40" maxWidth="1000" id="92">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Valid">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" id="96">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" minimumIntegerDigits="0" maximumIntegerDigits="42" id="97">
+                                                    <decimal key="minimum" value="0"/>
+                                                </numberFormatter>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="162" name="value" keyPath="arrangedObjects.validReps" id="184"/>
+                                                <binding destination="137" name="enabled" keyPath="values.VITaskStatus" id="437">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn identifier="invalidNearReps" width="77" minWidth="40" maxWidth="1000" id="91">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Near">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" id="98">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" minimumIntegerDigits="0" maximumIntegerDigits="42" id="99">
+                                                    <decimal key="minimum" value="0"/>
+                                                </numberFormatter>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="162" name="value" keyPath="arrangedObjects.invalidNearReps" id="422"/>
+                                                <binding destination="137" name="enabled" keyPath="values.VITaskStatus" id="436">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn identifier="invalidFarReps" width="69" minWidth="40" maxWidth="1000" id="419">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Far">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" title="Text Cell" id="420">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" minimumIntegerDigits="0" maximumIntegerDigits="42" id="421">
+                                                    <real key="minimum" value="0.0"/>
+                                                </numberFormatter>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="162" name="value" keyPath="arrangedObjects.invalidFarReps" id="425"/>
+                                                <binding destination="137" name="enabled" keyPath="values.VITaskStatus" id="435">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </tableColumn>
+                                    </tableColumns>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="88">
+                            <rect key="frame" x="1" y="237" width="316" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="89">
+                            <rect key="frame" x="317" y="17" width="15" height="220"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <tableHeaderView key="headerView" id="87">
+                            <rect key="frame" x="0.0" y="0.0" width="316" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </tableHeaderView>
+                    </scrollView>
+                    <textField toolTip="Time between fixation and first interval" verticalHuggingPriority="750" id="15">
+                        <rect key="frame" x="275" y="326" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="100">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="0.00" negativeFormat="-0.00" localizesFormat="NO" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="2" maximumFractionDigits="2" groupingSeparator="," id="101">
+                                <nil key="negativeInfinitySymbol"/>
+                                <nil key="positiveInfinitySymbol"/>
+                                <integer key="minimum" value="0"/>
+                                <integer key="maximum" value="1"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="137" name="value" keyPath="values.VIMinAlphaChange" id="415"/>
+                            <binding destination="137" name="enabled" keyPath="values.VITaskStatus" id="274">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">TaskStatusIdleAndNoFileTransformer</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="14">
+                        <rect key="frame" x="136" y="329" width="132" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Min. Change:" id="102">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="439">
+                        <rect key="frame" x="16" y="321" width="118" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Loc2 alpha factor:" id="440">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="441">
+                        <rect key="frame" x="133" y="318" width="39" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="442">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="0.00" negativeFormat="-0.00" localizesFormat="NO" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="2" maximumFractionDigits="2" id="445">
+                                <real key="minimum" value="0.0"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="137" name="value" keyPath="values.VILoc2AlphaFactor" id="453"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="446">
+                        <rect key="frame" x="16" y="296" width="118" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Loc3 alpha factor:" id="447">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+</document>

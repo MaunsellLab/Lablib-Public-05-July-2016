@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>data</string>
+				<string>*</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Lablib Data</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>DAT6</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>LLDataDoc</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>plugin</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>KnotPlugin</string>
+			<key>CFBundleTypeName</key>
+			<string>Lablib Task Plugin</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>BNDL</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSDocumentClass</key>
+			<string>LLTaskPlugIn</string>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>XML</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>Knot</string>
+	<key>CFBundleIconFile</key>
+	<string>Knot</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Knot</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>Lablib Knot Application</string>
+	<key>CFBundleSignature</key>
+	<string>LLkn</string>
+	<key>CFBundleVersion</key>
+	<string>4.2.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>KNAppController</string>
+</dict>
+</plist>

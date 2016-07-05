@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		691C46F60B27033400DA5103 /* Lablib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691C46F50B27033400DA5103 /* Lablib.framework */; };
+		695982D1080209EB0090B9A6 /* VTFixGraceState.h in Resources */ = {isa = PBXBuildFile; fileRef = 695982CF080209EB0090B9A6 /* VTFixGraceState.h */; };
+		695982D2080209EB0090B9A6 /* VTFixGraceState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695982D0080209EB0090B9A6 /* VTFixGraceState.m */; };
+		69E24E1B07A5C25A00DDC096 /* VideoTest.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247C907A5562500DDC096 /* VideoTest.h */; };
+		69E24E1C07A5C25B00DDC096 /* VideoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E247CA07A5562500DDC096 /* VideoTest.m */; };
+		69E24E1E07A5C25E00DDC096 /* VTStimuli.h in Resources */ = {isa = PBXBuildFile; fileRef = 69EAD86F04352E4F00F95509 /* VTStimuli.h */; };
+		69E24E1F07A5C25F00DDC096 /* VTStimuli.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EAD87004352E4F00F95509 /* VTStimuli.m */; };
+		69E24E2107A5C27000DDC096 /* VTBehaviorController.h in Resources */ = {isa = PBXBuildFile; fileRef = 690B798D047ADA9F00A80164 /* VTBehaviorController.h */; };
+		69E24E2207A5C27100DDC096 /* VTBehaviorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690B798E047ADA9F00A80164 /* VTBehaviorController.m */; };
+		69E24E2307A5C27200DDC096 /* VTEyeXYController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E96F8D0472CC5C00F95509 /* VTEyeXYController.h */; };
+		69E24E2407A5C27200DDC096 /* VTEyeXYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E96F8E0472CC5C00F95509 /* VTEyeXYController.m */; };
+		69E24E2507A5C27300DDC096 /* VTSpikeController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69F13A5F04716CF400F95509 /* VTSpikeController.h */; };
+		69E24E2607A5C27400DDC096 /* VTSpikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F13A6004716CF400F95509 /* VTSpikeController.m */; };
+		69E24E2707A5C27400DDC096 /* VTSummaryController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69B9AE720482FBDD00F95509 /* VTSummaryController.h */; };
+		69E24E2807A5C27600DDC096 /* VTSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B9AE730482FBDD00F95509 /* VTSummaryController.m */; };
+		69E24E2907A5C27700DDC096 /* VTXTController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69B5A7CA0471DBA300F95509 /* VTXTController.h */; };
+		69E24E2A07A5C27800DDC096 /* VTXTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B5A7CB0471DBA300F95509 /* VTXTController.m */; };
+		69E24E2D07A5C29700DDC096 /* VTStateSystem.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F10486AA2000FE06D7 /* VTStateSystem.h */; };
+		69E24E2E07A5C29800DDC096 /* VTStateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879F20486AA2000FE06D7 /* VTStateSystem.m */; };
+		69E24E2F07A5C29900DDC096 /* VTBlockedState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0480486D97300FE06D7 /* VTBlockedState.h */; };
+		69E24E3007A5C29A00DDC096 /* VTBlockedState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0490486D97300FE06D7 /* VTBlockedState.m */; };
+		69E24E3107A5C29B00DDC096 /* VTEndtrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0400486D3B700FE06D7 /* VTEndtrialState.h */; };
+		69E24E3207A5C29B00DDC096 /* VTEndtrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0410486D3B700FE06D7 /* VTEndtrialState.m */; };
+		69E24E3307A5C29C00DDC096 /* VTFixonState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A04C0486DB1300FE06D7 /* VTFixonState.h */; };
+		69E24E3407A5C29D00DDC096 /* VTFixonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A04D0486DB1300FE06D7 /* VTFixonState.m */; };
+		69E24E3507A5C29D00DDC096 /* VTGapState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69881C08059D0510008E90BB /* VTGapState.h */; };
+		69E24E3607A5C29E00DDC096 /* VTGapState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69881C09059D0510008E90BB /* VTGapState.m */; };
+		69E24E3707A5C29F00DDC096 /* VTIdleState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879FD0486B06A00FE06D7 /* VTIdleState.h */; };
+		69E24E3807A5C2A000DDC096 /* VTIdleState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FE0486B06A00FE06D7 /* VTIdleState.m */; };
+		69E24E3907A5C2A000DDC096 /* VTIntertrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 6983253D0486BE9600FE06D7 /* VTIntertrialState.h */; };
+		69E24E3A07A5C2A100DDC096 /* VTIntertrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6983253E0486BE9600FE06D7 /* VTIntertrialState.m */; };
+		69E24E3B07A5C2A200DDC096 /* VTIntervalOneState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A05C0486F0A700FE06D7 /* VTIntervalOneState.h */; };
+		69E24E3C07A5C2A300DDC096 /* VTIntervalOneState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A05D0486F0A700FE06D7 /* VTIntervalOneState.m */; };
+		69E24E3F07A5C2A500DDC096 /* VTPoststimState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0600486F17800FE06D7 /* VTPoststimState.h */; };
+		69E24E4007A5C2A600DDC096 /* VTPoststimState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0610486F17800FE06D7 /* VTPoststimState.m */; };
+		69E24E4107A5C2AA00DDC096 /* VTPrestimState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0580486E0EC00FE06D7 /* VTPrestimState.h */; };
+		69E24E4207A5C2AB00DDC096 /* VTPrestimState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0590486E0EC00FE06D7 /* VTPrestimState.m */; };
+		69E24E4307A5C2AC00DDC096 /* VTReactState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0640486F23700FE06D7 /* VTReactState.h */; };
+		69E24E4407A5C2AC00DDC096 /* VTReactState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0650486F23700FE06D7 /* VTReactState.m */; };
+		69E24E4507A5C2AD00DDC096 /* VTSaccadeState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69F443A305DEE56D000705E2 /* VTSaccadeState.h */; };
+		69E24E4607A5C2AE00DDC096 /* VTSaccadeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F443A405DEE56D000705E2 /* VTSaccadeState.m */; };
+		69E24E4707A5C2AE00DDC096 /* VTStartState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F50486AAC100FE06D7 /* VTStartState.h */; };
+		69E24E4807A5C2AF00DDC096 /* VTStartState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879F60486AAC100FE06D7 /* VTStartState.m */; };
+		69E24E4907A5C2B000DDC096 /* VTStarttrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0440486D59800FE06D7 /* VTStarttrialState.h */; };
+		69E24E4A07A5C2B000DDC096 /* VTStarttrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0450486D59800FE06D7 /* VTStarttrialState.m */; };
+		69E24E4B07A5C2B100DDC096 /* VTStopState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F90486AF9300FE06D7 /* VTStopState.h */; };
+		69E24E4C07A5C2B200DDC096 /* VTStopState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FA0486AF9300FE06D7 /* VTStopState.m */; };
+		69E24E4D07A5C2B300DDC096 /* VTTargetsOnState.h in Resources */ = {isa = PBXBuildFile; fileRef = 692683F705DD4717004EA4A6 /* VTTargetsOnState.h */; };
+		69E24E4E07A5C2B400DDC096 /* VTTargetsOnState.m in Sources */ = {isa = PBXBuildFile; fileRef = 692683F805DD4717004EA4A6 /* VTTargetsOnState.m */; };
+		69E24E4F07A5C2BB00DDC096 /* VideoTest_Prefix.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247A107A5527C00DDC096 /* VideoTest_Prefix.h */; };
+		69E24E5007A5C2BC00DDC096 /* VT.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247A207A5527C00DDC096 /* VT.h */; };
+		69E24E5107A5C2BD00DDC096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		69E24E5207A5C2BD00DDC096 /* UtilityFunctions.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */; };
+		69E24E5307A5C2BE00DDC096 /* UtilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69975550043E645C00F95509 /* UtilityFunctions.m */; };
+		69E24E5407A5C2C300DDC096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		69E24E5507A5C2C400DDC096 /* VideoTest.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* VideoTest.nib */; };
+		69E24E5607A5C2C500DDC096 /* VTBehaviorController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69B5A7C70471D9E400F95509 /* VTBehaviorController.nib */; };
+		69E24E5707A5C2C500DDC096 /* VTEyeXYController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69E96F950472CCC300F95509 /* VTEyeXYController.nib */; };
+		69E24E5807A5C2C700DDC096 /* VTSpikeController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69F13A6304716D0D00F95509 /* VTSpikeController.nib */; };
+		69E24E5907A5C2C800DDC096 /* VTMessageController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69CFF8140476A44400F95509 /* VTMessageController.nib */; };
+		69E24E5A07A5C2C900DDC096 /* VTSummaryController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 69B9AE6F0482FB9F00F95509 /* VTSummaryController.nib */; };
+		69E24E5B07A5C2C900DDC096 /* VTXTController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 690B7991047ADABA00A80164 /* VTXTController.nib */; };
+		69E24E5C07A5C2D100DDC096 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 696D8C8A075D683B0057453A /* UserDefaults.plist */; };
+		69E24E5E07A5C2E100DDC096 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		69E24E6207A5C2E200DDC096 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */; };
+		69E24E7407A5C34300DDC096 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		69E24F0907A5C34400DDC096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = VideoTest.xib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		690B798D047ADA9F00A80164 /* VTBehaviorController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VTBehaviorController.h; sourceTree = "<group>"; };
+		690B798E047ADA9F00A80164 /* VTBehaviorController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VTBehaviorController.m; sourceTree = "<group>"; };
+		690B7992047ADABA00A80164 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = VTXTController.xib; sourceTree = "<group>"; };
+		691C46F50B27033400DA5103 /* Lablib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lablib.framework; path = ../../Frameworks/Lablib/build/Development/Lablib.framework; sourceTree = SOURCE_ROOT; };
+		692683F705DD4717004EA4A6 /* VTTargetsOnState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTargetsOnState.h; sourceTree = "<group>"; };
+		692683F805DD4717004EA4A6 /* VTTargetsOnState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTargetsOnState.m; sourceTree = "<group>"; };
+		694879F10486AA2000FE06D7 /* VTStateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTStateSystem.h; sourceTree = "<group>"; };
+		694879F20486AA2000FE06D7 /* VTStateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTStateSystem.m; sourceTree = "<group>"; };
+		694879F50486AAC100FE06D7 /* VTStartState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTStartState.h; sourceTree = "<group>"; };
+		694879F60486AAC100FE06D7 /* VTStartState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTStartState.m; sourceTree = "<group>"; };
+		694879F90486AF9300FE06D7 /* VTStopState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTStopState.h; sourceTree = "<group>"; };
+		694879FA0486AF9300FE06D7 /* VTStopState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTStopState.m; sourceTree = "<group>"; };
+		694879FD0486B06A00FE06D7 /* VTIdleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTIdleState.h; sourceTree = "<group>"; };
+		694879FE0486B06A00FE06D7 /* VTIdleState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTIdleState.m; sourceTree = "<group>"; };
+		695982CF080209EB0090B9A6 /* VTFixGraceState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTFixGraceState.h; sourceTree = "<group>"; };
+		695982D0080209EB0090B9A6 /* VTFixGraceState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTFixGraceState.m; sourceTree = "<group>"; };
+		6968EA58059DDD1900E33065 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		696D8C8A075D683B0057453A /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
+		6983253D0486BE9600FE06D7 /* VTIntertrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTIntertrialState.h; sourceTree = "<group>"; };
+		6983253E0486BE9600FE06D7 /* VTIntertrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTIntertrialState.m; sourceTree = "<group>"; };
+		69881C08059D0510008E90BB /* VTGapState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTGapState.h; sourceTree = "<group>"; };
+		69881C09059D0510008E90BB /* VTGapState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTGapState.m; sourceTree = "<group>"; };
+		69975550043E645C00F95509 /* UtilityFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFunctions.m; sourceTree = "<group>"; };
+		69B5A7C80471D9E400F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = VTBehaviorController.xib; sourceTree = "<group>"; };
+		69B5A7CA0471DBA300F95509 /* VTXTController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VTXTController.h; sourceTree = "<group>"; };
+		69B5A7CB0471DBA300F95509 /* VTXTController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VTXTController.m; sourceTree = "<group>"; };
+		69B9AE700482FB9F00F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = VTSummaryController.xib; sourceTree = "<group>"; };
+		69B9AE720482FBDD00F95509 /* VTSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VTSummaryController.h; sourceTree = "<group>"; };
+		69B9AE730482FBDD00F95509 /* VTSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VTSummaryController.m; sourceTree = "<group>"; };
+		69CFF8150476A44400F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = VTMessageController.xib; sourceTree = "<group>"; };
+		69E247A107A5527C00DDC096 /* VideoTest_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VideoTest_Prefix.h; sourceTree = "<group>"; };
+		69E247A207A5527C00DDC096 /* VT.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VT.h; sourceTree = "<group>"; };
+		69E247A907A5529700DDC096 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E247C907A5562500DDC096 /* VideoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTest.h; sourceTree = "<group>"; };
+		69E247CA07A5562500DDC096 /* VideoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTest.m; sourceTree = "<group>"; };
+		69E24E1607A5C21F00DDC096 /* VideoTest.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoTest.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityFunctions.h; sourceTree = "<group>"; };
+		69E8A0400486D3B700FE06D7 /* VTEndtrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTEndtrialState.h; sourceTree = "<group>"; };
+		69E8A0410486D3B700FE06D7 /* VTEndtrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTEndtrialState.m; sourceTree = "<group>"; };
+		69E8A0440486D59800FE06D7 /* VTStarttrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTStarttrialState.h; sourceTree = "<group>"; };
+		69E8A0450486D59800FE06D7 /* VTStarttrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTStarttrialState.m; sourceTree = "<group>"; };
+		69E8A0480486D97300FE06D7 /* VTBlockedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBlockedState.h; sourceTree = "<group>"; };
+		69E8A0490486D97300FE06D7 /* VTBlockedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBlockedState.m; sourceTree = "<group>"; };
+		69E8A04C0486DB1300FE06D7 /* VTFixonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTFixonState.h; sourceTree = "<group>"; };
+		69E8A04D0486DB1300FE06D7 /* VTFixonState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTFixonState.m; sourceTree = "<group>"; };
+		69E8A0580486E0EC00FE06D7 /* VTPrestimState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPrestimState.h; sourceTree = "<group>"; };
+		69E8A0590486E0EC00FE06D7 /* VTPrestimState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPrestimState.m; sourceTree = "<group>"; };
+		69E8A05C0486F0A700FE06D7 /* VTIntervalOneState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTIntervalOneState.h; sourceTree = "<group>"; };
+		69E8A05D0486F0A700FE06D7 /* VTIntervalOneState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTIntervalOneState.m; sourceTree = "<group>"; };
+		69E8A0600486F17800FE06D7 /* VTPoststimState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPoststimState.h; sourceTree = "<group>"; };
+		69E8A0610486F17800FE06D7 /* VTPoststimState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPoststimState.m; sourceTree = "<group>"; };
+		69E8A0640486F23700FE06D7 /* VTReactState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTReactState.h; sourceTree = "<group>"; };
+		69E8A0650486F23700FE06D7 /* VTReactState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTReactState.m; sourceTree = "<group>"; };
+		69E96F8D0472CC5C00F95509 /* VTEyeXYController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VTEyeXYController.h; sourceTree = "<group>"; };
+		69E96F8E0472CC5C00F95509 /* VTEyeXYController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VTEyeXYController.m; sourceTree = "<group>"; };
+		69E96F960472CCC300F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = VTEyeXYController.xib; sourceTree = "<group>"; };
+		69EAD86F04352E4F00F95509 /* VTStimuli.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VTStimuli.h; sourceTree = "<group>"; };
+		69EAD87004352E4F00F95509 /* VTStimuli.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VTStimuli.m; sourceTree = "<group>"; };
+		69F13A5F04716CF400F95509 /* VTSpikeController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VTSpikeController.h; sourceTree = "<group>"; };
+		69F13A6004716CF400F95509 /* VTSpikeController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VTSpikeController.m; sourceTree = "<group>"; };
+		69F13A6404716D0D00F95509 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = VTSpikeController.xib; sourceTree = "<group>"; };
+		69F443A305DEE56D000705E2 /* VTSaccadeState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VTSaccadeState.h; sourceTree = "<group>"; };
+		69F443A405DEE56D000705E2 /* VTSaccadeState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VTSaccadeState.m; sourceTree = "<group>"; };
+		E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69E24E1407A5C21F00DDC096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E5E07A5C2E100DDC096 /* Cocoa.framework in Frameworks */,
+				69E24E6207A5C2E200DDC096 /* OpenGL.framework in Frameworks */,
+				69E24E7407A5C34300DDC096 /* AppKit.framework in Frameworks */,
+				69E24F0907A5C34400DDC096 /* Foundation.framework in Frameworks */,
+				691C46F60B27033400DA5103 /* Lablib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				696D3833059E19DE0018E5D5 /* Controllers */,
+				694879ED0486A83B00FE06D7 /* On-line Display */,
+				694879EE0486A85E00FE06D7 /* State System */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				691C46F50B27033400DA5103 /* Lablib.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69E24E1607A5C21F00DDC096 /* VideoTest.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* terstes */ = {
+			isa = PBXGroup;
+			children = (
+				6968EA58059DDD1900E33065 /* Notes.txt */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				69C1CC640827E43C00A71FDE /* Plists */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = terstes;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				69E247A107A5527C00DDC096 /* VideoTest_Prefix.h */,
+				69E247A207A5527C00DDC096 /* VT.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */,
+				69975550043E645C00F95509 /* UtilityFunctions.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* VideoTest.nib */,
+				69B5A7C70471D9E400F95509 /* VTBehaviorController.nib */,
+				69E96F950472CCC300F95509 /* VTEyeXYController.nib */,
+				69CFF8140476A44400F95509 /* VTMessageController.nib */,
+				69F13A6304716D0D00F95509 /* VTSpikeController.nib */,
+				69B9AE6F0482FB9F00F95509 /* VTSummaryController.nib */,
+				690B7991047ADABA00A80164 /* VTXTController.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		694879ED0486A83B00FE06D7 /* On-line Display */ = {
+			isa = PBXGroup;
+			children = (
+				690B798D047ADA9F00A80164 /* VTBehaviorController.h */,
+				690B798E047ADA9F00A80164 /* VTBehaviorController.m */,
+				69E96F8D0472CC5C00F95509 /* VTEyeXYController.h */,
+				69E96F8E0472CC5C00F95509 /* VTEyeXYController.m */,
+				69F13A5F04716CF400F95509 /* VTSpikeController.h */,
+				69F13A6004716CF400F95509 /* VTSpikeController.m */,
+				69B9AE720482FBDD00F95509 /* VTSummaryController.h */,
+				69B9AE730482FBDD00F95509 /* VTSummaryController.m */,
+				69B5A7CA0471DBA300F95509 /* VTXTController.h */,
+				69B5A7CB0471DBA300F95509 /* VTXTController.m */,
+			);
+			name = "On-line Display";
+			sourceTree = "<group>";
+		};
+		694879EE0486A85E00FE06D7 /* State System */ = {
+			isa = PBXGroup;
+			children = (
+				694879F10486AA2000FE06D7 /* VTStateSystem.h */,
+				694879F20486AA2000FE06D7 /* VTStateSystem.m */,
+				69E8A0480486D97300FE06D7 /* VTBlockedState.h */,
+				69E8A0490486D97300FE06D7 /* VTBlockedState.m */,
+				69E8A0400486D3B700FE06D7 /* VTEndtrialState.h */,
+				69E8A0410486D3B700FE06D7 /* VTEndtrialState.m */,
+				695982CF080209EB0090B9A6 /* VTFixGraceState.h */,
+				695982D0080209EB0090B9A6 /* VTFixGraceState.m */,
+				69E8A04C0486DB1300FE06D7 /* VTFixonState.h */,
+				69E8A04D0486DB1300FE06D7 /* VTFixonState.m */,
+				69881C08059D0510008E90BB /* VTGapState.h */,
+				69881C09059D0510008E90BB /* VTGapState.m */,
+				694879FD0486B06A00FE06D7 /* VTIdleState.h */,
+				694879FE0486B06A00FE06D7 /* VTIdleState.m */,
+				6983253D0486BE9600FE06D7 /* VTIntertrialState.h */,
+				6983253E0486BE9600FE06D7 /* VTIntertrialState.m */,
+				69E8A05C0486F0A700FE06D7 /* VTIntervalOneState.h */,
+				69E8A05D0486F0A700FE06D7 /* VTIntervalOneState.m */,
+				69E8A0600486F17800FE06D7 /* VTPoststimState.h */,
+				69E8A0610486F17800FE06D7 /* VTPoststimState.m */,
+				69E8A0580486E0EC00FE06D7 /* VTPrestimState.h */,
+				69E8A0590486E0EC00FE06D7 /* VTPrestimState.m */,
+				69E8A0640486F23700FE06D7 /* VTReactState.h */,
+				69E8A0650486F23700FE06D7 /* VTReactState.m */,
+				69F443A305DEE56D000705E2 /* VTSaccadeState.h */,
+				69F443A405DEE56D000705E2 /* VTSaccadeState.m */,
+				694879F50486AAC100FE06D7 /* VTStartState.h */,
+				694879F60486AAC100FE06D7 /* VTStartState.m */,
+				69E8A0440486D59800FE06D7 /* VTStarttrialState.h */,
+				69E8A0450486D59800FE06D7 /* VTStarttrialState.m */,
+				694879F90486AF9300FE06D7 /* VTStopState.h */,
+				694879FA0486AF9300FE06D7 /* VTStopState.m */,
+				692683F705DD4717004EA4A6 /* VTTargetsOnState.h */,
+				692683F805DD4717004EA4A6 /* VTTargetsOnState.m */,
+			);
+			name = "State System";
+			sourceTree = "<group>";
+		};
+		696D3833059E19DE0018E5D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69E247C907A5562500DDC096 /* VideoTest.h */,
+				69E247CA07A5562500DDC096 /* VideoTest.m */,
+				69EAD86F04352E4F00F95509 /* VTStimuli.h */,
+				69EAD87004352E4F00F95509 /* VTStimuli.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		69C1CC640827E43C00A71FDE /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				696D8C8A075D683B0057453A /* UserDefaults.plist */,
+				69E247A907A5529700DDC096 /* Info.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69E24E1507A5C21F00DDC096 /* VideoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B8D0E9088DAADA002FCFD4 /* Build configuration list for PBXNativeTarget "VideoTest" */;
+			buildPhases = (
+				69E24E1207A5C21F00DDC096 /* Resources */,
+				69E24E1307A5C21F00DDC096 /* Sources */,
+				69E24E1407A5C21F00DDC096 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoTest;
+			productName = VideoTest;
+			productReference = 69E24E1607A5C21F00DDC096 /* VideoTest.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 69B8D0ED088DAADA002FCFD4 /* Build configuration list for PBXProject "VideoTest" */;
+			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* terstes */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69E24E1507A5C21F00DDC096 /* VideoTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69E24E1207A5C21F00DDC096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E1B07A5C25A00DDC096 /* VideoTest.h in Resources */,
+				69E24E1E07A5C25E00DDC096 /* VTStimuli.h in Resources */,
+				69E24E2107A5C27000DDC096 /* VTBehaviorController.h in Resources */,
+				69E24E2307A5C27200DDC096 /* VTEyeXYController.h in Resources */,
+				69E24E2507A5C27300DDC096 /* VTSpikeController.h in Resources */,
+				69E24E2707A5C27400DDC096 /* VTSummaryController.h in Resources */,
+				69E24E2907A5C27700DDC096 /* VTXTController.h in Resources */,
+				69E24E2D07A5C29700DDC096 /* VTStateSystem.h in Resources */,
+				69E24E2F07A5C29900DDC096 /* VTBlockedState.h in Resources */,
+				69E24E3107A5C29B00DDC096 /* VTEndtrialState.h in Resources */,
+				69E24E3307A5C29C00DDC096 /* VTFixonState.h in Resources */,
+				69E24E3507A5C29D00DDC096 /* VTGapState.h in Resources */,
+				69E24E3707A5C29F00DDC096 /* VTIdleState.h in Resources */,
+				69E24E3907A5C2A000DDC096 /* VTIntertrialState.h in Resources */,
+				69E24E3B07A5C2A200DDC096 /* VTIntervalOneState.h in Resources */,
+				69E24E3F07A5C2A500DDC096 /* VTPoststimState.h in Resources */,
+				69E24E4107A5C2AA00DDC096 /* VTPrestimState.h in Resources */,
+				69E24E4307A5C2AC00DDC096 /* VTReactState.h in Resources */,
+				69E24E4507A5C2AD00DDC096 /* VTSaccadeState.h in Resources */,
+				69E24E4707A5C2AE00DDC096 /* VTStartState.h in Resources */,
+				69E24E4907A5C2B000DDC096 /* VTStarttrialState.h in Resources */,
+				69E24E4B07A5C2B100DDC096 /* VTStopState.h in Resources */,
+				69E24E4D07A5C2B300DDC096 /* VTTargetsOnState.h in Resources */,
+				69E24E4F07A5C2BB00DDC096 /* VideoTest_Prefix.h in Resources */,
+				69E24E5007A5C2BC00DDC096 /* VT.h in Resources */,
+				69E24E5207A5C2BD00DDC096 /* UtilityFunctions.h in Resources */,
+				69E24E5407A5C2C300DDC096 /* InfoPlist.strings in Resources */,
+				69E24E5507A5C2C400DDC096 /* VideoTest.nib in Resources */,
+				69E24E5607A5C2C500DDC096 /* VTBehaviorController.nib in Resources */,
+				69E24E5707A5C2C500DDC096 /* VTEyeXYController.nib in Resources */,
+				69E24E5807A5C2C700DDC096 /* VTSpikeController.nib in Resources */,
+				69E24E5907A5C2C800DDC096 /* VTMessageController.nib in Resources */,
+				69E24E5A07A5C2C900DDC096 /* VTSummaryController.nib in Resources */,
+				69E24E5B07A5C2C900DDC096 /* VTXTController.nib in Resources */,
+				69E24E5C07A5C2D100DDC096 /* UserDefaults.plist in Resources */,
+				695982D1080209EB0090B9A6 /* VTFixGraceState.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69E24E1307A5C21F00DDC096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E1C07A5C25B00DDC096 /* VideoTest.m in Sources */,
+				69E24E1F07A5C25F00DDC096 /* VTStimuli.m in Sources */,
+				69E24E2207A5C27100DDC096 /* VTBehaviorController.m in Sources */,
+				69E24E2407A5C27200DDC096 /* VTEyeXYController.m in Sources */,
+				69E24E2607A5C27400DDC096 /* VTSpikeController.m in Sources */,
+				69E24E2807A5C27600DDC096 /* VTSummaryController.m in Sources */,
+				69E24E2A07A5C27800DDC096 /* VTXTController.m in Sources */,
+				69E24E2E07A5C29800DDC096 /* VTStateSystem.m in Sources */,
+				69E24E3007A5C29A00DDC096 /* VTBlockedState.m in Sources */,
+				69E24E3207A5C29B00DDC096 /* VTEndtrialState.m in Sources */,
+				69E24E3407A5C29D00DDC096 /* VTFixonState.m in Sources */,
+				69E24E3607A5C29E00DDC096 /* VTGapState.m in Sources */,
+				69E24E3807A5C2A000DDC096 /* VTIdleState.m in Sources */,
+				69E24E3A07A5C2A100DDC096 /* VTIntertrialState.m in Sources */,
+				69E24E3C07A5C2A300DDC096 /* VTIntervalOneState.m in Sources */,
+				69E24E4007A5C2A600DDC096 /* VTPoststimState.m in Sources */,
+				69E24E4207A5C2AB00DDC096 /* VTPrestimState.m in Sources */,
+				69E24E4407A5C2AC00DDC096 /* VTReactState.m in Sources */,
+				69E24E4607A5C2AE00DDC096 /* VTSaccadeState.m in Sources */,
+				69E24E4807A5C2AF00DDC096 /* VTStartState.m in Sources */,
+				69E24E4A07A5C2B000DDC096 /* VTStarttrialState.m in Sources */,
+				69E24E4C07A5C2B200DDC096 /* VTStopState.m in Sources */,
+				69E24E4E07A5C2B400DDC096 /* VTTargetsOnState.m in Sources */,
+				69E24E5107A5C2BD00DDC096 /* main.m in Sources */,
+				69E24E5307A5C2BE00DDC096 /* UtilityFunctions.m in Sources */,
+				695982D2080209EB0090B9A6 /* VTFixGraceState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* VideoTest.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = VideoTest.nib;
+			sourceTree = "<group>";
+		};
+		690B7991047ADABA00A80164 /* VTXTController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				690B7992047ADABA00A80164 /* English */,
+			);
+			name = VTXTController.nib;
+			sourceTree = "<group>";
+		};
+		69B5A7C70471D9E400F95509 /* VTBehaviorController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69B5A7C80471D9E400F95509 /* English */,
+			);
+			name = VTBehaviorController.nib;
+			sourceTree = "<group>";
+		};
+		69B9AE6F0482FB9F00F95509 /* VTSummaryController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69B9AE700482FB9F00F95509 /* English */,
+			);
+			name = VTSummaryController.nib;
+			sourceTree = "<group>";
+		};
+		69CFF8140476A44400F95509 /* VTMessageController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69CFF8150476A44400F95509 /* English */,
+			);
+			name = VTMessageController.nib;
+			sourceTree = "<group>";
+		};
+		69E96F950472CCC300F95509 /* VTEyeXYController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E96F960472CCC300F95509 /* English */,
+			);
+			name = VTEyeXYController.nib;
+			sourceTree = "<group>";
+		};
+		69F13A6304716D0D00F95509 /* VTSpikeController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69F13A6404716D0D00F95509 /* English */,
+			);
+			name = VTSpikeController.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69B8D0EA088DAADA002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../Frameworks/Lablib/build/Development\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = VideoTest_Prefix.h;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OBJROOT = /Users/maunsell/Documents/Development/Lablib/Plugins/VideoTest/build;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = VideoTest;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				UNSTRIPPED_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		69B8D0EB088DAADA002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Documents/Lablib/Frameworks/Lablib/build,
+					/Documents/Lablib/Frameworks/LablibITC18/build,
+					"$(SRCROOT)/../../Frameworks/Lablib/build/Development",
+					"$(SRCROOT)/../../Frameworks/LablibITC18/build/Development",
+					/Documents/Lablib/Frameworks/Lablib/build/Development,
+					/Documents/Lablib/Frameworks/LablibITC18/build/Development,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = VideoTest_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = VideoTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Deployment;
+		};
+		69B8D0EC088DAADA002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Documents/Lablib/Frameworks/Lablib/build,
+					/Documents/Lablib/Frameworks/LablibITC18/build,
+					"$(SRCROOT)/../../Frameworks/Lablib/build/Development",
+					"$(SRCROOT)/../../Frameworks/LablibITC18/build/Development",
+					/Documents/Lablib/Frameworks/Lablib/build/Development,
+					/Documents/Lablib/Frameworks/LablibITC18/build/Development,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = VideoTest_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = VideoTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Default;
+		};
+		69B8D0EE088DAADA002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Development;
+		};
+		69B8D0EF088DAADA002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Deployment;
+		};
+		69B8D0F0088DAADA002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69B8D0E9088DAADA002FCFD4 /* Build configuration list for PBXNativeTarget "VideoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D0EA088DAADA002FCFD4 /* Development */,
+				69B8D0EB088DAADA002FCFD4 /* Deployment */,
+				69B8D0EC088DAADA002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		69B8D0ED088DAADA002FCFD4 /* Build configuration list for PBXProject "VideoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D0EE088DAADA002FCFD4 /* Development */,
+				69B8D0EF088DAADA002FCFD4 /* Deployment */,
+				69B8D0F0088DAADA002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

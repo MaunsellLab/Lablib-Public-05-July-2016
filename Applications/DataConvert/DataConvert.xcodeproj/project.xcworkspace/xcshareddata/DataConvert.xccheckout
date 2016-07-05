@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2A71FA93-71D9-475E-AA7B-BB9DF1519DE6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DataConvert</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8A6F72CA-94CD-4B78-81D9-200B43153771</key>
+		<string>https://github.com/MaunsellLab/Lablib.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Applications/DataConvert/DataConvert.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8A6F72CA-94CD-4B78-81D9-200B43153771</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MaunsellLab/Lablib.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8A6F72CA-94CD-4B78-81D9-200B43153771</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8A6F72CA-94CD-4B78-81D9-200B43153771</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lablib</string>
+		</dict>
+	</array>
+</dict>
+</plist>

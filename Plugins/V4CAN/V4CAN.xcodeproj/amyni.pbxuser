@@ -1,0 +1,84 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeBuildStyle = E73013B30BE8E0D0008C731E /* Development */;
+		activeTarget = 69E24E1507A5C21F00DDC096 /* MTContrast */;
+		codeSenseManager = E73013D00BE8E10A008C731E /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					585,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 199811281;
+			PBXWorkspaceStateSaveDate = 199811281;
+		};
+		perUserProjectItems = {
+			E73013CA0BE8E10A008C731E /* PBXTextBookmark */ = E73013CA0BE8E10A008C731E /* PBXTextBookmark */;
+			E73013CB0BE8E10A008C731E /* PBXTextBookmark */ = E73013CB0BE8E10A008C731E /* PBXTextBookmark */;
+		};
+		sourceControlManager = E73013CF0BE8E10A008C731E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	69E247C907A5562500DDC096 /* MTContrast.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {783, 655}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {783, 655}}";
+		};
+	};
+	69E24E1507A5C21F00DDC096 /* MTContrast */ = {
+		activeExec = 0;
+	};
+	E73013CA0BE8E10A008C731E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 69E247C907A5562500DDC096 /* MTContrast.h */;
+		name = "MTContrast.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1012;
+		vrLoc = 0;
+	};
+	E73013CB0BE8E10A008C731E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 69E247C907A5562500DDC096 /* MTContrast.h */;
+		name = "MTContrast.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1012;
+		vrLoc = 0;
+	};
+	E73013CF0BE8E10A008C731E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	E73013D00BE8E10A008C731E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

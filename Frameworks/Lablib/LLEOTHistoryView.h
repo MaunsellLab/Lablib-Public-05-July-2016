@@ -1,0 +1,1 @@
+////  LLEOTHistoryView.h////  Created by Geoff Ghose on Wed Aug 11 2004.//  Copyright (c) 2004. All rights reserved.//#define kLLEOTHistMaxBins 100@interface LLEOTHistoryView:NSView {    short EOTHistory[kLLEOTHistMaxBins];	long bins;	long counter;}- (void)addEOT:(short)eotCode;- (void)reset;- (void)setBins:(long)newBins;@end

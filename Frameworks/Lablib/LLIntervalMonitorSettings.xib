@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LLIntervalMonitorSettings">
+            <connections>
+                <outlet property="greaterStandardField" destination="94" id="96"/>
+                <outlet property="lessStandardField" destination="95" id="97"/>
+                <outlet property="successGreaterButton" destination="13" id="69"/>
+                <outlet property="successGreaterCountField" destination="14" id="71"/>
+                <outlet property="successGreaterMSField" destination="16" id="72"/>
+                <outlet property="successLessButton" destination="18" id="70"/>
+                <outlet property="successLessCountField" destination="22" id="73"/>
+                <outlet property="successLessMSField" destination="20" id="74"/>
+                <outlet property="warnDisarmButton" destination="49" id="75"/>
+                <outlet property="warnGreaterButton" destination="33" id="77"/>
+                <outlet property="warnGreaterCountField" destination="31" id="78"/>
+                <outlet property="warnLessButton" destination="30" id="80"/>
+                <outlet property="warnLessCountField" destination="41" id="81"/>
+                <outlet property="warnSequentialButton" destination="46" id="83"/>
+                <outlet property="warnSequentialCountField" destination="47" id="84"/>
+                <outlet property="window" destination="3" id="4"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="LLIntervalMonitor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="LLIntervalMonitor" animationBehavior="default" id="3" userLabel="Window" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
+            <rect key="contentRect" x="64" y="339" width="582" height="325"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1024" height="746"/>
+            <value key="minSize" type="size" width="150" height="200"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="7" y="11" width="582" height="325"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button id="13">
+                        <rect key="frame" x="45" y="261" width="113" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="No more than " bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="99">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeDoSuccessGreater:" target="-2" id="53"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="14">
+                        <rect key="frame" x="164" y="260" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="100">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="24">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="changeSuccessGreaterCount:" target="-2" id="59"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="15">
+                        <rect key="frame" x="247" y="263" width="59" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="intervals" id="101">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="16">
+                        <rect key="frame" x="311" y="263" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="102">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="26">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="changeSuccessGreaterMS:" target="-2" id="60"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="17">
+                        <rect key="frame" x="394" y="248" width="112" height="34"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="ms &gt; than mean" id="103">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button id="18">
+                        <rect key="frame" x="45" y="231" width="113" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="No more than " bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="104">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeDoSuccessLess:" target="-2" id="54"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="19">
+                        <rect key="frame" x="247" y="233" width="59" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="intervals" id="105">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="20">
+                        <rect key="frame" x="311" y="233" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="106">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0.0" negativeFormat="-0.0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="27">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0.0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="changeSuccessLessMS:" target="-2" id="62"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="21">
+                        <rect key="frame" x="394" y="235" width="118" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="ms &lt; than mean" id="107">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="22">
+                        <rect key="frame" x="164" y="230" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="108">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="25">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="changeSuccessLessCount:" target="-2" id="61"/>
+                        </connections>
+                    </textField>
+                    <button id="30">
+                        <rect key="frame" x="45" y="36" width="56" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Every" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="109">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeDoWarnLess:" target="-2" id="57"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="31">
+                        <rect key="frame" x="107" y="64" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="110">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="28">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="changeWarnGreaterCount:" target="-2" id="64"/>
+                        </connections>
+                    </textField>
+                    <button id="33">
+                        <rect key="frame" x="45" y="66" width="56" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Every" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="111">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeDoWarnGreater:" target="-2" id="56"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="36">
+                        <rect key="frame" x="190" y="66" width="107" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="long intervals" id="112">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="38">
+                        <rect key="frame" x="190" y="36" width="141" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="short intervals" id="113">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="41">
+                        <rect key="frame" x="107" y="34" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="114">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="32">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="changeWarnLessCount:" target="-2" id="66"/>
+                        </connections>
+                    </textField>
+                    <button id="46">
+                        <rect key="frame" x="45" y="96" width="56" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Every" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="115">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeDoWarnSequential:" target="-2" id="58"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="47">
+                        <rect key="frame" x="107" y="94" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="116">
+                            <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="42">
+                                <attributedString key="attributedStringForZero">
+                                    <fragment content="0"/>
+                                </attributedString>
+                                <decimal key="minimum" value="0"/>
+                                <decimal key="maximum" value="NaN"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="changeWarnSequentialCount:" target="-2" id="68"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="48">
+                        <rect key="frame" x="190" y="96" width="225" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="sequential unsuccessful sequences" id="117">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button id="49">
+                        <rect key="frame" x="45" y="135" width="147" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Disarm all warnings" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="118">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeDoWarnDisarm:" target="-2" id="55"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="95">
+                        <rect key="frame" x="525" y="235" width="59" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="System Font Text" id="120">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="94">
+                        <rect key="frame" x="513" y="265" width="59" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="System Font Text" id="119">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="5"/>
+            </connections>
+        </window>
+    </objects>
+</document>

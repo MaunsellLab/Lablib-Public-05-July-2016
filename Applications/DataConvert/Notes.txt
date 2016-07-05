@@ -1,0 +1,7 @@
+Version 1.0.0  August 6, 2002
+
+    Initial version.  Displays data format 5, with definitions, events and hex in separate panes.  Perference panel adjusts display of events.
+    
+Version 1.0.1
+
+Event printing is working to the printers, but it is not working when outputting to a PDF.  Too many blank pages

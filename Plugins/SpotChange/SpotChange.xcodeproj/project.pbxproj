@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		695982D1080209EB0090B9A6 /* SCFixGraceState.h in Resources */ = {isa = PBXBuildFile; fileRef = 695982CF080209EB0090B9A6 /* SCFixGraceState.h */; };
+		695982D2080209EB0090B9A6 /* SCFixGraceState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695982D0080209EB0090B9A6 /* SCFixGraceState.m */; };
+		695C12F709B108880021A27D /* SCFixateState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695C12F609B108880021A27D /* SCFixateState.m */; };
+		69BDCE44098BD2CA00578E91 /* SCSpikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F13A6004716CF400F95509 /* SCSpikeController.m */; };
+		69E24E1B07A5C25A00DDC096 /* SpotChange.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247C907A5562500DDC096 /* SpotChange.h */; };
+		69E24E1C07A5C25B00DDC096 /* SpotChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E247CA07A5562500DDC096 /* SpotChange.m */; };
+		69E24E1E07A5C25E00DDC096 /* SCStimuli.h in Resources */ = {isa = PBXBuildFile; fileRef = 69EAD86F04352E4F00F95509 /* SCStimuli.h */; };
+		69E24E1F07A5C25F00DDC096 /* SCStimuli.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EAD87004352E4F00F95509 /* SCStimuli.m */; };
+		69E24E2107A5C27000DDC096 /* SCBehaviorController.h in Resources */ = {isa = PBXBuildFile; fileRef = 690B798D047ADA9F00A80164 /* SCBehaviorController.h */; };
+		69E24E2207A5C27100DDC096 /* SCBehaviorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690B798E047ADA9F00A80164 /* SCBehaviorController.m */; };
+		69E24E2307A5C27200DDC096 /* SCEyeXYController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E96F8D0472CC5C00F95509 /* SCEyeXYController.h */; };
+		69E24E2407A5C27200DDC096 /* SCEyeXYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E96F8E0472CC5C00F95509 /* SCEyeXYController.m */; };
+		69E24E2507A5C27300DDC096 /* SCSpikeController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69F13A5F04716CF400F95509 /* SCSpikeController.h */; };
+		69E24E2707A5C27400DDC096 /* SCSummaryController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69B9AE720482FBDD00F95509 /* SCSummaryController.h */; };
+		69E24E2807A5C27600DDC096 /* SCSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B9AE730482FBDD00F95509 /* SCSummaryController.m */; };
+		69E24E2907A5C27700DDC096 /* SCXTController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69B5A7CA0471DBA300F95509 /* SCXTController.h */; };
+		69E24E2A07A5C27800DDC096 /* SCXTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B5A7CB0471DBA300F95509 /* SCXTController.m */; };
+		69E24E2D07A5C29700DDC096 /* SCStateSystem.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F10486AA2000FE06D7 /* SCStateSystem.h */; };
+		69E24E2E07A5C29800DDC096 /* SCStateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879F20486AA2000FE06D7 /* SCStateSystem.m */; };
+		69E24E2F07A5C29900DDC096 /* SCBlockedState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0480486D97300FE06D7 /* SCBlockedState.h */; };
+		69E24E3007A5C29A00DDC096 /* SCBlockedState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0490486D97300FE06D7 /* SCBlockedState.m */; };
+		69E24E3107A5C29B00DDC096 /* SCEndtrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0400486D3B700FE06D7 /* SCEndtrialState.h */; };
+		69E24E3207A5C29B00DDC096 /* SCEndtrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0410486D3B700FE06D7 /* SCEndtrialState.m */; };
+		69E24E3307A5C29C00DDC096 /* SCFixonState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A04C0486DB1300FE06D7 /* SCFixonState.h */; };
+		69E24E3407A5C29D00DDC096 /* SCFixonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A04D0486DB1300FE06D7 /* SCFixonState.m */; };
+		69E24E3707A5C29F00DDC096 /* SCIdleState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879FD0486B06A00FE06D7 /* SCIdleState.h */; };
+		69E24E3807A5C2A000DDC096 /* SCIdleState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FE0486B06A00FE06D7 /* SCIdleState.m */; };
+		69E24E3907A5C2A000DDC096 /* SCIntertrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 6983253D0486BE9600FE06D7 /* SCIntertrialState.h */; };
+		69E24E3A07A5C2A100DDC096 /* SCIntertrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6983253E0486BE9600FE06D7 /* SCIntertrialState.m */; };
+		69E24E3B07A5C2A200DDC096 /* SCStimulate.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A05C0486F0A700FE06D7 /* SCStimulate.h */; };
+		69E24E3C07A5C2A300DDC096 /* SCStimulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A05D0486F0A700FE06D7 /* SCStimulate.m */; };
+		69E24E4307A5C2AC00DDC096 /* SCReactState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0640486F23700FE06D7 /* SCReactState.h */; };
+		69E24E4407A5C2AC00DDC096 /* SCReactState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0650486F23700FE06D7 /* SCReactState.m */; };
+		69E24E4507A5C2AD00DDC096 /* SCSaccadeState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69F443A305DEE56D000705E2 /* SCSaccadeState.h */; };
+		69E24E4607A5C2AE00DDC096 /* SCSaccadeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F443A405DEE56D000705E2 /* SCSaccadeState.m */; };
+		69E24E4907A5C2B000DDC096 /* SCStarttrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0440486D59800FE06D7 /* SCStarttrialState.h */; };
+		69E24E4A07A5C2B000DDC096 /* SCStarttrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0450486D59800FE06D7 /* SCStarttrialState.m */; };
+		69E24E4B07A5C2B100DDC096 /* SCStopState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F90486AF9300FE06D7 /* SCStopState.h */; };
+		69E24E4C07A5C2B200DDC096 /* SCStopState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FA0486AF9300FE06D7 /* SCStopState.m */; };
+		69E24E4F07A5C2BB00DDC096 /* SpotChange_Prefix.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247A107A5527C00DDC096 /* SpotChange_Prefix.h */; };
+		69E24E5007A5C2BC00DDC096 /* SC.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247A207A5527C00DDC096 /* SC.h */; };
+		69E24E5107A5C2BD00DDC096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		69E24E5207A5C2BD00DDC096 /* UtilityFunctions.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */; };
+		69E24E5307A5C2BE00DDC096 /* UtilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69975550043E645C00F95509 /* UtilityFunctions.m */; };
+		69E24E5407A5C2C300DDC096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		69E24E5C07A5C2D100DDC096 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 696D8C8A075D683B0057453A /* UserDefaults.plist */; };
+		69E24E5E07A5C2E100DDC096 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		69E24E6207A5C2E200DDC096 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */; };
+		69E24E7407A5C34300DDC096 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		69E24F0907A5C34400DDC096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		69E60D2E177F7AF8003F308E /* SCEyeXYController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E60D2C177F7AF8003F308E /* SCEyeXYController.xib */; };
+		69E60D31177F7ED5003F308E /* SCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E60D30177F7ED5003F308E /* SCUtilities.m */; };
+		69E60D42177F8B47003F308E /* SCBehaviorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E60D38177F8B47003F308E /* SCBehaviorController.xib */; };
+		69E60D43177F8B47003F308E /* SCSpikeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E60D3A177F8B47003F308E /* SCSpikeController.xib */; };
+		69E60D44177F8B47003F308E /* SCSummaryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E60D3C177F8B47003F308E /* SCSummaryController.xib */; };
+		69E60D45177F8B47003F308E /* SCXTController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E60D3E177F8B47003F308E /* SCXTController.xib */; };
+		69E60D46177F8B47003F308E /* SpotChange.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E60D40177F8B47003F308E /* SpotChange.xib */; };
+		7C2B57921787089E000AA622 /* Lablib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2B57911787089E000AA622 /* Lablib.framework */; };
+		967B8E5E0D08481200219A02 /* SCDigitalOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 967B8E5D0D08481200219A02 /* SCDigitalOut.m */; };
+		AF0220F80B37000B0029778E /* SCTooFastState.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0220F70B37000B0029778E /* SCTooFastState.m */; };
+		AFCACCF80B9D2F610033D226 /* SCRoundToStimCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCACCF70B9D2F610033D226 /* SCRoundToStimCycle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		690B798D047ADA9F00A80164 /* SCBehaviorController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SCBehaviorController.h; sourceTree = "<group>"; };
+		690B798E047ADA9F00A80164 /* SCBehaviorController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SCBehaviorController.m; sourceTree = "<group>"; };
+		694879F10486AA2000FE06D7 /* SCStateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStateSystem.h; sourceTree = "<group>"; };
+		694879F20486AA2000FE06D7 /* SCStateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCStateSystem.m; sourceTree = "<group>"; };
+		694879F90486AF9300FE06D7 /* SCStopState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStopState.h; sourceTree = "<group>"; };
+		694879FA0486AF9300FE06D7 /* SCStopState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCStopState.m; sourceTree = "<group>"; };
+		694879FD0486B06A00FE06D7 /* SCIdleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIdleState.h; sourceTree = "<group>"; };
+		694879FE0486B06A00FE06D7 /* SCIdleState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIdleState.m; sourceTree = "<group>"; };
+		695982CF080209EB0090B9A6 /* SCFixGraceState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFixGraceState.h; sourceTree = "<group>"; };
+		695982D0080209EB0090B9A6 /* SCFixGraceState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFixGraceState.m; sourceTree = "<group>"; };
+		695C12F509B108880021A27D /* SCFixateState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFixateState.h; sourceTree = "<group>"; };
+		695C12F609B108880021A27D /* SCFixateState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFixateState.m; sourceTree = "<group>"; };
+		6968EA58059DDD1900E33065 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		696D8C8A075D683B0057453A /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
+		6983253D0486BE9600FE06D7 /* SCIntertrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIntertrialState.h; sourceTree = "<group>"; };
+		6983253E0486BE9600FE06D7 /* SCIntertrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIntertrialState.m; sourceTree = "<group>"; };
+		69975550043E645C00F95509 /* UtilityFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFunctions.m; sourceTree = "<group>"; };
+		69B5A7CA0471DBA300F95509 /* SCXTController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SCXTController.h; sourceTree = "<group>"; };
+		69B5A7CB0471DBA300F95509 /* SCXTController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SCXTController.m; sourceTree = "<group>"; };
+		69B9AE720482FBDD00F95509 /* SCSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SCSummaryController.h; sourceTree = "<group>"; };
+		69B9AE730482FBDD00F95509 /* SCSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SCSummaryController.m; sourceTree = "<group>"; };
+		69E247A107A5527C00DDC096 /* SpotChange_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SpotChange_Prefix.h; sourceTree = "<group>"; };
+		69E247A207A5527C00DDC096 /* SC.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SC.h; sourceTree = "<group>"; };
+		69E247A907A5529700DDC096 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E247C907A5562500DDC096 /* SpotChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotChange.h; sourceTree = "<group>"; };
+		69E247CA07A5562500DDC096 /* SpotChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotChange.m; sourceTree = "<group>"; };
+		69E24E1607A5C21F00DDC096 /* SpotChange.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotChange.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E60D2D177F7AF8003F308E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SCEyeXYController.xib; sourceTree = "<group>"; };
+		69E60D2F177F7ED5003F308E /* SCUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUtilities.h; sourceTree = "<group>"; };
+		69E60D30177F7ED5003F308E /* SCUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUtilities.m; sourceTree = "<group>"; };
+		69E60D39177F8B47003F308E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SCBehaviorController.xib; sourceTree = "<group>"; };
+		69E60D3B177F8B47003F308E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SCSpikeController.xib; sourceTree = "<group>"; };
+		69E60D3D177F8B47003F308E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SCSummaryController.xib; sourceTree = "<group>"; };
+		69E60D3F177F8B47003F308E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SCXTController.xib; sourceTree = "<group>"; };
+		69E60D41177F8B47003F308E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SpotChange.xib; sourceTree = "<group>"; };
+		69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityFunctions.h; sourceTree = "<group>"; };
+		69E8A0400486D3B700FE06D7 /* SCEndtrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCEndtrialState.h; sourceTree = "<group>"; };
+		69E8A0410486D3B700FE06D7 /* SCEndtrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCEndtrialState.m; sourceTree = "<group>"; };
+		69E8A0440486D59800FE06D7 /* SCStarttrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStarttrialState.h; sourceTree = "<group>"; };
+		69E8A0450486D59800FE06D7 /* SCStarttrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCStarttrialState.m; sourceTree = "<group>"; };
+		69E8A0480486D97300FE06D7 /* SCBlockedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBlockedState.h; sourceTree = "<group>"; };
+		69E8A0490486D97300FE06D7 /* SCBlockedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBlockedState.m; sourceTree = "<group>"; };
+		69E8A04C0486DB1300FE06D7 /* SCFixonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFixonState.h; sourceTree = "<group>"; };
+		69E8A04D0486DB1300FE06D7 /* SCFixonState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFixonState.m; sourceTree = "<group>"; };
+		69E8A05C0486F0A700FE06D7 /* SCStimulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStimulate.h; sourceTree = "<group>"; };
+		69E8A05D0486F0A700FE06D7 /* SCStimulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCStimulate.m; sourceTree = "<group>"; };
+		69E8A0640486F23700FE06D7 /* SCReactState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCReactState.h; sourceTree = "<group>"; };
+		69E8A0650486F23700FE06D7 /* SCReactState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCReactState.m; sourceTree = "<group>"; };
+		69E96F8D0472CC5C00F95509 /* SCEyeXYController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SCEyeXYController.h; sourceTree = "<group>"; };
+		69E96F8E0472CC5C00F95509 /* SCEyeXYController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SCEyeXYController.m; sourceTree = "<group>"; };
+		69EAD86F04352E4F00F95509 /* SCStimuli.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SCStimuli.h; sourceTree = "<group>"; };
+		69EAD87004352E4F00F95509 /* SCStimuli.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SCStimuli.m; sourceTree = "<group>"; };
+		69F13A5F04716CF400F95509 /* SCSpikeController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SCSpikeController.h; sourceTree = "<group>"; };
+		69F13A6004716CF400F95509 /* SCSpikeController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SCSpikeController.m; sourceTree = "<group>"; };
+		69F443A305DEE56D000705E2 /* SCSaccadeState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SCSaccadeState.h; sourceTree = "<group>"; };
+		69F443A405DEE56D000705E2 /* SCSaccadeState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SCSaccadeState.m; sourceTree = "<group>"; };
+		7C2B57911787089E000AA622 /* Lablib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lablib.framework; path = ../../../../../../Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework; sourceTree = "<group>"; };
+		967B8E230D08468400219A02 /* LablibITC18.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LablibITC18.h; path = /Documents/Lablib/Frameworks/LablibITC18/build/Development/LablibITC18.framework/Headers/LablibITC18.h; sourceTree = "<absolute>"; };
+		967B8E5C0D08481200219A02 /* SCDigitalOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDigitalOut.h; sourceTree = "<group>"; };
+		967B8E5D0D08481200219A02 /* SCDigitalOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDigitalOut.m; sourceTree = "<group>"; };
+		AF0220F60B36FFEA0029778E /* SCTooFastState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SCTooFastState.h; sourceTree = "<group>"; };
+		AF0220F70B37000B0029778E /* SCTooFastState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SCTooFastState.m; sourceTree = "<group>"; };
+		AFCACCF60B9D2F610033D226 /* SCRoundToStimCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRoundToStimCycle.h; sourceTree = "<group>"; };
+		AFCACCF70B9D2F610033D226 /* SCRoundToStimCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRoundToStimCycle.m; sourceTree = "<group>"; };
+		E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69E24E1407A5C21F00DDC096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E5E07A5C2E100DDC096 /* Cocoa.framework in Frameworks */,
+				69E24E6207A5C2E200DDC096 /* OpenGL.framework in Frameworks */,
+				69E24E7407A5C34300DDC096 /* AppKit.framework in Frameworks */,
+				69E24F0907A5C34400DDC096 /* Foundation.framework in Frameworks */,
+				7C2B57921787089E000AA622 /* Lablib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				696D3833059E19DE0018E5D5 /* Controllers */,
+				694879ED0486A83B00FE06D7 /* On-line Display */,
+				694879EE0486A85E00FE06D7 /* State System */,
+				AFCB086E0B9E0F4600422186 /* Transformers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C2B57911787089E000AA622 /* Lablib.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69E24E1607A5C21F00DDC096 /* SpotChange.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* terstes */ = {
+			isa = PBXGroup;
+			children = (
+				6968EA58059DDD1900E33065 /* Notes.txt */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				69C1CC640827E43C00A71FDE /* Plists */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = terstes;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				69E247A107A5527C00DDC096 /* SpotChange_Prefix.h */,
+				69E247A207A5527C00DDC096 /* SC.h */,
+				967B8E230D08468400219A02 /* LablibITC18.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				69E60D2F177F7ED5003F308E /* SCUtilities.h */,
+				69E60D30177F7ED5003F308E /* SCUtilities.m */,
+				69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */,
+				69975550043E645C00F95509 /* UtilityFunctions.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69E60D40177F8B47003F308E /* SpotChange.xib */,
+				69E60D38177F8B47003F308E /* SCBehaviorController.xib */,
+				69E60D3A177F8B47003F308E /* SCSpikeController.xib */,
+				69E60D3C177F8B47003F308E /* SCSummaryController.xib */,
+				69E60D3E177F8B47003F308E /* SCXTController.xib */,
+				69E60D2C177F7AF8003F308E /* SCEyeXYController.xib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		694879ED0486A83B00FE06D7 /* On-line Display */ = {
+			isa = PBXGroup;
+			children = (
+				690B798D047ADA9F00A80164 /* SCBehaviorController.h */,
+				690B798E047ADA9F00A80164 /* SCBehaviorController.m */,
+				69E96F8D0472CC5C00F95509 /* SCEyeXYController.h */,
+				69E96F8E0472CC5C00F95509 /* SCEyeXYController.m */,
+				69F13A5F04716CF400F95509 /* SCSpikeController.h */,
+				69F13A6004716CF400F95509 /* SCSpikeController.m */,
+				69B9AE720482FBDD00F95509 /* SCSummaryController.h */,
+				69B9AE730482FBDD00F95509 /* SCSummaryController.m */,
+				69B5A7CA0471DBA300F95509 /* SCXTController.h */,
+				69B5A7CB0471DBA300F95509 /* SCXTController.m */,
+			);
+			name = "On-line Display";
+			sourceTree = "<group>";
+		};
+		694879EE0486A85E00FE06D7 /* State System */ = {
+			isa = PBXGroup;
+			children = (
+				694879F10486AA2000FE06D7 /* SCStateSystem.h */,
+				694879F20486AA2000FE06D7 /* SCStateSystem.m */,
+				69E8A0480486D97300FE06D7 /* SCBlockedState.h */,
+				69E8A0490486D97300FE06D7 /* SCBlockedState.m */,
+				69E8A0400486D3B700FE06D7 /* SCEndtrialState.h */,
+				69E8A0410486D3B700FE06D7 /* SCEndtrialState.m */,
+				695C12F509B108880021A27D /* SCFixateState.h */,
+				695C12F609B108880021A27D /* SCFixateState.m */,
+				695982CF080209EB0090B9A6 /* SCFixGraceState.h */,
+				695982D0080209EB0090B9A6 /* SCFixGraceState.m */,
+				69E8A04C0486DB1300FE06D7 /* SCFixonState.h */,
+				69E8A04D0486DB1300FE06D7 /* SCFixonState.m */,
+				694879FD0486B06A00FE06D7 /* SCIdleState.h */,
+				694879FE0486B06A00FE06D7 /* SCIdleState.m */,
+				6983253D0486BE9600FE06D7 /* SCIntertrialState.h */,
+				6983253E0486BE9600FE06D7 /* SCIntertrialState.m */,
+				69E8A0640486F23700FE06D7 /* SCReactState.h */,
+				69E8A0650486F23700FE06D7 /* SCReactState.m */,
+				69F443A305DEE56D000705E2 /* SCSaccadeState.h */,
+				69F443A405DEE56D000705E2 /* SCSaccadeState.m */,
+				69E8A0440486D59800FE06D7 /* SCStarttrialState.h */,
+				69E8A0450486D59800FE06D7 /* SCStarttrialState.m */,
+				69E8A05C0486F0A700FE06D7 /* SCStimulate.h */,
+				69E8A05D0486F0A700FE06D7 /* SCStimulate.m */,
+				694879F90486AF9300FE06D7 /* SCStopState.h */,
+				694879FA0486AF9300FE06D7 /* SCStopState.m */,
+				AF0220F60B36FFEA0029778E /* SCTooFastState.h */,
+				AF0220F70B37000B0029778E /* SCTooFastState.m */,
+			);
+			name = "State System";
+			sourceTree = "<group>";
+		};
+		696D3833059E19DE0018E5D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69E247C907A5562500DDC096 /* SpotChange.h */,
+				69E247CA07A5562500DDC096 /* SpotChange.m */,
+				69EAD86F04352E4F00F95509 /* SCStimuli.h */,
+				69EAD87004352E4F00F95509 /* SCStimuli.m */,
+				967B8E5C0D08481200219A02 /* SCDigitalOut.h */,
+				967B8E5D0D08481200219A02 /* SCDigitalOut.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		69C1CC640827E43C00A71FDE /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				696D8C8A075D683B0057453A /* UserDefaults.plist */,
+				69E247A907A5529700DDC096 /* Info.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+		AFCB086E0B9E0F4600422186 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				AFCACCF60B9D2F610033D226 /* SCRoundToStimCycle.h */,
+				AFCACCF70B9D2F610033D226 /* SCRoundToStimCycle.m */,
+			);
+			name = Transformers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69E24E1507A5C21F00DDC096 /* SpotChange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B8D0E9088DAADA002FCFD4 /* Build configuration list for PBXNativeTarget "SpotChange" */;
+			buildPhases = (
+				69E24E1207A5C21F00DDC096 /* Resources */,
+				69E24E1307A5C21F00DDC096 /* Sources */,
+				69E24E1407A5C21F00DDC096 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotChange;
+			productName = OrientationChange;
+			productReference = 69E24E1607A5C21F00DDC096 /* SpotChange.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 69B8D0ED088DAADA002FCFD4 /* Build configuration list for PBXProject "SpotChange" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* terstes */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69E24E1507A5C21F00DDC096 /* SpotChange */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69E24E1207A5C21F00DDC096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E1B07A5C25A00DDC096 /* SpotChange.h in Resources */,
+				69E24E1E07A5C25E00DDC096 /* SCStimuli.h in Resources */,
+				69E24E2107A5C27000DDC096 /* SCBehaviorController.h in Resources */,
+				69E24E2307A5C27200DDC096 /* SCEyeXYController.h in Resources */,
+				69E24E2507A5C27300DDC096 /* SCSpikeController.h in Resources */,
+				69E24E2707A5C27400DDC096 /* SCSummaryController.h in Resources */,
+				69E24E2907A5C27700DDC096 /* SCXTController.h in Resources */,
+				69E24E2D07A5C29700DDC096 /* SCStateSystem.h in Resources */,
+				69E24E2F07A5C29900DDC096 /* SCBlockedState.h in Resources */,
+				69E24E3107A5C29B00DDC096 /* SCEndtrialState.h in Resources */,
+				69E24E3307A5C29C00DDC096 /* SCFixonState.h in Resources */,
+				69E24E3707A5C29F00DDC096 /* SCIdleState.h in Resources */,
+				69E24E3907A5C2A000DDC096 /* SCIntertrialState.h in Resources */,
+				69E24E3B07A5C2A200DDC096 /* SCStimulate.h in Resources */,
+				69E24E4307A5C2AC00DDC096 /* SCReactState.h in Resources */,
+				69E24E4507A5C2AD00DDC096 /* SCSaccadeState.h in Resources */,
+				69E24E4907A5C2B000DDC096 /* SCStarttrialState.h in Resources */,
+				69E24E4B07A5C2B100DDC096 /* SCStopState.h in Resources */,
+				69E24E4F07A5C2BB00DDC096 /* SpotChange_Prefix.h in Resources */,
+				69E24E5007A5C2BC00DDC096 /* SC.h in Resources */,
+				69E24E5207A5C2BD00DDC096 /* UtilityFunctions.h in Resources */,
+				69E24E5407A5C2C300DDC096 /* InfoPlist.strings in Resources */,
+				69E24E5C07A5C2D100DDC096 /* UserDefaults.plist in Resources */,
+				695982D1080209EB0090B9A6 /* SCFixGraceState.h in Resources */,
+				69E60D2E177F7AF8003F308E /* SCEyeXYController.xib in Resources */,
+				69E60D42177F8B47003F308E /* SCBehaviorController.xib in Resources */,
+				69E60D43177F8B47003F308E /* SCSpikeController.xib in Resources */,
+				69E60D44177F8B47003F308E /* SCSummaryController.xib in Resources */,
+				69E60D45177F8B47003F308E /* SCXTController.xib in Resources */,
+				69E60D46177F8B47003F308E /* SpotChange.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69E24E1307A5C21F00DDC096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E1C07A5C25B00DDC096 /* SpotChange.m in Sources */,
+				69E24E1F07A5C25F00DDC096 /* SCStimuli.m in Sources */,
+				69E24E2207A5C27100DDC096 /* SCBehaviorController.m in Sources */,
+				69E24E2407A5C27200DDC096 /* SCEyeXYController.m in Sources */,
+				69E24E2807A5C27600DDC096 /* SCSummaryController.m in Sources */,
+				69E24E2A07A5C27800DDC096 /* SCXTController.m in Sources */,
+				69E24E2E07A5C29800DDC096 /* SCStateSystem.m in Sources */,
+				69E24E3007A5C29A00DDC096 /* SCBlockedState.m in Sources */,
+				69E24E3207A5C29B00DDC096 /* SCEndtrialState.m in Sources */,
+				69E24E3407A5C29D00DDC096 /* SCFixonState.m in Sources */,
+				69E24E3807A5C2A000DDC096 /* SCIdleState.m in Sources */,
+				69E24E3A07A5C2A100DDC096 /* SCIntertrialState.m in Sources */,
+				69E24E3C07A5C2A300DDC096 /* SCStimulate.m in Sources */,
+				69E24E4407A5C2AC00DDC096 /* SCReactState.m in Sources */,
+				69E24E4607A5C2AE00DDC096 /* SCSaccadeState.m in Sources */,
+				69E24E4A07A5C2B000DDC096 /* SCStarttrialState.m in Sources */,
+				69E24E4C07A5C2B200DDC096 /* SCStopState.m in Sources */,
+				69E24E5107A5C2BD00DDC096 /* main.m in Sources */,
+				69E24E5307A5C2BE00DDC096 /* UtilityFunctions.m in Sources */,
+				695982D2080209EB0090B9A6 /* SCFixGraceState.m in Sources */,
+				69BDCE44098BD2CA00578E91 /* SCSpikeController.m in Sources */,
+				695C12F709B108880021A27D /* SCFixateState.m in Sources */,
+				AF0220F80B37000B0029778E /* SCTooFastState.m in Sources */,
+				AFCACCF80B9D2F610033D226 /* SCRoundToStimCycle.m in Sources */,
+				967B8E5E0D08481200219A02 /* SCDigitalOut.m in Sources */,
+				69E60D31177F7ED5003F308E /* SCUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		69E60D2C177F7AF8003F308E /* SCEyeXYController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E60D2D177F7AF8003F308E /* English */,
+			);
+			name = SCEyeXYController.xib;
+			sourceTree = "<group>";
+		};
+		69E60D38177F8B47003F308E /* SCBehaviorController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E60D39177F8B47003F308E /* English */,
+			);
+			name = SCBehaviorController.xib;
+			sourceTree = "<group>";
+		};
+		69E60D3A177F8B47003F308E /* SCSpikeController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E60D3B177F8B47003F308E /* English */,
+			);
+			name = SCSpikeController.xib;
+			sourceTree = "<group>";
+		};
+		69E60D3C177F8B47003F308E /* SCSummaryController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E60D3D177F8B47003F308E /* English */,
+			);
+			name = SCSummaryController.xib;
+			sourceTree = "<group>";
+		};
+		69E60D3E177F8B47003F308E /* SCXTController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E60D3F177F8B47003F308E /* English */,
+			);
+			name = SCXTController.xib;
+			sourceTree = "<group>";
+		};
+		69E60D40177F8B47003F308E /* SpotChange.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E60D41177F8B47003F308E /* English */,
+			);
+			name = SpotChange.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69B8D0EA088DAADA002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Documents/Lablib/Frameworks/LablibITC18/build/Development,
+					/Documents/Lablib/Frameworks/Lablib/build/Development,
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpotChange_Prefix.h;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OBJROOT = "/Users/Shared/Lablib-Plugins/SpotChange";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SpotChange;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				UNSTRIPPED_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		69B8D0EB088DAADA002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Documents/Lablib/Frameworks/Lablib/build,
+					/Documents/Lablib/Frameworks/LablibITC18/build,
+					"$(SRCROOT)/../../Frameworks/Lablib/build/Development",
+					"$(SRCROOT)/../../Frameworks/LablibITC18/build/Development",
+					/Documents/Lablib/Frameworks/LablibITC18/build/Development,
+					/Documents/Lablib/Frameworks/Lablib/build/Development,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpotChange_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OBJROOT = "/Users/Shared/Lablib-Plugins/SpotChange";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SpotChange;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Deployment;
+		};
+		69B8D0EC088DAADA002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Documents/Lablib/Frameworks/Lablib/build,
+					/Documents/Lablib/Frameworks/LablibITC18/build,
+					"$(SRCROOT)/../../Frameworks/Lablib/build/Development",
+					"$(SRCROOT)/../../Frameworks/LablibITC18/build/Development",
+					/Documents/Lablib/Frameworks/LablibITC18/build/Development,
+					/Documents/Lablib/Frameworks/Lablib/build/Development,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpotChange_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OBJROOT = "/Users/Shared/Lablib-Plugins/SpotChange";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SpotChange;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Default;
+		};
+		69B8D0EE088DAADA002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Documents/Lablib/Frameworks/Lablib/build/Development,
+					/Documents/Lablib/Frameworks/LablibITC18/build/Development,
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "$(BUILD_DIR)";
+				SYMROOT = "$(BUILD_DIR)";
+			};
+			name = Development;
+		};
+		69B8D0EF088DAADA002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "$(BUILD_DIR)";
+				SYMROOT = "$(BUILD_DIR)";
+			};
+			name = Deployment;
+		};
+		69B8D0F0088DAADA002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "$(BUILD_DIR)";
+				SYMROOT = "$(BUILD_DIR)";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69B8D0E9088DAADA002FCFD4 /* Build configuration list for PBXNativeTarget "SpotChange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D0EA088DAADA002FCFD4 /* Development */,
+				69B8D0EB088DAADA002FCFD4 /* Deployment */,
+				69B8D0EC088DAADA002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		69B8D0ED088DAADA002FCFD4 /* Build configuration list for PBXProject "SpotChange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D0EE088DAADA002FCFD4 /* Development */,
+				69B8D0EF088DAADA002FCFD4 /* Deployment */,
+				69B8D0F0088DAADA002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

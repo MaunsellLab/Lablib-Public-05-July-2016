@@ -1,0 +1,6 @@
+
+Need to fix endTrial certification to include ITC check
+
+CPTaskStatus is still being used for enabling dialog entries
+
+Need to remove "distracted" as an EOT

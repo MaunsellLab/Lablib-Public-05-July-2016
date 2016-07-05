@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		691C49240B27B1B000DA5103 /* Lablib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691C49230B27B1B000DA5103 /* Lablib.framework */; };
+		6922B38D0785DF1200B0F5D0 /* RFEyeXYController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6922B38B0785DF1200B0F5D0 /* RFEyeXYController.h */; };
+		6922B38E0785DF1200B0F5D0 /* RFEyeXYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6922B38C0785DF1200B0F5D0 /* RFEyeXYController.m */; };
+		6933B3C20784BC82006963FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		6933B3C70784BC92006963FA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */; };
+		6933B5040784BCA6006963FA /* RFMapUtilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69975550043E645C00F95509 /* RFMapUtilityFunctions.m */; };
+		6933B5070784BCA6006963FA /* RFXTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B5A7CB0471DBA300F95509 /* RFXTController.m */; };
+		6933B50B0784BCA6006963FA /* RFSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B9AE730482FBDD00F95509 /* RFSummaryController.m */; };
+		6933B50C0784BCA6006963FA /* RFStateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879F20486AA2000FE06D7 /* RFStateSystem.m */; };
+		6933B50D0784BCA6006963FA /* RFStartState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879F60486AAC100FE06D7 /* RFStartState.m */; };
+		6933B50E0784BCA6006963FA /* RFStopState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FA0486AF9300FE06D7 /* RFStopState.m */; };
+		6933B50F0784BCA6006963FA /* RFIdleState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FE0486B06A00FE06D7 /* RFIdleState.m */; };
+		6933B5100784BCA6006963FA /* RFIntertrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6983253E0486BE9600FE06D7 /* RFIntertrialState.m */; };
+		6933B5110784BCA6006963FA /* RFEndtrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0410486D3B700FE06D7 /* RFEndtrialState.m */; };
+		6933B5120784BCA6006963FA /* RFStarttrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0450486D59800FE06D7 /* RFStarttrialState.m */; };
+		6933B5130784BCA6006963FA /* RFBlockedState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0490486D97300FE06D7 /* RFBlockedState.m */; };
+		6933B5140784BCA6006963FA /* RFFixonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A04D0486DB1300FE06D7 /* RFFixonState.m */; };
+		6933B5150784BCA6006963FA /* RFFixateState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69924A73068B313000B1C977 /* RFFixateState.m */; };
+		6933B5170784BCA6006963FA /* RFMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6933AFC6078459D1006963FA /* RFMap.m */; };
+		6933B5180784BCA6006963FA /* RFMapStimuli.m in Sources */ = {isa = PBXBuildFile; fileRef = 6933AFFC07845AF4006963FA /* RFMapStimuli.m */; };
+		6933B51E0784BCE6006963FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		6933B52D0784BD19006963FA /* RFXTController.h in Headers */ = {isa = PBXBuildFile; fileRef = 69B5A7CA0471DBA300F95509 /* RFXTController.h */; };
+		6933B52F0784BD19006963FA /* RFSummaryController.h in Headers */ = {isa = PBXBuildFile; fileRef = 69B9AE720482FBDD00F95509 /* RFSummaryController.h */; };
+		6933B5300784BD19006963FA /* RFStateSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 694879F10486AA2000FE06D7 /* RFStateSystem.h */; };
+		6933B5310784BD19006963FA /* RFStartState.h in Headers */ = {isa = PBXBuildFile; fileRef = 694879F50486AAC100FE06D7 /* RFStartState.h */; };
+		6933B5320784BD19006963FA /* RFStopState.h in Headers */ = {isa = PBXBuildFile; fileRef = 694879F90486AF9300FE06D7 /* RFStopState.h */; };
+		6933B5330784BD19006963FA /* RFIdleState.h in Headers */ = {isa = PBXBuildFile; fileRef = 694879FD0486B06A00FE06D7 /* RFIdleState.h */; };
+		6933B5340784BD19006963FA /* RFIntertrialState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6983253D0486BE9600FE06D7 /* RFIntertrialState.h */; };
+		6933B5350784BD19006963FA /* RFEndtrialState.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E8A0400486D3B700FE06D7 /* RFEndtrialState.h */; };
+		6933B5360784BD19006963FA /* RFStarttrialState.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E8A0440486D59800FE06D7 /* RFStarttrialState.h */; };
+		6933B5370784BD19006963FA /* RFBlockedState.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E8A0480486D97300FE06D7 /* RFBlockedState.h */; };
+		6933B5380784BD19006963FA /* RFFixonState.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E8A04C0486DB1300FE06D7 /* RFFixonState.h */; };
+		6933B53A0784BD19006963FA /* RFMapUtilityFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E7FC6E04DBE6EF00F95507 /* RFMapUtilityFunctions.h */; };
+		6933B53E0784BD19006963FA /* RFFixateState.h in Headers */ = {isa = PBXBuildFile; fileRef = 69924A72068B313000B1C977 /* RFFixateState.h */; };
+		6933B5410784BD19006963FA /* RFMapStimuli.h in Headers */ = {isa = PBXBuildFile; fileRef = 6933AFFB07845AF4006963FA /* RFMapStimuli.h */; };
+		6933B5450784BD4C006963FA /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69756447076F90A900293610 /* UserDefaults.plist */; };
+		6933B5480784BD84006963FA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		6933B5490784BD86006963FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		694D21F2092D1CC600764986 /* Release Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 694D21F1092D1CC600764986 /* Release Notes.txt */; };
+		695EFEF11AC6243800D9D458 /* RFBehaviorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEEB1AC6243800D9D458 /* RFBehaviorController.xib */; };
+		695EFEF21AC6243800D9D458 /* RFEyeXYController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEEC1AC6243800D9D458 /* RFEyeXYController.xib */; };
+		695EFEF31AC6243800D9D458 /* RFMap.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEED1AC6243800D9D458 /* RFMap.xib */; };
+		695EFEF41AC6243800D9D458 /* RFSpikeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEEE1AC6243800D9D458 /* RFSpikeController.xib */; };
+		695EFEF51AC6243800D9D458 /* RFSummaryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEEF1AC6243800D9D458 /* RFSummaryController.xib */; };
+		695EFEF61AC6243800D9D458 /* RFXTController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEF01AC6243800D9D458 /* RFXTController.xib */; };
+		69CEB7A107999A7000C79781 /* RF.h in Headers */ = {isa = PBXBuildFile; fileRef = 69CEB7A007999A7000C79781 /* RF.h */; };
+		69CEB7A907999A7D00C79781 /* RFMap_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 69CEB7A807999A7D00C79781 /* RFMap_Prefix.h */; };
+		69FB5C35078EE91700AC42FA /* RFMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6933AFC5078459D1006963FA /* RFMap.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		691C49230B27B1B000DA5103 /* Lablib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lablib.framework; path = ../../Frameworks/Lablib/build/Development/Lablib.framework; sourceTree = SOURCE_ROOT; };
+		6922B38B0785DF1200B0F5D0 /* RFEyeXYController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RFEyeXYController.h; sourceTree = "<group>"; };
+		6922B38C0785DF1200B0F5D0 /* RFEyeXYController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RFEyeXYController.m; sourceTree = "<group>"; };
+		6933AFC5078459D1006963FA /* RFMap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RFMap.h; sourceTree = "<group>"; };
+		6933AFC6078459D1006963FA /* RFMap.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RFMap.m; sourceTree = "<group>"; };
+		6933AFFB07845AF4006963FA /* RFMapStimuli.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RFMapStimuli.h; sourceTree = "<group>"; };
+		6933AFFC07845AF4006963FA /* RFMapStimuli.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RFMapStimuli.m; sourceTree = "<group>"; };
+		6933B3A90784BBE2006963FA /* RFMap.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFMap.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		694879F10486AA2000FE06D7 /* RFStateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFStateSystem.h; sourceTree = "<group>"; };
+		694879F20486AA2000FE06D7 /* RFStateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFStateSystem.m; sourceTree = "<group>"; };
+		694879F50486AAC100FE06D7 /* RFStartState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFStartState.h; sourceTree = "<group>"; };
+		694879F60486AAC100FE06D7 /* RFStartState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFStartState.m; sourceTree = "<group>"; };
+		694879F90486AF9300FE06D7 /* RFStopState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFStopState.h; sourceTree = "<group>"; };
+		694879FA0486AF9300FE06D7 /* RFStopState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFStopState.m; sourceTree = "<group>"; };
+		694879FD0486B06A00FE06D7 /* RFIdleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIdleState.h; sourceTree = "<group>"; };
+		694879FE0486B06A00FE06D7 /* RFIdleState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIdleState.m; sourceTree = "<group>"; };
+		694D21F1092D1CC600764986 /* Release Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Release Notes.txt"; sourceTree = "<group>"; };
+		695EFEEB1AC6243800D9D458 /* RFBehaviorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFBehaviorController.xib; sourceTree = "<group>"; };
+		695EFEEC1AC6243800D9D458 /* RFEyeXYController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFEyeXYController.xib; sourceTree = "<group>"; };
+		695EFEED1AC6243800D9D458 /* RFMap.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFMap.xib; sourceTree = "<group>"; };
+		695EFEEE1AC6243800D9D458 /* RFSpikeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFSpikeController.xib; sourceTree = "<group>"; };
+		695EFEEF1AC6243800D9D458 /* RFSummaryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFSummaryController.xib; sourceTree = "<group>"; };
+		695EFEF01AC6243800D9D458 /* RFXTController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFXTController.xib; sourceTree = "<group>"; };
+		6968EA58059DDD1900E33065 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		69756447076F90A900293610 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
+		6983253D0486BE9600FE06D7 /* RFIntertrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIntertrialState.h; sourceTree = "<group>"; };
+		6983253E0486BE9600FE06D7 /* RFIntertrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIntertrialState.m; sourceTree = "<group>"; };
+		69924A72068B313000B1C977 /* RFFixateState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RFFixateState.h; sourceTree = "<group>"; };
+		69924A73068B313000B1C977 /* RFFixateState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RFFixateState.m; sourceTree = "<group>"; };
+		69975550043E645C00F95509 /* RFMapUtilityFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMapUtilityFunctions.m; sourceTree = "<group>"; };
+		69AA91D80842722C00DAB812 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69B5A7CA0471DBA300F95509 /* RFXTController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RFXTController.h; sourceTree = "<group>"; };
+		69B5A7CB0471DBA300F95509 /* RFXTController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RFXTController.m; sourceTree = "<group>"; };
+		69B9AE720482FBDD00F95509 /* RFSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RFSummaryController.h; sourceTree = "<group>"; };
+		69B9AE730482FBDD00F95509 /* RFSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RFSummaryController.m; sourceTree = "<group>"; };
+		69CEB7A007999A7000C79781 /* RF.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RF.h; sourceTree = "<group>"; };
+		69CEB7A807999A7D00C79781 /* RFMap_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RFMap_Prefix.h; sourceTree = "<group>"; };
+		69E7FC6E04DBE6EF00F95507 /* RFMapUtilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMapUtilityFunctions.h; sourceTree = "<group>"; };
+		69E8A0400486D3B700FE06D7 /* RFEndtrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFEndtrialState.h; sourceTree = "<group>"; };
+		69E8A0410486D3B700FE06D7 /* RFEndtrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFEndtrialState.m; sourceTree = "<group>"; };
+		69E8A0440486D59800FE06D7 /* RFStarttrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFStarttrialState.h; sourceTree = "<group>"; };
+		69E8A0450486D59800FE06D7 /* RFStarttrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFStarttrialState.m; sourceTree = "<group>"; };
+		69E8A0480486D97300FE06D7 /* RFBlockedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBlockedState.h; sourceTree = "<group>"; };
+		69E8A0490486D97300FE06D7 /* RFBlockedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBlockedState.m; sourceTree = "<group>"; };
+		69E8A04C0486DB1300FE06D7 /* RFFixonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFFixonState.h; sourceTree = "<group>"; };
+		69E8A04D0486DB1300FE06D7 /* RFFixonState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFFixonState.m; sourceTree = "<group>"; };
+		E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6933B3A70784BBE2006963FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6933B3C20784BC82006963FA /* Cocoa.framework in Frameworks */,
+				6933B3C70784BC92006963FA /* OpenGL.framework in Frameworks */,
+				6933B5480784BD84006963FA /* AppKit.framework in Frameworks */,
+				6933B5490784BD86006963FA /* Foundation.framework in Frameworks */,
+				691C49240B27B1B000DA5103 /* Lablib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				696D3833059E19DE0018E5D5 /* Controllers */,
+				694879ED0486A83B00FE06D7 /* On-line Display */,
+				694879EE0486A85E00FE06D7 /* State System */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				691C49230B27B1B000DA5103 /* Lablib.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6933B3A90784BBE2006963FA /* RFMap.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* terstes */ = {
+			isa = PBXGroup;
+			children = (
+				694D21F1092D1CC600764986 /* Release Notes.txt */,
+				6968EA58059DDD1900E33065 /* Notes.txt */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				69756442076F905200293610 /* Plists */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = terstes;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				69CEB7A007999A7000C79781 /* RF.h */,
+				69CEB7A807999A7D00C79781 /* RFMap_Prefix.h */,
+				69E7FC6E04DBE6EF00F95507 /* RFMapUtilityFunctions.h */,
+				69975550043E645C00F95509 /* RFMapUtilityFunctions.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				695EFEEB1AC6243800D9D458 /* RFBehaviorController.xib */,
+				695EFEEC1AC6243800D9D458 /* RFEyeXYController.xib */,
+				695EFEED1AC6243800D9D458 /* RFMap.xib */,
+				695EFEEE1AC6243800D9D458 /* RFSpikeController.xib */,
+				695EFEEF1AC6243800D9D458 /* RFSummaryController.xib */,
+				695EFEF01AC6243800D9D458 /* RFXTController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		694879ED0486A83B00FE06D7 /* On-line Display */ = {
+			isa = PBXGroup;
+			children = (
+				6922B38B0785DF1200B0F5D0 /* RFEyeXYController.h */,
+				6922B38C0785DF1200B0F5D0 /* RFEyeXYController.m */,
+				69B9AE720482FBDD00F95509 /* RFSummaryController.h */,
+				69B9AE730482FBDD00F95509 /* RFSummaryController.m */,
+				69B5A7CA0471DBA300F95509 /* RFXTController.h */,
+				69B5A7CB0471DBA300F95509 /* RFXTController.m */,
+			);
+			name = "On-line Display";
+			sourceTree = "<group>";
+		};
+		694879EE0486A85E00FE06D7 /* State System */ = {
+			isa = PBXGroup;
+			children = (
+				694879F10486AA2000FE06D7 /* RFStateSystem.h */,
+				694879F20486AA2000FE06D7 /* RFStateSystem.m */,
+				69E8A0480486D97300FE06D7 /* RFBlockedState.h */,
+				69E8A0490486D97300FE06D7 /* RFBlockedState.m */,
+				69E8A0400486D3B700FE06D7 /* RFEndtrialState.h */,
+				69E8A0410486D3B700FE06D7 /* RFEndtrialState.m */,
+				69924A72068B313000B1C977 /* RFFixateState.h */,
+				69924A73068B313000B1C977 /* RFFixateState.m */,
+				69E8A04C0486DB1300FE06D7 /* RFFixonState.h */,
+				69E8A04D0486DB1300FE06D7 /* RFFixonState.m */,
+				694879FD0486B06A00FE06D7 /* RFIdleState.h */,
+				694879FE0486B06A00FE06D7 /* RFIdleState.m */,
+				6983253D0486BE9600FE06D7 /* RFIntertrialState.h */,
+				6983253E0486BE9600FE06D7 /* RFIntertrialState.m */,
+				694879F50486AAC100FE06D7 /* RFStartState.h */,
+				694879F60486AAC100FE06D7 /* RFStartState.m */,
+				69E8A0440486D59800FE06D7 /* RFStarttrialState.h */,
+				69E8A0450486D59800FE06D7 /* RFStarttrialState.m */,
+				694879F90486AF9300FE06D7 /* RFStopState.h */,
+				694879FA0486AF9300FE06D7 /* RFStopState.m */,
+			);
+			name = "State System";
+			sourceTree = "<group>";
+		};
+		696D3833059E19DE0018E5D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6933AFC5078459D1006963FA /* RFMap.h */,
+				6933AFC6078459D1006963FA /* RFMap.m */,
+				6933AFFB07845AF4006963FA /* RFMapStimuli.h */,
+				6933AFFC07845AF4006963FA /* RFMapStimuli.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		69756442076F905200293610 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				69AA91D80842722C00DAB812 /* Info.plist */,
+				69756447076F90A900293610 /* UserDefaults.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6933B5290784BD01006963FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6933B52D0784BD19006963FA /* RFXTController.h in Headers */,
+				6933B52F0784BD19006963FA /* RFSummaryController.h in Headers */,
+				6933B5300784BD19006963FA /* RFStateSystem.h in Headers */,
+				6933B5310784BD19006963FA /* RFStartState.h in Headers */,
+				6933B5320784BD19006963FA /* RFStopState.h in Headers */,
+				6933B5330784BD19006963FA /* RFIdleState.h in Headers */,
+				6933B5340784BD19006963FA /* RFIntertrialState.h in Headers */,
+				6933B5350784BD19006963FA /* RFEndtrialState.h in Headers */,
+				6933B5360784BD19006963FA /* RFStarttrialState.h in Headers */,
+				6933B5370784BD19006963FA /* RFBlockedState.h in Headers */,
+				6933B5380784BD19006963FA /* RFFixonState.h in Headers */,
+				6933B53A0784BD19006963FA /* RFMapUtilityFunctions.h in Headers */,
+				6933B53E0784BD19006963FA /* RFFixateState.h in Headers */,
+				6933B5410784BD19006963FA /* RFMapStimuli.h in Headers */,
+				6922B38D0785DF1200B0F5D0 /* RFEyeXYController.h in Headers */,
+				69FB5C35078EE91700AC42FA /* RFMap.h in Headers */,
+				69CEB7A107999A7000C79781 /* RF.h in Headers */,
+				69CEB7A907999A7D00C79781 /* RFMap_Prefix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6933B3A80784BBE2006963FA /* RFMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B8D124088DABDB002FCFD4 /* Build configuration list for PBXNativeTarget "RFMap" */;
+			buildPhases = (
+				6933B5290784BD01006963FA /* Headers */,
+				6933B3A50784BBE2006963FA /* Resources */,
+				6933B3A60784BBE2006963FA /* Sources */,
+				6933B3A70784BBE2006963FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFMap;
+			productName = RFMapTASk;
+			productReference = 6933B3A90784BBE2006963FA /* RFMap.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 69B8D128088DABDB002FCFD4 /* Build configuration list for PBXProject "RFMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* terstes */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6933B3A80784BBE2006963FA /* RFMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6933B3A50784BBE2006963FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695EFEF31AC6243800D9D458 /* RFMap.xib in Resources */,
+				6933B51E0784BCE6006963FA /* InfoPlist.strings in Resources */,
+				695EFEF61AC6243800D9D458 /* RFXTController.xib in Resources */,
+				695EFEF51AC6243800D9D458 /* RFSummaryController.xib in Resources */,
+				695EFEF21AC6243800D9D458 /* RFEyeXYController.xib in Resources */,
+				695EFEF11AC6243800D9D458 /* RFBehaviorController.xib in Resources */,
+				695EFEF41AC6243800D9D458 /* RFSpikeController.xib in Resources */,
+				6933B5450784BD4C006963FA /* UserDefaults.plist in Resources */,
+				694D21F2092D1CC600764986 /* Release Notes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6933B3A60784BBE2006963FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6933B5040784BCA6006963FA /* RFMapUtilityFunctions.m in Sources */,
+				6933B5070784BCA6006963FA /* RFXTController.m in Sources */,
+				6933B50B0784BCA6006963FA /* RFSummaryController.m in Sources */,
+				6933B50C0784BCA6006963FA /* RFStateSystem.m in Sources */,
+				6933B50D0784BCA6006963FA /* RFStartState.m in Sources */,
+				6933B50E0784BCA6006963FA /* RFStopState.m in Sources */,
+				6933B50F0784BCA6006963FA /* RFIdleState.m in Sources */,
+				6933B5100784BCA6006963FA /* RFIntertrialState.m in Sources */,
+				6933B5110784BCA6006963FA /* RFEndtrialState.m in Sources */,
+				6933B5120784BCA6006963FA /* RFStarttrialState.m in Sources */,
+				6933B5130784BCA6006963FA /* RFBlockedState.m in Sources */,
+				6933B5140784BCA6006963FA /* RFFixonState.m in Sources */,
+				6933B5150784BCA6006963FA /* RFFixateState.m in Sources */,
+				6933B5170784BCA6006963FA /* RFMap.m in Sources */,
+				6933B5180784BCA6006963FA /* RFMapStimuli.m in Sources */,
+				6922B38E0785DF1200B0F5D0 /* RFEyeXYController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69B8D125088DABDB002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../Frameworks/Lablib/build/Development";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RFMap_Prefix.h;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = lablib.RFMap;
+				PRODUCT_NAME = RFMap;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				UNSTRIPPED_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		69B8D126088DABDB002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../Frameworks/Lablib/build/Development";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RFMap_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = lablib.RFMap;
+				PRODUCT_NAME = RFMap;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		69B8D127088DABDB002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../Frameworks/Lablib/build/Development";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RFMap_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = lablib.RFMap;
+				PRODUCT_NAME = RFMap;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		69B8D129088DABDB002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INSTALL_GROUP = staff;
+				INSTALL_OWNER = admin;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Development;
+		};
+		69B8D12A088DABDB002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_GROUP = staff;
+				INSTALL_OWNER = admin;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Deployment;
+		};
+		69B8D12B088DABDB002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_GROUP = staff;
+				INSTALL_OWNER = admin;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69B8D124088DABDB002FCFD4 /* Build configuration list for PBXNativeTarget "RFMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D125088DABDB002FCFD4 /* Development */,
+				69B8D126088DABDB002FCFD4 /* Deployment */,
+				69B8D127088DABDB002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		69B8D128088DABDB002FCFD4 /* Build configuration list for PBXProject "RFMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D129088DABDB002FCFD4 /* Development */,
+				69B8D12A088DABDB002FCFD4 /* Deployment */,
+				69B8D12B088DABDB002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

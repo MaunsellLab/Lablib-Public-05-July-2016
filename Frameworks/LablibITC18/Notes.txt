@@ -1,0 +1,7 @@
+April 29, 2005
+
+•Put dataLock calls around digitalBitsOn and digitalBitsOff, to address a problem discovered by Geoff Ghose
+
+Novemeber 11, 2006
+
+Had to set Mac OS Deployment to Mac OS X 10.2 for the weak-linking of ITC.framework to work.

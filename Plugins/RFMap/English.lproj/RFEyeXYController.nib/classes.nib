@@ -1,0 +1,156 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showPreferencePanel = id; }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = BehaviorView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scrollView = NSScrollView; zoomButton = NSPopUpButton; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {
+                centerDisplay = id; 
+                changeDoGrid = id; 
+                changeDoTicks = id; 
+                changeDotLife = id; 
+                changeDotSize = id; 
+                changeDrawCal = id; 
+                changeEyeColor = id; 
+                changeFadeDots = id; 
+                changeGridDeg = id; 
+                changeOneInN = id; 
+                changeTickDeg = id; 
+                changeZoom = id; 
+                doOptions = id; 
+                endOptionSheet = id; 
+            }; 
+            CLASS = EyeXYController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                doGridButton = NSButton; 
+                doTicksButton = NSButton; 
+                dotLifeField = NSTextField; 
+                dotSizeField = NSTextField; 
+                drawCalButton = NSButton; 
+                eyeColorWell = NSColorWell; 
+                eyePlot = LLEyeXYView; 
+                fadeDotsButton = NSButton; 
+                gridDegField = NSTextField; 
+                oneInNField = NSTextField; 
+                optionsSheet = NSPanel; 
+                scrollView = NSScrollView; 
+                slider = NSSlider; 
+                tickDegField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                centerDisplay = id; 
+                changeDotLife = id; 
+                changeDotSize = id; 
+                changeEyeColor = id; 
+                changeFadeDots = id; 
+                changeOneInN = id; 
+                changeZoom = id; 
+                doOptions = id; 
+                endOptionSheet = id; 
+            }; 
+            CLASS = EyeXYWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dotLifeField = NSTextField; 
+                dotSizeField = NSTextField; 
+                eyeColorWell = NSColorWell; 
+                eyePlot = LLEyeXYView; 
+                fadeDotsButton = NSButton; 
+                oneInNField = NSTextField; 
+                optionsSheet = NSPanel; 
+                scrollView = NSScrollView; 
+                slider = NSSlider; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LLEyeXYView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = LLHistView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = LLPlotView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {
+                changeFormat = id; 
+                changeShowAddress = id; 
+                changeShowData = id; 
+                changeShowTime = id; 
+                changeShowTimeOfDay = id; 
+            }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addressCheckBox = NSButton; 
+                dataCheckBox = NSButton; 
+                formatMatrix = NSMatrix; 
+                timeCheckBox = NSButton; 
+                timeOfDayCheckBox = NSButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {centerDisplay = id; changeZoom = id; doOptions = id; endOptionSheet = id; }; 
+            CLASS = RFEyeXYController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                eyePlot = LLEyeXYView; 
+                optionsSheet = NSPanel; 
+                scrollView = NSScrollView; 
+                slider = NSSlider; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = SpikeView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scrollView = NSScrollView; zoomButton = NSPopUpButton; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = SpikeWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                histView0 = LLHistView; 
+                histView1 = LLHistView; 
+                histView2 = LLHistView; 
+                histView3 = LLHistView; 
+                histView4 = LLHistView; 
+                histView5 = LLHistView; 
+                histView6 = LLHistView; 
+                histView7 = LLHistView; 
+                responsePlot = LLPlotView; 
+                scrollView = NSScrollView; 
+                zoomButton = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = SummaryController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {openGLView = NSOpenGLView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {changeZoom = id; }; 
+            CLASS = SummaryView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scrollView = NSScrollView; zoomButton = NSPopUpButton; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

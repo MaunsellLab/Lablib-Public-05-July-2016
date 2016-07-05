@@ -1,0 +1,62 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {setVBL = id; }; 
+            CLASS = App; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSApplication; 
+        }, 
+        {
+            ACTIONS = {
+                changeDataSource = id; 
+                changeSettings = id; 
+                doJuice = id; 
+                doRunStop = id; 
+                recordDontRecord = id; 
+                resetRequest = id; 
+                showAboutPanel = id; 
+                showDisplayCalibratorPanel = id; 
+                showEyeCalibratorPanel = id; 
+                showPreferencePanel = id; 
+                showReportPanel = id; 
+                showStimulusPanel = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                controlPanel = NSPanel; 
+                fileNameDisplay = NSTextField; 
+                recordDontRecordMenuItem = NSMenuItem; 
+                resetButton = NSButton; 
+                runStopButton = NSButton; 
+                runStopMenuItem = NSMenuItem; 
+                saveButton = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {deactivate = id; }; 
+            CLASS = LLTaskPlugIn; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dataSource = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                doCueSettings = id; 
+                doFixSettings = id; 
+                doGaborSettings = id; 
+                doJuice = id; 
+                doRFMap = id; 
+                doReset = id; 
+                doRunStop = id; 
+            }; 
+            CLASS = MTContrast; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {actionsMenu = NSMenu; runStopMenuItem = NSMenuItem; settingsMenu = NSMenu; }; 
+            SUPERCLASS = LLTaskPlugIn; 
+        }
+    ); 
+    IBVersion = 1; 
+}

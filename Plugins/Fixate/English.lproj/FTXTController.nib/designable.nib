@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TrialController">
+            <connections>
+                <outlet property="scrollView" destination="204" id="205"/>
+                <outlet property="window" destination="76" id="167"/>
+                <outlet property="xtView" destination="185" id="203"/>
+                <outlet property="zoomButton" destination="101" id="135"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Trial" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="TrialController" animationBehavior="default" id="76" userLabel="Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="250" y="351" width="271" height="297"/>
+            <rect key="screenRect" x="1152" y="-154" width="1280" height="854"/>
+            <view key="contentView" id="77">
+                <rect key="frame" x="1" y="9" width="271" height="297"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="204">
+                        <rect key="frame" x="20" y="60" width="231" height="217"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="58T-NS-riQ">
+                            <rect key="frame" x="1" y="1" width="214" height="200"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <customView id="185" customClass="LLXTView">
+                                    <rect key="frame" x="0.0" y="0.0" width="214" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </customView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.15887850522994995" horizontal="YES" id="213">
+                            <rect key="frame" x="1" y="201" width="214" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="214">
+                            <rect key="frame" x="215" y="1" width="15" height="200"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <popUpButton verticalHuggingPriority="750" id="101">
+                        <rect key="frame" x="141" y="56" width="98" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <popUpButtonCell key="cell" type="push" title="100%" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="100" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="106" id="211">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="104">
+                                <items>
+                                    <menuItem title="25%" tag="25" id="103"/>
+                                    <menuItem title="50%" tag="50" id="102"/>
+                                    <menuItem title="75%" tag="75" id="100"/>
+                                    <menuItem title="100%" state="on" tag="100" id="106"/>
+                                    <menuItem title="125%" tag="125" id="105"/>
+                                    <menuItem title="150%" tag="150" id="108"/>
+                                    <menuItem title="200%" tag="200" id="109"/>
+                                    <menuItem title="400%" tag="400" id="107"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="changeZoom:" target="-2" id="166"/>
+                        </connections>
+                    </popUpButton>
+                    <button verticalHuggingPriority="750" id="208">
+                        <rect key="frame" x="14" y="12" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Freeze" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="212">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeFreeze:" target="-2" id="209"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="168"/>
+            </connections>
+        </window>
+    </objects>
+</document>

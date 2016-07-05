@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		693E232C08227BAB006BD680 /* Release Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 693E232B08227BAB006BD680 /* Release Notes.txt */; };
+		694D0C82077B65400025BAA4 /* Fixate.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D0C80077B65400025BAA4 /* Fixate.h */; };
+		694D0C83077B65400025BAA4 /* Fixate.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D0C81077B65400025BAA4 /* Fixate.m */; };
+		694D127D077B8EC50025BAA4 /* FTBlockedState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D125B077B8EC50025BAA4 /* FTBlockedState.h */; };
+		694D127E077B8EC50025BAA4 /* FTBlockedState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D125C077B8EC50025BAA4 /* FTBlockedState.m */; };
+		694D127F077B8EC50025BAA4 /* FTEndtrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D125D077B8EC50025BAA4 /* FTEndtrialState.h */; };
+		694D1280077B8EC50025BAA4 /* FTEndtrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D125E077B8EC50025BAA4 /* FTEndtrialState.m */; };
+		694D1281077B8EC50025BAA4 /* FTFixonState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D125F077B8EC50025BAA4 /* FTFixonState.h */; };
+		694D1282077B8EC50025BAA4 /* FTFixonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D1260077B8EC50025BAA4 /* FTFixonState.m */; };
+		694D1285077B8EC50025BAA4 /* FTIdleState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D1263077B8EC50025BAA4 /* FTIdleState.h */; };
+		694D1286077B8EC50025BAA4 /* FTIdleState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D1264077B8EC50025BAA4 /* FTIdleState.m */; };
+		694D1287077B8EC50025BAA4 /* FTIntertrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D1265077B8EC50025BAA4 /* FTIntertrialState.h */; };
+		694D1288077B8EC50025BAA4 /* FTIntertrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D1266077B8EC50025BAA4 /* FTIntertrialState.m */; };
+		694D1295077B8EC50025BAA4 /* FTStartState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D1273077B8EC50025BAA4 /* FTStartState.h */; };
+		694D1296077B8EC50025BAA4 /* FTStartState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D1274077B8EC50025BAA4 /* FTStartState.m */; };
+		694D1297077B8EC50025BAA4 /* FTStarttrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D1275077B8EC50025BAA4 /* FTStarttrialState.h */; };
+		694D1298077B8EC50025BAA4 /* FTStarttrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D1276077B8EC50025BAA4 /* FTStarttrialState.m */; };
+		694D1299077B8EC50025BAA4 /* FTStateSystem.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D1277077B8EC50025BAA4 /* FTStateSystem.h */; };
+		694D129A077B8EC50025BAA4 /* FTStateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D1278077B8EC50025BAA4 /* FTStateSystem.m */; };
+		694D129B077B8EC50025BAA4 /* FTStopState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D1279077B8EC50025BAA4 /* FTStopState.h */; };
+		694D129C077B8EC50025BAA4 /* FTStopState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D127A077B8EC50025BAA4 /* FTStopState.m */; };
+		694D14FF077BA5CC0025BAA4 /* FTFixateState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D14FE077BA5CC0025BAA4 /* FTFixateState.h */; };
+		694D17C3077C618D0025BAA4 /* FTFixateState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D17C2077C618D0025BAA4 /* FTFixateState.m */; };
+		694D184E077C67B50025BAA4 /* FTEyeXYController.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D1844077C67B50025BAA4 /* FTEyeXYController.h */; };
+		694D184F077C67B50025BAA4 /* FTEyeXYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D1845077C67B50025BAA4 /* FTEyeXYController.m */; };
+		694D19B5077C76B70025BAA4 /* FTXTController.h in Resources */ = {isa = PBXBuildFile; fileRef = 694D19B3077C76B70025BAA4 /* FTXTController.h */; };
+		694D19B6077C76B70025BAA4 /* FTXTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 694D19B4077C76B70025BAA4 /* FTXTController.m */; };
+		694D215C077D34A10025BAA4 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 694D215B077D34A10025BAA4 /* UserDefaults.plist */; };
+		694E0E6E07C2B90400A965E0 /* FT_Prefix.h in Resources */ = {isa = PBXBuildFile; fileRef = 694E0E6D07C2B90400A965E0 /* FT_Prefix.h */; };
+		695EFEE41AC623AA00D9D458 /* Fixate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEE31AC623AA00D9D458 /* Fixate.xib */; };
+		695EFEE61AC623D400D9D458 /* FTEyeXYController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEE51AC623D400D9D458 /* FTEyeXYController.xib */; };
+		695EFEE81AC623E600D9D458 /* FTSummaryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695EFEE71AC623E600D9D458 /* FTSummaryController.xib */; };
+		697CC50F077DD6F10025E7D2 /* FT.h in Resources */ = {isa = PBXBuildFile; fileRef = 697CC50E077DD6F10025E7D2 /* FT.h */; };
+		697CC99D077E01CA0025E7D2 /* FTStimuli.h in Resources */ = {isa = PBXBuildFile; fileRef = 697CC99C077E01CA0025E7D2 /* FTStimuli.h */; };
+		697CC9A1077E01E00025E7D2 /* FTStimuli.m in Sources */ = {isa = PBXBuildFile; fileRef = 697CC9A0077E01E00025E7D2 /* FTStimuli.m */; };
+		697CD04B077F6B510025E7D2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697CD04A077F6B510025E7D2 /* OpenGL.framework */; };
+		69952B7415A247C0002CD226 /* FTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 69952B7315A247C0002CD226 /* FTUtilities.m */; };
+		69B8D545088EB863002FCFD4 /* Lablib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B8D544088EB863002FCFD4 /* Lablib.framework */; };
+		69C19D6007834E7B00D2B044 /* FTSummaryController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69C19D5F07834E7B00D2B044 /* FTSummaryController.h */; };
+		69C19D6407834E8C00D2B044 /* FTSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C19D6307834E8C00D2B044 /* FTSummaryController.m */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		693E232B08227BAB006BD680 /* Release Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Release Notes.txt"; sourceTree = "<group>"; };
+		694D0C80077B65400025BAA4 /* Fixate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fixate.h; sourceTree = "<group>"; };
+		694D0C81077B65400025BAA4 /* Fixate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixate.m; sourceTree = "<group>"; };
+		694D125B077B8EC50025BAA4 /* FTBlockedState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTBlockedState.h; sourceTree = "<group>"; };
+		694D125C077B8EC50025BAA4 /* FTBlockedState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTBlockedState.m; sourceTree = "<group>"; };
+		694D125D077B8EC50025BAA4 /* FTEndtrialState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTEndtrialState.h; sourceTree = "<group>"; };
+		694D125E077B8EC50025BAA4 /* FTEndtrialState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTEndtrialState.m; sourceTree = "<group>"; };
+		694D125F077B8EC50025BAA4 /* FTFixonState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTFixonState.h; sourceTree = "<group>"; };
+		694D1260077B8EC50025BAA4 /* FTFixonState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTFixonState.m; sourceTree = "<group>"; };
+		694D1263077B8EC50025BAA4 /* FTIdleState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTIdleState.h; sourceTree = "<group>"; };
+		694D1264077B8EC50025BAA4 /* FTIdleState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTIdleState.m; sourceTree = "<group>"; };
+		694D1265077B8EC50025BAA4 /* FTIntertrialState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTIntertrialState.h; sourceTree = "<group>"; };
+		694D1266077B8EC50025BAA4 /* FTIntertrialState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTIntertrialState.m; sourceTree = "<group>"; };
+		694D1273077B8EC50025BAA4 /* FTStartState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTStartState.h; sourceTree = "<group>"; };
+		694D1274077B8EC50025BAA4 /* FTStartState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTStartState.m; sourceTree = "<group>"; };
+		694D1275077B8EC50025BAA4 /* FTStarttrialState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTStarttrialState.h; sourceTree = "<group>"; };
+		694D1276077B8EC50025BAA4 /* FTStarttrialState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTStarttrialState.m; sourceTree = "<group>"; };
+		694D1277077B8EC50025BAA4 /* FTStateSystem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTStateSystem.h; sourceTree = "<group>"; };
+		694D1278077B8EC50025BAA4 /* FTStateSystem.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTStateSystem.m; sourceTree = "<group>"; };
+		694D1279077B8EC50025BAA4 /* FTStopState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTStopState.h; sourceTree = "<group>"; };
+		694D127A077B8EC50025BAA4 /* FTStopState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTStopState.m; sourceTree = "<group>"; };
+		694D14FE077BA5CC0025BAA4 /* FTFixateState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTFixateState.h; sourceTree = "<group>"; };
+		694D17C2077C618D0025BAA4 /* FTFixateState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTFixateState.m; sourceTree = "<group>"; };
+		694D1844077C67B50025BAA4 /* FTEyeXYController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTEyeXYController.h; sourceTree = "<group>"; };
+		694D1845077C67B50025BAA4 /* FTEyeXYController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTEyeXYController.m; sourceTree = "<group>"; };
+		694D19B3077C76B70025BAA4 /* FTXTController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTXTController.h; sourceTree = "<group>"; };
+		694D19B4077C76B70025BAA4 /* FTXTController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTXTController.m; sourceTree = "<group>"; };
+		694D215B077D34A10025BAA4 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
+		694E0E6D07C2B90400A965E0 /* FT_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FT_Prefix.h; sourceTree = "<group>"; };
+		695EFEE31AC623AA00D9D458 /* Fixate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Fixate.xib; sourceTree = "<group>"; };
+		695EFEE51AC623D400D9D458 /* FTEyeXYController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTEyeXYController.xib; sourceTree = "<group>"; };
+		695EFEE71AC623E600D9D458 /* FTSummaryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTSummaryController.xib; sourceTree = "<group>"; };
+		697CC50E077DD6F10025E7D2 /* FT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FT.h; sourceTree = "<group>"; };
+		697CC99C077E01CA0025E7D2 /* FTStimuli.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTStimuli.h; sourceTree = "<group>"; };
+		697CC9A0077E01E00025E7D2 /* FTStimuli.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTStimuli.m; sourceTree = "<group>"; };
+		697CD04A077F6B510025E7D2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		69952B7215A247C0002CD226 /* FTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUtilities.h; sourceTree = "<group>"; };
+		69952B7315A247C0002CD226 /* FTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUtilities.m; sourceTree = "<group>"; };
+		69B8D544088EB863002FCFD4 /* Lablib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lablib.framework; path = ../../Frameworks/Lablib/build/Development/Lablib.framework; sourceTree = SOURCE_ROOT; };
+		69C19D5F07834E7B00D2B044 /* FTSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FTSummaryController.h; sourceTree = "<group>"; };
+		69C19D6307834E8C00D2B044 /* FTSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FTSummaryController.m; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* Fixate.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fixate.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				697CD04B077F6B510025E7D2 /* OpenGL.framework in Frameworks */,
+				69B8D545088EB863002FCFD4 /* Lablib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* FixateTask */ = {
+			isa = PBXGroup;
+			children = (
+				693E232B08227BAB006BD680 /* Release Notes.txt */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				694D215F077D34C00025BAA4 /* Plists */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = FixateTask;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				695EFEE31AC623AA00D9D458 /* Fixate.xib */,
+				695EFEE51AC623D400D9D458 /* FTEyeXYController.xib */,
+				695EFEE71AC623E600D9D458 /* FTSummaryController.xib */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				694D0C80077B65400025BAA4 /* Fixate.h */,
+				694D0C81077B65400025BAA4 /* Fixate.m */,
+				694D1844077C67B50025BAA4 /* FTEyeXYController.h */,
+				694D1845077C67B50025BAA4 /* FTEyeXYController.m */,
+				697CC99C077E01CA0025E7D2 /* FTStimuli.h */,
+				697CC9A0077E01E00025E7D2 /* FTStimuli.m */,
+				69C19D5F07834E7B00D2B044 /* FTSummaryController.h */,
+				69C19D6307834E8C00D2B044 /* FTSummaryController.m */,
+				694D19B3077C76B70025BAA4 /* FTXTController.h */,
+				694D19B4077C76B70025BAA4 /* FTXTController.m */,
+				694D1258077B8E9D0025BAA4 /* State System */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69B8D544088EB863002FCFD4 /* Lablib.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				697CD04A077F6B510025E7D2 /* OpenGL.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* Fixate.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				697CC50E077DD6F10025E7D2 /* FT.h */,
+				694E0E6D07C2B90400A965E0 /* FT_Prefix.h */,
+				69952B7215A247C0002CD226 /* FTUtilities.h */,
+				69952B7315A247C0002CD226 /* FTUtilities.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		694D1258077B8E9D0025BAA4 /* State System */ = {
+			isa = PBXGroup;
+			children = (
+				694D1277077B8EC50025BAA4 /* FTStateSystem.h */,
+				694D1278077B8EC50025BAA4 /* FTStateSystem.m */,
+				694D125B077B8EC50025BAA4 /* FTBlockedState.h */,
+				694D125C077B8EC50025BAA4 /* FTBlockedState.m */,
+				694D125D077B8EC50025BAA4 /* FTEndtrialState.h */,
+				694D125E077B8EC50025BAA4 /* FTEndtrialState.m */,
+				694D14FE077BA5CC0025BAA4 /* FTFixateState.h */,
+				694D17C2077C618D0025BAA4 /* FTFixateState.m */,
+				694D125F077B8EC50025BAA4 /* FTFixonState.h */,
+				694D1260077B8EC50025BAA4 /* FTFixonState.m */,
+				694D1263077B8EC50025BAA4 /* FTIdleState.h */,
+				694D1264077B8EC50025BAA4 /* FTIdleState.m */,
+				694D1265077B8EC50025BAA4 /* FTIntertrialState.h */,
+				694D1266077B8EC50025BAA4 /* FTIntertrialState.m */,
+				694D1273077B8EC50025BAA4 /* FTStartState.h */,
+				694D1274077B8EC50025BAA4 /* FTStartState.m */,
+				694D1275077B8EC50025BAA4 /* FTStarttrialState.h */,
+				694D1276077B8EC50025BAA4 /* FTStarttrialState.m */,
+				694D1279077B8EC50025BAA4 /* FTStopState.h */,
+				694D127A077B8EC50025BAA4 /* FTStopState.m */,
+			);
+			name = "State System";
+			sourceTree = "<group>";
+		};
+		694D215F077D34C00025BAA4 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				694D215B077D34A10025BAA4 /* UserDefaults.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* Fixate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B8D10F088DABA8002FCFD4 /* Build configuration list for PBXNativeTarget "Fixate" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fixate;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = FixateTask;
+			productReference = 8D5B49B6048680CD000E48DA /* Fixate.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 69B8D113088DABA8002FCFD4 /* Build configuration list for PBXProject "Fixate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* FixateTask */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* Fixate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695EFEE41AC623AA00D9D458 /* Fixate.xib in Resources */,
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				694D0C82077B65400025BAA4 /* Fixate.h in Resources */,
+				694D127D077B8EC50025BAA4 /* FTBlockedState.h in Resources */,
+				694D127F077B8EC50025BAA4 /* FTEndtrialState.h in Resources */,
+				695EFEE81AC623E600D9D458 /* FTSummaryController.xib in Resources */,
+				694D1281077B8EC50025BAA4 /* FTFixonState.h in Resources */,
+				694D1285077B8EC50025BAA4 /* FTIdleState.h in Resources */,
+				694D1287077B8EC50025BAA4 /* FTIntertrialState.h in Resources */,
+				694D1295077B8EC50025BAA4 /* FTStartState.h in Resources */,
+				694D1297077B8EC50025BAA4 /* FTStarttrialState.h in Resources */,
+				694D1299077B8EC50025BAA4 /* FTStateSystem.h in Resources */,
+				694D129B077B8EC50025BAA4 /* FTStopState.h in Resources */,
+				694D14FF077BA5CC0025BAA4 /* FTFixateState.h in Resources */,
+				694D184E077C67B50025BAA4 /* FTEyeXYController.h in Resources */,
+				694D19B5077C76B70025BAA4 /* FTXTController.h in Resources */,
+				694D215C077D34A10025BAA4 /* UserDefaults.plist in Resources */,
+				697CC50F077DD6F10025E7D2 /* FT.h in Resources */,
+				697CC99D077E01CA0025E7D2 /* FTStimuli.h in Resources */,
+				69C19D6007834E7B00D2B044 /* FTSummaryController.h in Resources */,
+				694E0E6E07C2B90400A965E0 /* FT_Prefix.h in Resources */,
+				693E232C08227BAB006BD680 /* Release Notes.txt in Resources */,
+				695EFEE61AC623D400D9D458 /* FTEyeXYController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694D0C83077B65400025BAA4 /* Fixate.m in Sources */,
+				694D127E077B8EC50025BAA4 /* FTBlockedState.m in Sources */,
+				694D1280077B8EC50025BAA4 /* FTEndtrialState.m in Sources */,
+				694D1282077B8EC50025BAA4 /* FTFixonState.m in Sources */,
+				694D1286077B8EC50025BAA4 /* FTIdleState.m in Sources */,
+				694D1288077B8EC50025BAA4 /* FTIntertrialState.m in Sources */,
+				694D1296077B8EC50025BAA4 /* FTStartState.m in Sources */,
+				694D1298077B8EC50025BAA4 /* FTStarttrialState.m in Sources */,
+				694D129A077B8EC50025BAA4 /* FTStateSystem.m in Sources */,
+				694D129C077B8EC50025BAA4 /* FTStopState.m in Sources */,
+				694D17C3077C618D0025BAA4 /* FTFixateState.m in Sources */,
+				694D184F077C67B50025BAA4 /* FTEyeXYController.m in Sources */,
+				694D19B6077C76B70025BAA4 /* FTXTController.m in Sources */,
+				697CC9A1077E01E00025E7D2 /* FTStimuli.m in Sources */,
+				69C19D6407834E8C00D2B044 /* FTSummaryController.m in Sources */,
+				69952B7415A247C0002CD226 /* FTUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69B8D110088DABA8002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../Frameworks/Lablib/build/Development";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FT_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = lablib.fixate;
+				PRODUCT_NAME = Fixate;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		69B8D111088DABA8002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_VARIANTS = normal;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../Frameworks/Lablib/build/Development";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FT_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = lablib.fixate;
+				PRODUCT_NAME = FixateTask;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		69B8D112088DABA8002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../Frameworks/Lablib/build/Development";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FT_Prefix.h;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = lablib.fixate;
+				PRODUCT_NAME = FixateTask;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Default;
+		};
+		69B8D114088DABA8002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				ENABLE_TESTABILITY = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SYMROOT = build;
+			};
+			name = Development;
+		};
+		69B8D115088DABA8002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				SDKROOT = "";
+				SYMROOT = build;
+			};
+			name = Deployment;
+		};
+		69B8D116088DABA8002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				SDKROOT = "";
+				SYMROOT = build;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69B8D10F088DABA8002FCFD4 /* Build configuration list for PBXNativeTarget "Fixate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D110088DABA8002FCFD4 /* Development */,
+				69B8D111088DABA8002FCFD4 /* Deployment */,
+				69B8D112088DABA8002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		69B8D113088DABA8002FCFD4 /* Build configuration list for PBXProject "Fixate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D114088DABA8002FCFD4 /* Development */,
+				69B8D115088DABA8002FCFD4 /* Deployment */,
+				69B8D116088DABA8002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

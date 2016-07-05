@@ -1,0 +1,17 @@
+July 27, 2005
+
+• Added support to change the display mode on a captured display when switching between tasks
+
+April 29, 2005
+
+• Changed AppController so that any task windows left open during a task switch are closed
+
+November 17, 2005
+
+• Added support for programmatic change of tasks.  This includes a menu entry for bouncing back
+to the previous task, and also a programmatic entry for tasks to ask for other tasks by name.
+
+November 18, 2005
+
+• Made changes to support passing mouse button information to LLMouseDataDevice.
+

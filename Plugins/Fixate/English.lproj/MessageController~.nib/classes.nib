@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {clear = id; }; 
+            CLASS = LLMessageWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {textView = NSTextView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {clear = id; }; 
+            CLASS = MessageController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {textView = NSTextView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = NSTextView; LANGUAGE = ObjC; SUPERCLASS = NSText; }
+    ); 
+    IBVersion = 1; 
+}

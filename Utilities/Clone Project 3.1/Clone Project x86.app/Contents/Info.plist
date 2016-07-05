@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>applet</string>
+	<key>CFBundleIconFile</key>
+	<string>applet</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.ScriptEditor.id.836C5AB7-0B6D-433F-9AB1-115623479FF9</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Clone Project x86</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>aplt</string>
+	<key>LSRequiresCarbon</key>
+	<true/>
+	<key>WindowState</key>
+	<dict>
+		<key>dividerCollapsed</key>
+		<false/>
+		<key>eventLogLevel</key>
+		<integer>-1</integer>
+		<key>name</key>
+		<string>ScriptWindowState</string>
+		<key>positionOfDivider</key>
+		<real>900</real>
+		<key>savedFrame</key>
+		<string>288 87 1931 1331 0 0 2560 1418 </string>
+		<key>selectedTabView</key>
+		<string>event log</string>
+	</dict>
+</dict>
+</plist>

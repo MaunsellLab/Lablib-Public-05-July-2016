@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35628D35163204A200D290DA /* VCANTooFastState.m in Sources */ = {isa = PBXBuildFile; fileRef = 35628D34163204A100D290DA /* VCANTooFastState.m */; };
+		358F4F74155DBAD600EC08B9 /* VCANDiagnosticsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F4F73155DBAD600EC08B9 /* VCANDiagnosticsController.m */; };
+		358F4FB3155DC66600EC08B9 /* VCANDiagnosticsController.h in Resources */ = {isa = PBXBuildFile; fileRef = 358F4F72155DBAD600EC08B9 /* VCANDiagnosticsController.h */; };
+		6910CE411596279000E0A375 /* VCANUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6910CE401596279000E0A375 /* VCANUtilities.m */; };
+		693BB74B15C8007300390101 /* Lablib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693BB74A15C8007300390101 /* Lablib.framework */; };
+		69413FD81121F736001C358C /* VCANDigitalOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 69413FD71121F736001C358C /* VCANDigitalOut.m */; };
+		695982D1080209EB0090B9A6 /* VCANFixGraceState.h in Resources */ = {isa = PBXBuildFile; fileRef = 695982CF080209EB0090B9A6 /* VCANFixGraceState.h */; };
+		695982D2080209EB0090B9A6 /* VCANFixGraceState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695982D0080209EB0090B9A6 /* VCANFixGraceState.m */; };
+		695C12F709B108880021A27D /* VCANPreCueState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695C12F609B108880021A27D /* VCANPreCueState.m */; };
+		695C12FC09B108970021A27D /* VCANCueState.m in Sources */ = {isa = PBXBuildFile; fileRef = 695C12FB09B108970021A27D /* VCANCueState.m */; };
+		69AF5A2415BC61E9006087F9 /* V4CAN.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5A2215BC61E9006087F9 /* V4CAN.xib */; };
+		69AF5A3115BC62D4006087F9 /* VCANBehaviorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5A2515BC62D4006087F9 /* VCANBehaviorController.xib */; };
+		69AF5A3215BC62D4006087F9 /* VCANDiagnosticsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5A2715BC62D4006087F9 /* VCANDiagnosticsController.xib */; };
+		69AF5A3315BC62D4006087F9 /* VCANEyeXYController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5A2915BC62D4006087F9 /* VCANEyeXYController.xib */; };
+		69AF5A3415BC62D4006087F9 /* VCANSpikeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5A2B15BC62D4006087F9 /* VCANSpikeController.xib */; };
+		69AF5A3515BC62D4006087F9 /* VCANSummaryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5A2D15BC62D4006087F9 /* VCANSummaryController.xib */; };
+		69AF5A3615BC62D4006087F9 /* VCANXTController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AF5A2F15BC62D4006087F9 /* VCANXTController.xib */; };
+		69BD0E6010CEE87300E2A458 /* IsNan.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E3F10CEE87300E2A458 /* IsNan.m */; };
+		69BD0E6110CEE87300E2A458 /* q_bestQuantileOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4010CEE87300E2A458 /* q_bestQuantileOrder.m */; };
+		69BD0E6210CEE87300E2A458 /* q_brent.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4110CEE87300E2A458 /* q_brent.m */; };
+		69BD0E6310CEE87300E2A458 /* q_copyCond.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4210CEE87300E2A458 /* q_copyCond.m */; };
+		69BD0E6410CEE87300E2A458 /* q_E.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4310CEE87300E2A458 /* q_E.m */; };
+		69BD0E6510CEE87300E2A458 /* q_entropy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4410CEE87300E2A458 /* q_entropy.m */; };
+		69BD0E6610CEE87300E2A458 /* q_erralloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4510CEE87300E2A458 /* q_erralloc.m */; };
+		69BD0E6710CEE87300E2A458 /* q_error.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4610CEE87300E2A458 /* q_error.m */; };
+		69BD0E6810CEE87300E2A458 /* q_findIntensity.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4710CEE87300E2A458 /* q_findIntensity.m */; };
+		69BD0E6910CEE87300E2A458 /* q_freeCond.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4810CEE87300E2A458 /* q_freeCond.m */; };
+		69BD0E6A10CEE87300E2A458 /* q_get.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4910CEE87300E2A458 /* q_get.m */; };
+		69BD0E6B10CEE87300E2A458 /* q_InitialGaussian.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4B10CEE87300E2A458 /* q_InitialGaussian.m */; };
+		69BD0E6C10CEE87300E2A458 /* q_makeCond.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4C10CEE87300E2A458 /* q_makeCond.m */; };
+		69BD0E6D10CEE87300E2A458 /* q_mean.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4D10CEE87300E2A458 /* q_mean.m */; };
+		69BD0E6E10CEE87300E2A458 /* q_minECostN.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4E10CEE87300E2A458 /* q_minECostN.m */; };
+		69BD0E6F10CEE87300E2A458 /* q_minSweatFactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E4F10CEE87300E2A458 /* q_minSweatFactor.m */; };
+		69BD0E7010CEE87300E2A458 /* q_mode.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5010CEE87300E2A458 /* q_mode.m */; };
+		69BD0E7110CEE87300E2A458 /* q_plot.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5110CEE87300E2A458 /* q_plot.m */; };
+		69BD0E7210CEE87300E2A458 /* q_print.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5210CEE87300E2A458 /* q_print.m */; };
+		69BD0E7310CEE87300E2A458 /* q_psych.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5310CEE87300E2A458 /* q_psych.m */; };
+		69BD0E7410CEE87300E2A458 /* q_quantile.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5410CEE87300E2A458 /* q_quantile.m */; };
+		69BD0E7510CEE87300E2A458 /* q_response.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5510CEE87300E2A458 /* q_response.m */; };
+		69BD0E7610CEE87300E2A458 /* q_updateCond.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5610CEE87300E2A458 /* q_updateCond.m */; };
+		69BD0E7710CEE87300E2A458 /* q_variance.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5710CEE87300E2A458 /* q_variance.m */; };
+		69BD0E7810CEE87300E2A458 /* q_Weibull.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5810CEE87300E2A458 /* q_Weibull.m */; };
+		69BD0E7910CEE87300E2A458 /* Quest.doc in Resources */ = {isa = PBXBuildFile; fileRef = 69BD0E5910CEE87300E2A458 /* Quest.doc */; };
+		69BD0E7A10CEE87300E2A458 /* Quest.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5B10CEE87300E2A458 /* Quest.m */; };
+		69BD0E7B10CEE87300E2A458 /* QuestClose.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5C10CEE87300E2A458 /* QuestClose.m */; };
+		69BD0E7D10CEE87300E2A458 /* QuestOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD0E5E10CEE87300E2A458 /* QuestOpen.m */; };
+		69BDCE44098BD2CA00578E91 /* VCANSpikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F13A6004716CF400F95509 /* VCANSpikeController.m */; };
+		69E24E1B07A5C25A00DDC096 /* V4CAN.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247C907A5562500DDC096 /* V4CAN.h */; };
+		69E24E1C07A5C25B00DDC096 /* V4CAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E247CA07A5562500DDC096 /* V4CAN.m */; };
+		69E24E1E07A5C25E00DDC096 /* VCANStimuli.h in Resources */ = {isa = PBXBuildFile; fileRef = 69EAD86F04352E4F00F95509 /* VCANStimuli.h */; };
+		69E24E1F07A5C25F00DDC096 /* VCANStimuli.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EAD87004352E4F00F95509 /* VCANStimuli.m */; };
+		69E24E2107A5C27000DDC096 /* VCANBehaviorController.h in Resources */ = {isa = PBXBuildFile; fileRef = 690B798D047ADA9F00A80164 /* VCANBehaviorController.h */; };
+		69E24E2207A5C27100DDC096 /* VCANBehaviorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690B798E047ADA9F00A80164 /* VCANBehaviorController.m */; };
+		69E24E2307A5C27200DDC096 /* VCANEyeXYController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E96F8D0472CC5C00F95509 /* VCANEyeXYController.h */; };
+		69E24E2407A5C27200DDC096 /* VCANEyeXYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E96F8E0472CC5C00F95509 /* VCANEyeXYController.m */; };
+		69E24E2507A5C27300DDC096 /* VCANSpikeController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69F13A5F04716CF400F95509 /* VCANSpikeController.h */; };
+		69E24E2707A5C27400DDC096 /* VCANSummaryController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69B9AE720482FBDD00F95509 /* VCANSummaryController.h */; };
+		69E24E2807A5C27600DDC096 /* VCANSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B9AE730482FBDD00F95509 /* VCANSummaryController.m */; };
+		69E24E2907A5C27700DDC096 /* VCANXTController.h in Resources */ = {isa = PBXBuildFile; fileRef = 69B5A7CA0471DBA300F95509 /* VCANXTController.h */; };
+		69E24E2A07A5C27800DDC096 /* VCANXTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B5A7CB0471DBA300F95509 /* VCANXTController.m */; };
+		69E24E2D07A5C29700DDC096 /* VCANStateSystem.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F10486AA2000FE06D7 /* VCANStateSystem.h */; };
+		69E24E2E07A5C29800DDC096 /* VCANStateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879F20486AA2000FE06D7 /* VCANStateSystem.m */; };
+		69E24E2F07A5C29900DDC096 /* VCANBlockedState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0480486D97300FE06D7 /* VCANBlockedState.h */; };
+		69E24E3007A5C29A00DDC096 /* VCANBlockedState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0490486D97300FE06D7 /* VCANBlockedState.m */; };
+		69E24E3107A5C29B00DDC096 /* VCANEndtrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0400486D3B700FE06D7 /* VCANEndtrialState.h */; };
+		69E24E3207A5C29B00DDC096 /* VCANEndtrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0410486D3B700FE06D7 /* VCANEndtrialState.m */; };
+		69E24E3307A5C29C00DDC096 /* VCANFixonState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A04C0486DB1300FE06D7 /* VCANFixonState.h */; };
+		69E24E3407A5C29D00DDC096 /* VCANFixonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A04D0486DB1300FE06D7 /* VCANFixonState.m */; };
+		69E24E3707A5C29F00DDC096 /* VCANIdleState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879FD0486B06A00FE06D7 /* VCANIdleState.h */; };
+		69E24E3807A5C2A000DDC096 /* VCANIdleState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FE0486B06A00FE06D7 /* VCANIdleState.m */; };
+		69E24E3907A5C2A000DDC096 /* VCANIntertrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 6983253D0486BE9600FE06D7 /* VCANIntertrialState.h */; };
+		69E24E3A07A5C2A100DDC096 /* VCANIntertrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6983253E0486BE9600FE06D7 /* VCANIntertrialState.m */; };
+		69E24E3B07A5C2A200DDC096 /* VCANStimulate.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A05C0486F0A700FE06D7 /* VCANStimulate.h */; };
+		69E24E3C07A5C2A300DDC096 /* VCANStimulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A05D0486F0A700FE06D7 /* VCANStimulate.m */; };
+		69E24E4107A5C2AA00DDC096 /* VCANPrestimState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0580486E0EC00FE06D7 /* VCANPrestimState.h */; };
+		69E24E4207A5C2AB00DDC096 /* VCANPrestimState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0590486E0EC00FE06D7 /* VCANPrestimState.m */; };
+		69E24E4307A5C2AC00DDC096 /* VCANReactState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0640486F23700FE06D7 /* VCANReactState.h */; };
+		69E24E4407A5C2AC00DDC096 /* VCANReactState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0650486F23700FE06D7 /* VCANReactState.m */; };
+		69E24E4507A5C2AD00DDC096 /* VCANSaccadeState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69F443A305DEE56D000705E2 /* VCANSaccadeState.h */; };
+		69E24E4607A5C2AE00DDC096 /* VCANSaccadeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F443A405DEE56D000705E2 /* VCANSaccadeState.m */; };
+		69E24E4907A5C2B000DDC096 /* VCANStarttrialState.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E8A0440486D59800FE06D7 /* VCANStarttrialState.h */; };
+		69E24E4A07A5C2B000DDC096 /* VCANStarttrialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A0450486D59800FE06D7 /* VCANStarttrialState.m */; };
+		69E24E4B07A5C2B100DDC096 /* VCANStopState.h in Resources */ = {isa = PBXBuildFile; fileRef = 694879F90486AF9300FE06D7 /* VCANStopState.h */; };
+		69E24E4C07A5C2B200DDC096 /* VCANStopState.m in Sources */ = {isa = PBXBuildFile; fileRef = 694879FA0486AF9300FE06D7 /* VCANStopState.m */; };
+		69E24E4F07A5C2BB00DDC096 /* V4CAN_Prefix.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247A107A5527C00DDC096 /* V4CAN_Prefix.h */; };
+		69E24E5007A5C2BC00DDC096 /* VCAN.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E247A207A5527C00DDC096 /* VCAN.h */; };
+		69E24E5107A5C2BD00DDC096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		69E24E5207A5C2BD00DDC096 /* UtilityFunctions.h in Resources */ = {isa = PBXBuildFile; fileRef = 69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */; };
+		69E24E5307A5C2BE00DDC096 /* UtilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69975550043E645C00F95509 /* UtilityFunctions.m */; };
+		69E24E5407A5C2C300DDC096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		69E24E5C07A5C2D100DDC096 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 696D8C8A075D683B0057453A /* UserDefaults.plist */; };
+		69E24E5E07A5C2E100DDC096 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		69E24E6207A5C2E200DDC096 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */; };
+		69E24E7407A5C34300DDC096 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		69E24F0907A5C34400DDC096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		35628D33163204A100D290DA /* VCANTooFastState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANTooFastState.h; sourceTree = "<group>"; };
+		35628D34163204A100D290DA /* VCANTooFastState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANTooFastState.m; sourceTree = "<group>"; };
+		358F4F72155DBAD600EC08B9 /* VCANDiagnosticsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANDiagnosticsController.h; sourceTree = "<group>"; };
+		358F4F73155DBAD600EC08B9 /* VCANDiagnosticsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANDiagnosticsController.m; sourceTree = "<group>"; };
+		690B798D047ADA9F00A80164 /* VCANBehaviorController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VCANBehaviorController.h; sourceTree = "<group>"; };
+		690B798E047ADA9F00A80164 /* VCANBehaviorController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VCANBehaviorController.m; sourceTree = "<group>"; };
+		6910CE3F1596279000E0A375 /* VCANUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANUtilities.h; sourceTree = "<group>"; };
+		6910CE401596279000E0A375 /* VCANUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANUtilities.m; sourceTree = "<group>"; };
+		693BB74A15C8007300390101 /* Lablib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lablib.framework; path = ../../../../Documents/Lablib/Frameworks/Lablib/build/Development/Lablib.framework; sourceTree = "<group>"; };
+		69413FD61121F736001C358C /* VCANDigitalOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANDigitalOut.h; sourceTree = "<group>"; };
+		69413FD71121F736001C358C /* VCANDigitalOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANDigitalOut.m; sourceTree = "<group>"; };
+		694879F10486AA2000FE06D7 /* VCANStateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANStateSystem.h; sourceTree = "<group>"; };
+		694879F20486AA2000FE06D7 /* VCANStateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANStateSystem.m; sourceTree = "<group>"; };
+		694879F90486AF9300FE06D7 /* VCANStopState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANStopState.h; sourceTree = "<group>"; };
+		694879FA0486AF9300FE06D7 /* VCANStopState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANStopState.m; sourceTree = "<group>"; };
+		694879FD0486B06A00FE06D7 /* VCANIdleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANIdleState.h; sourceTree = "<group>"; };
+		694879FE0486B06A00FE06D7 /* VCANIdleState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANIdleState.m; sourceTree = "<group>"; };
+		695982CF080209EB0090B9A6 /* VCANFixGraceState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANFixGraceState.h; sourceTree = "<group>"; };
+		695982D0080209EB0090B9A6 /* VCANFixGraceState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANFixGraceState.m; sourceTree = "<group>"; };
+		695C12F509B108880021A27D /* VCANPreCueState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANPreCueState.h; sourceTree = "<group>"; };
+		695C12F609B108880021A27D /* VCANPreCueState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANPreCueState.m; sourceTree = "<group>"; };
+		695C12FA09B108970021A27D /* VCANCueState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANCueState.h; sourceTree = "<group>"; };
+		695C12FB09B108970021A27D /* VCANCueState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANCueState.m; sourceTree = "<group>"; };
+		6968EA58059DDD1900E33065 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		696D8C8A075D683B0057453A /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
+		6983253D0486BE9600FE06D7 /* VCANIntertrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANIntertrialState.h; sourceTree = "<group>"; };
+		6983253E0486BE9600FE06D7 /* VCANIntertrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANIntertrialState.m; sourceTree = "<group>"; };
+		69975550043E645C00F95509 /* UtilityFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFunctions.m; sourceTree = "<group>"; };
+		69AF5A2315BC61E9006087F9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/V4CAN.xib; sourceTree = "<group>"; };
+		69AF5A2615BC62D4006087F9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/VCANBehaviorController.xib; sourceTree = "<group>"; };
+		69AF5A2815BC62D4006087F9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/VCANDiagnosticsController.xib; sourceTree = "<group>"; };
+		69AF5A2A15BC62D4006087F9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/VCANEyeXYController.xib; sourceTree = "<group>"; };
+		69AF5A2C15BC62D4006087F9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/VCANSpikeController.xib; sourceTree = "<group>"; };
+		69AF5A2E15BC62D4006087F9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/VCANSummaryController.xib; sourceTree = "<group>"; };
+		69AF5A3015BC62D4006087F9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/VCANXTController.xib; sourceTree = "<group>"; };
+		69B5A7CA0471DBA300F95509 /* VCANXTController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VCANXTController.h; sourceTree = "<group>"; };
+		69B5A7CB0471DBA300F95509 /* VCANXTController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VCANXTController.m; sourceTree = "<group>"; };
+		69B9AE720482FBDD00F95509 /* VCANSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VCANSummaryController.h; sourceTree = "<group>"; };
+		69B9AE730482FBDD00F95509 /* VCANSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VCANSummaryController.m; sourceTree = "<group>"; };
+		69BD0E3F10CEE87300E2A458 /* IsNan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsNan.m; sourceTree = "<group>"; };
+		69BD0E4010CEE87300E2A458 /* q_bestQuantileOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_bestQuantileOrder.m; sourceTree = "<group>"; };
+		69BD0E4110CEE87300E2A458 /* q_brent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_brent.m; sourceTree = "<group>"; };
+		69BD0E4210CEE87300E2A458 /* q_copyCond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_copyCond.m; sourceTree = "<group>"; };
+		69BD0E4310CEE87300E2A458 /* q_E.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_E.m; sourceTree = "<group>"; };
+		69BD0E4410CEE87300E2A458 /* q_entropy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_entropy.m; sourceTree = "<group>"; };
+		69BD0E4510CEE87300E2A458 /* q_erralloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_erralloc.m; sourceTree = "<group>"; };
+		69BD0E4610CEE87300E2A458 /* q_error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_error.m; sourceTree = "<group>"; };
+		69BD0E4710CEE87300E2A458 /* q_findIntensity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_findIntensity.m; sourceTree = "<group>"; };
+		69BD0E4810CEE87300E2A458 /* q_freeCond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_freeCond.m; sourceTree = "<group>"; };
+		69BD0E4910CEE87300E2A458 /* q_get.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_get.m; sourceTree = "<group>"; };
+		69BD0E4A10CEE87300E2A458 /* q_include.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = q_include.h; sourceTree = "<group>"; };
+		69BD0E4B10CEE87300E2A458 /* q_InitialGaussian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_InitialGaussian.m; sourceTree = "<group>"; };
+		69BD0E4C10CEE87300E2A458 /* q_makeCond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_makeCond.m; sourceTree = "<group>"; };
+		69BD0E4D10CEE87300E2A458 /* q_mean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_mean.m; sourceTree = "<group>"; };
+		69BD0E4E10CEE87300E2A458 /* q_minECostN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_minECostN.m; sourceTree = "<group>"; };
+		69BD0E4F10CEE87300E2A458 /* q_minSweatFactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_minSweatFactor.m; sourceTree = "<group>"; };
+		69BD0E5010CEE87300E2A458 /* q_mode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_mode.m; sourceTree = "<group>"; };
+		69BD0E5110CEE87300E2A458 /* q_plot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_plot.m; sourceTree = "<group>"; };
+		69BD0E5210CEE87300E2A458 /* q_print.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_print.m; sourceTree = "<group>"; };
+		69BD0E5310CEE87300E2A458 /* q_psych.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_psych.m; sourceTree = "<group>"; };
+		69BD0E5410CEE87300E2A458 /* q_quantile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_quantile.m; sourceTree = "<group>"; };
+		69BD0E5510CEE87300E2A458 /* q_response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_response.m; sourceTree = "<group>"; };
+		69BD0E5610CEE87300E2A458 /* q_updateCond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_updateCond.m; sourceTree = "<group>"; };
+		69BD0E5710CEE87300E2A458 /* q_variance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_variance.m; sourceTree = "<group>"; };
+		69BD0E5810CEE87300E2A458 /* q_Weibull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = q_Weibull.m; sourceTree = "<group>"; };
+		69BD0E5910CEE87300E2A458 /* Quest.doc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quest.doc; sourceTree = "<group>"; };
+		69BD0E5A10CEE87300E2A458 /* Quest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quest.h; sourceTree = "<group>"; };
+		69BD0E5B10CEE87300E2A458 /* Quest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quest.m; sourceTree = "<group>"; };
+		69BD0E5C10CEE87300E2A458 /* QuestClose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestClose.m; sourceTree = "<group>"; };
+		69BD0E5E10CEE87300E2A458 /* QuestOpen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestOpen.m; sourceTree = "<group>"; };
+		69E247A107A5527C00DDC096 /* V4CAN_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = V4CAN_Prefix.h; sourceTree = "<group>"; };
+		69E247A207A5527C00DDC096 /* VCAN.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VCAN.h; sourceTree = "<group>"; };
+		69E247A907A5529700DDC096 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E247C907A5562500DDC096 /* V4CAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V4CAN.h; sourceTree = "<group>"; };
+		69E247CA07A5562500DDC096 /* V4CAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = V4CAN.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		69E24E1607A5C21F00DDC096 /* V4CAN.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V4CAN.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityFunctions.h; sourceTree = "<group>"; };
+		69E8A0400486D3B700FE06D7 /* VCANEndtrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANEndtrialState.h; sourceTree = "<group>"; };
+		69E8A0410486D3B700FE06D7 /* VCANEndtrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANEndtrialState.m; sourceTree = "<group>"; };
+		69E8A0440486D59800FE06D7 /* VCANStarttrialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANStarttrialState.h; sourceTree = "<group>"; };
+		69E8A0450486D59800FE06D7 /* VCANStarttrialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANStarttrialState.m; sourceTree = "<group>"; };
+		69E8A0480486D97300FE06D7 /* VCANBlockedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANBlockedState.h; sourceTree = "<group>"; };
+		69E8A0490486D97300FE06D7 /* VCANBlockedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANBlockedState.m; sourceTree = "<group>"; };
+		69E8A04C0486DB1300FE06D7 /* VCANFixonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANFixonState.h; sourceTree = "<group>"; };
+		69E8A04D0486DB1300FE06D7 /* VCANFixonState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANFixonState.m; sourceTree = "<group>"; };
+		69E8A0580486E0EC00FE06D7 /* VCANPrestimState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANPrestimState.h; sourceTree = "<group>"; };
+		69E8A0590486E0EC00FE06D7 /* VCANPrestimState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANPrestimState.m; sourceTree = "<group>"; };
+		69E8A05C0486F0A700FE06D7 /* VCANStimulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANStimulate.h; sourceTree = "<group>"; };
+		69E8A05D0486F0A700FE06D7 /* VCANStimulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANStimulate.m; sourceTree = "<group>"; };
+		69E8A0640486F23700FE06D7 /* VCANReactState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCANReactState.h; sourceTree = "<group>"; };
+		69E8A0650486F23700FE06D7 /* VCANReactState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCANReactState.m; sourceTree = "<group>"; };
+		69E96F8D0472CC5C00F95509 /* VCANEyeXYController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VCANEyeXYController.h; sourceTree = "<group>"; };
+		69E96F8E0472CC5C00F95509 /* VCANEyeXYController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VCANEyeXYController.m; sourceTree = "<group>"; };
+		69EAD86F04352E4F00F95509 /* VCANStimuli.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VCANStimuli.h; sourceTree = "<group>"; };
+		69EAD87004352E4F00F95509 /* VCANStimuli.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VCANStimuli.m; sourceTree = "<group>"; };
+		69F13A5F04716CF400F95509 /* VCANSpikeController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = VCANSpikeController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		69F13A6004716CF400F95509 /* VCANSpikeController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = VCANSpikeController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		69F443A305DEE56D000705E2 /* VCANSaccadeState.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VCANSaccadeState.h; sourceTree = "<group>"; };
+		69F443A405DEE56D000705E2 /* VCANSaccadeState.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VCANSaccadeState.m; sourceTree = "<group>"; };
+		E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69E24E1407A5C21F00DDC096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E5E07A5C2E100DDC096 /* Cocoa.framework in Frameworks */,
+				69E24E6207A5C2E200DDC096 /* OpenGL.framework in Frameworks */,
+				69E24E7407A5C34300DDC096 /* AppKit.framework in Frameworks */,
+				69E24F0907A5C34400DDC096 /* Foundation.framework in Frameworks */,
+				693BB74B15C8007300390101 /* Lablib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				696D3833059E19DE0018E5D5 /* Controllers */,
+				694879ED0486A83B00FE06D7 /* On-line Display */,
+				694879EE0486A85E00FE06D7 /* State System */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				693BB74A15C8007300390101 /* Lablib.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				E7A443DD0132ED6B0ACA2124 /* OpenGL.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69E24E1607A5C21F00DDC096 /* V4CAN.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* terstes */ = {
+			isa = PBXGroup;
+			children = (
+				6968EA58059DDD1900E33065 /* Notes.txt */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				69BD0E3D10CEE87300E2A458 /* Quest */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				69C1CC640827E43C00A71FDE /* Plists */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = terstes;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				69E247A107A5527C00DDC096 /* V4CAN_Prefix.h */,
+				69E247A207A5527C00DDC096 /* VCAN.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				69E7FC6E04DBE6EF00F95507 /* UtilityFunctions.h */,
+				69975550043E645C00F95509 /* UtilityFunctions.m */,
+				6910CE3F1596279000E0A375 /* VCANUtilities.h */,
+				6910CE401596279000E0A375 /* VCANUtilities.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				69AF5A2215BC61E9006087F9 /* V4CAN.xib */,
+				69AF5A2515BC62D4006087F9 /* VCANBehaviorController.xib */,
+				69AF5A2715BC62D4006087F9 /* VCANDiagnosticsController.xib */,
+				69AF5A2915BC62D4006087F9 /* VCANEyeXYController.xib */,
+				69AF5A2B15BC62D4006087F9 /* VCANSpikeController.xib */,
+				69AF5A2D15BC62D4006087F9 /* VCANSummaryController.xib */,
+				69AF5A2F15BC62D4006087F9 /* VCANXTController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		694879ED0486A83B00FE06D7 /* On-line Display */ = {
+			isa = PBXGroup;
+			children = (
+				690B798D047ADA9F00A80164 /* VCANBehaviorController.h */,
+				690B798E047ADA9F00A80164 /* VCANBehaviorController.m */,
+				358F4F72155DBAD600EC08B9 /* VCANDiagnosticsController.h */,
+				358F4F73155DBAD600EC08B9 /* VCANDiagnosticsController.m */,
+				69E96F8D0472CC5C00F95509 /* VCANEyeXYController.h */,
+				69E96F8E0472CC5C00F95509 /* VCANEyeXYController.m */,
+				69F13A5F04716CF400F95509 /* VCANSpikeController.h */,
+				69F13A6004716CF400F95509 /* VCANSpikeController.m */,
+				69B9AE720482FBDD00F95509 /* VCANSummaryController.h */,
+				69B9AE730482FBDD00F95509 /* VCANSummaryController.m */,
+				69B5A7CA0471DBA300F95509 /* VCANXTController.h */,
+				69B5A7CB0471DBA300F95509 /* VCANXTController.m */,
+			);
+			name = "On-line Display";
+			sourceTree = "<group>";
+		};
+		694879EE0486A85E00FE06D7 /* State System */ = {
+			isa = PBXGroup;
+			children = (
+				694879F10486AA2000FE06D7 /* VCANStateSystem.h */,
+				694879F20486AA2000FE06D7 /* VCANStateSystem.m */,
+				69E8A0480486D97300FE06D7 /* VCANBlockedState.h */,
+				69E8A0490486D97300FE06D7 /* VCANBlockedState.m */,
+				695C12FA09B108970021A27D /* VCANCueState.h */,
+				695C12FB09B108970021A27D /* VCANCueState.m */,
+				69E8A0400486D3B700FE06D7 /* VCANEndtrialState.h */,
+				69E8A0410486D3B700FE06D7 /* VCANEndtrialState.m */,
+				695982CF080209EB0090B9A6 /* VCANFixGraceState.h */,
+				695982D0080209EB0090B9A6 /* VCANFixGraceState.m */,
+				69E8A04C0486DB1300FE06D7 /* VCANFixonState.h */,
+				69E8A04D0486DB1300FE06D7 /* VCANFixonState.m */,
+				694879FD0486B06A00FE06D7 /* VCANIdleState.h */,
+				694879FE0486B06A00FE06D7 /* VCANIdleState.m */,
+				6983253D0486BE9600FE06D7 /* VCANIntertrialState.h */,
+				6983253E0486BE9600FE06D7 /* VCANIntertrialState.m */,
+				695C12F509B108880021A27D /* VCANPreCueState.h */,
+				695C12F609B108880021A27D /* VCANPreCueState.m */,
+				69E8A0580486E0EC00FE06D7 /* VCANPrestimState.h */,
+				69E8A0590486E0EC00FE06D7 /* VCANPrestimState.m */,
+				69E8A0640486F23700FE06D7 /* VCANReactState.h */,
+				69E8A0650486F23700FE06D7 /* VCANReactState.m */,
+				69F443A305DEE56D000705E2 /* VCANSaccadeState.h */,
+				69F443A405DEE56D000705E2 /* VCANSaccadeState.m */,
+				69E8A0440486D59800FE06D7 /* VCANStarttrialState.h */,
+				69E8A0450486D59800FE06D7 /* VCANStarttrialState.m */,
+				69E8A05C0486F0A700FE06D7 /* VCANStimulate.h */,
+				69E8A05D0486F0A700FE06D7 /* VCANStimulate.m */,
+				694879F90486AF9300FE06D7 /* VCANStopState.h */,
+				694879FA0486AF9300FE06D7 /* VCANStopState.m */,
+				35628D33163204A100D290DA /* VCANTooFastState.h */,
+				35628D34163204A100D290DA /* VCANTooFastState.m */,
+			);
+			name = "State System";
+			sourceTree = "<group>";
+		};
+		696D3833059E19DE0018E5D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69E247C907A5562500DDC096 /* V4CAN.h */,
+				69E247CA07A5562500DDC096 /* V4CAN.m */,
+				69EAD86F04352E4F00F95509 /* VCANStimuli.h */,
+				69EAD87004352E4F00F95509 /* VCANStimuli.m */,
+				69413FD61121F736001C358C /* VCANDigitalOut.h */,
+				69413FD71121F736001C358C /* VCANDigitalOut.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		69BD0E3D10CEE87300E2A458 /* Quest */ = {
+			isa = PBXGroup;
+			children = (
+				69BD0E5A10CEE87300E2A458 /* Quest.h */,
+				69BD0E4A10CEE87300E2A458 /* q_include.h */,
+				69BD0E3F10CEE87300E2A458 /* IsNan.m */,
+				69BD0E4010CEE87300E2A458 /* q_bestQuantileOrder.m */,
+				69BD0E4110CEE87300E2A458 /* q_brent.m */,
+				69BD0E4210CEE87300E2A458 /* q_copyCond.m */,
+				69BD0E4310CEE87300E2A458 /* q_E.m */,
+				69BD0E4410CEE87300E2A458 /* q_entropy.m */,
+				69BD0E4510CEE87300E2A458 /* q_erralloc.m */,
+				69BD0E4610CEE87300E2A458 /* q_error.m */,
+				69BD0E4710CEE87300E2A458 /* q_findIntensity.m */,
+				69BD0E4810CEE87300E2A458 /* q_freeCond.m */,
+				69BD0E4910CEE87300E2A458 /* q_get.m */,
+				69BD0E4B10CEE87300E2A458 /* q_InitialGaussian.m */,
+				69BD0E4C10CEE87300E2A458 /* q_makeCond.m */,
+				69BD0E4D10CEE87300E2A458 /* q_mean.m */,
+				69BD0E4E10CEE87300E2A458 /* q_minECostN.m */,
+				69BD0E4F10CEE87300E2A458 /* q_minSweatFactor.m */,
+				69BD0E5010CEE87300E2A458 /* q_mode.m */,
+				69BD0E5110CEE87300E2A458 /* q_plot.m */,
+				69BD0E5210CEE87300E2A458 /* q_print.m */,
+				69BD0E5310CEE87300E2A458 /* q_psych.m */,
+				69BD0E5410CEE87300E2A458 /* q_quantile.m */,
+				69BD0E5510CEE87300E2A458 /* q_response.m */,
+				69BD0E5610CEE87300E2A458 /* q_updateCond.m */,
+				69BD0E5710CEE87300E2A458 /* q_variance.m */,
+				69BD0E5810CEE87300E2A458 /* q_Weibull.m */,
+				69BD0E5910CEE87300E2A458 /* Quest.doc */,
+				69BD0E5B10CEE87300E2A458 /* Quest.m */,
+				69BD0E5C10CEE87300E2A458 /* QuestClose.m */,
+				69BD0E5E10CEE87300E2A458 /* QuestOpen.m */,
+			);
+			path = Quest;
+			sourceTree = "<group>";
+		};
+		69C1CC640827E43C00A71FDE /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				696D8C8A075D683B0057453A /* UserDefaults.plist */,
+				69E247A907A5529700DDC096 /* Info.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69E24E1507A5C21F00DDC096 /* V4CAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B8D0E9088DAADA002FCFD4 /* Build configuration list for PBXNativeTarget "V4CAN" */;
+			buildPhases = (
+				69E24E1207A5C21F00DDC096 /* Resources */,
+				69E24E1307A5C21F00DDC096 /* Sources */,
+				69E24E1407A5C21F00DDC096 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = V4CAN;
+			productName = V4CAN;
+			productReference = 69E24E1607A5C21F00DDC096 /* V4CAN.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 69B8D0ED088DAADA002FCFD4 /* Build configuration list for PBXProject "V4CAN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* terstes */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69E24E1507A5C21F00DDC096 /* V4CAN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69E24E1207A5C21F00DDC096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E1B07A5C25A00DDC096 /* V4CAN.h in Resources */,
+				69E24E1E07A5C25E00DDC096 /* VCANStimuli.h in Resources */,
+				69E24E2107A5C27000DDC096 /* VCANBehaviorController.h in Resources */,
+				358F4FB3155DC66600EC08B9 /* VCANDiagnosticsController.h in Resources */,
+				69E24E2307A5C27200DDC096 /* VCANEyeXYController.h in Resources */,
+				69E24E2507A5C27300DDC096 /* VCANSpikeController.h in Resources */,
+				69E24E2707A5C27400DDC096 /* VCANSummaryController.h in Resources */,
+				69E24E2907A5C27700DDC096 /* VCANXTController.h in Resources */,
+				69E24E2D07A5C29700DDC096 /* VCANStateSystem.h in Resources */,
+				69E24E2F07A5C29900DDC096 /* VCANBlockedState.h in Resources */,
+				69E24E3107A5C29B00DDC096 /* VCANEndtrialState.h in Resources */,
+				69E24E3307A5C29C00DDC096 /* VCANFixonState.h in Resources */,
+				69E24E3707A5C29F00DDC096 /* VCANIdleState.h in Resources */,
+				69E24E3907A5C2A000DDC096 /* VCANIntertrialState.h in Resources */,
+				69E24E3B07A5C2A200DDC096 /* VCANStimulate.h in Resources */,
+				69E24E4107A5C2AA00DDC096 /* VCANPrestimState.h in Resources */,
+				69E24E4307A5C2AC00DDC096 /* VCANReactState.h in Resources */,
+				69E24E4507A5C2AD00DDC096 /* VCANSaccadeState.h in Resources */,
+				69E24E4907A5C2B000DDC096 /* VCANStarttrialState.h in Resources */,
+				69E24E4B07A5C2B100DDC096 /* VCANStopState.h in Resources */,
+				69E24E4F07A5C2BB00DDC096 /* V4CAN_Prefix.h in Resources */,
+				69E24E5007A5C2BC00DDC096 /* VCAN.h in Resources */,
+				69E24E5207A5C2BD00DDC096 /* UtilityFunctions.h in Resources */,
+				69E24E5407A5C2C300DDC096 /* InfoPlist.strings in Resources */,
+				69E24E5C07A5C2D100DDC096 /* UserDefaults.plist in Resources */,
+				695982D1080209EB0090B9A6 /* VCANFixGraceState.h in Resources */,
+				69BD0E7910CEE87300E2A458 /* Quest.doc in Resources */,
+				69AF5A2415BC61E9006087F9 /* V4CAN.xib in Resources */,
+				69AF5A3115BC62D4006087F9 /* VCANBehaviorController.xib in Resources */,
+				69AF5A3215BC62D4006087F9 /* VCANDiagnosticsController.xib in Resources */,
+				69AF5A3315BC62D4006087F9 /* VCANEyeXYController.xib in Resources */,
+				69AF5A3415BC62D4006087F9 /* VCANSpikeController.xib in Resources */,
+				69AF5A3515BC62D4006087F9 /* VCANSummaryController.xib in Resources */,
+				69AF5A3615BC62D4006087F9 /* VCANXTController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69E24E1307A5C21F00DDC096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E24E1C07A5C25B00DDC096 /* V4CAN.m in Sources */,
+				69E24E1F07A5C25F00DDC096 /* VCANStimuli.m in Sources */,
+				69E24E2207A5C27100DDC096 /* VCANBehaviorController.m in Sources */,
+				69E24E2407A5C27200DDC096 /* VCANEyeXYController.m in Sources */,
+				69E24E2807A5C27600DDC096 /* VCANSummaryController.m in Sources */,
+				69E24E2A07A5C27800DDC096 /* VCANXTController.m in Sources */,
+				69E24E2E07A5C29800DDC096 /* VCANStateSystem.m in Sources */,
+				69E24E3007A5C29A00DDC096 /* VCANBlockedState.m in Sources */,
+				69E24E3207A5C29B00DDC096 /* VCANEndtrialState.m in Sources */,
+				69E24E3407A5C29D00DDC096 /* VCANFixonState.m in Sources */,
+				69E24E3807A5C2A000DDC096 /* VCANIdleState.m in Sources */,
+				69E24E3A07A5C2A100DDC096 /* VCANIntertrialState.m in Sources */,
+				69E24E3C07A5C2A300DDC096 /* VCANStimulate.m in Sources */,
+				69E24E4207A5C2AB00DDC096 /* VCANPrestimState.m in Sources */,
+				69E24E4407A5C2AC00DDC096 /* VCANReactState.m in Sources */,
+				69E24E4607A5C2AE00DDC096 /* VCANSaccadeState.m in Sources */,
+				69E24E4A07A5C2B000DDC096 /* VCANStarttrialState.m in Sources */,
+				69E24E4C07A5C2B200DDC096 /* VCANStopState.m in Sources */,
+				69E24E5107A5C2BD00DDC096 /* main.m in Sources */,
+				69E24E5307A5C2BE00DDC096 /* UtilityFunctions.m in Sources */,
+				695982D2080209EB0090B9A6 /* VCANFixGraceState.m in Sources */,
+				69BDCE44098BD2CA00578E91 /* VCANSpikeController.m in Sources */,
+				695C12F709B108880021A27D /* VCANPreCueState.m in Sources */,
+				695C12FC09B108970021A27D /* VCANCueState.m in Sources */,
+				69BD0E6010CEE87300E2A458 /* IsNan.m in Sources */,
+				69BD0E6110CEE87300E2A458 /* q_bestQuantileOrder.m in Sources */,
+				69BD0E6210CEE87300E2A458 /* q_brent.m in Sources */,
+				69BD0E6310CEE87300E2A458 /* q_copyCond.m in Sources */,
+				69BD0E6410CEE87300E2A458 /* q_E.m in Sources */,
+				69BD0E6510CEE87300E2A458 /* q_entropy.m in Sources */,
+				69BD0E6610CEE87300E2A458 /* q_erralloc.m in Sources */,
+				69BD0E6710CEE87300E2A458 /* q_error.m in Sources */,
+				69BD0E6810CEE87300E2A458 /* q_findIntensity.m in Sources */,
+				69BD0E6910CEE87300E2A458 /* q_freeCond.m in Sources */,
+				69BD0E6A10CEE87300E2A458 /* q_get.m in Sources */,
+				69BD0E6B10CEE87300E2A458 /* q_InitialGaussian.m in Sources */,
+				69BD0E6C10CEE87300E2A458 /* q_makeCond.m in Sources */,
+				69BD0E6D10CEE87300E2A458 /* q_mean.m in Sources */,
+				69BD0E6E10CEE87300E2A458 /* q_minECostN.m in Sources */,
+				69BD0E6F10CEE87300E2A458 /* q_minSweatFactor.m in Sources */,
+				69BD0E7010CEE87300E2A458 /* q_mode.m in Sources */,
+				69BD0E7110CEE87300E2A458 /* q_plot.m in Sources */,
+				69BD0E7210CEE87300E2A458 /* q_print.m in Sources */,
+				69BD0E7310CEE87300E2A458 /* q_psych.m in Sources */,
+				69BD0E7410CEE87300E2A458 /* q_quantile.m in Sources */,
+				69BD0E7510CEE87300E2A458 /* q_response.m in Sources */,
+				69BD0E7610CEE87300E2A458 /* q_updateCond.m in Sources */,
+				69BD0E7710CEE87300E2A458 /* q_variance.m in Sources */,
+				69BD0E7810CEE87300E2A458 /* q_Weibull.m in Sources */,
+				69BD0E7A10CEE87300E2A458 /* Quest.m in Sources */,
+				69BD0E7B10CEE87300E2A458 /* QuestClose.m in Sources */,
+				69BD0E7D10CEE87300E2A458 /* QuestOpen.m in Sources */,
+				69413FD81121F736001C358C /* VCANDigitalOut.m in Sources */,
+				358F4F74155DBAD600EC08B9 /* VCANDiagnosticsController.m in Sources */,
+				6910CE411596279000E0A375 /* VCANUtilities.m in Sources */,
+				35628D35163204A200D290DA /* VCANTooFastState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		69AF5A2215BC61E9006087F9 /* V4CAN.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69AF5A2315BC61E9006087F9 /* English */,
+			);
+			name = V4CAN.xib;
+			sourceTree = "<group>";
+		};
+		69AF5A2515BC62D4006087F9 /* VCANBehaviorController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69AF5A2615BC62D4006087F9 /* English */,
+			);
+			name = VCANBehaviorController.xib;
+			sourceTree = "<group>";
+		};
+		69AF5A2715BC62D4006087F9 /* VCANDiagnosticsController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69AF5A2815BC62D4006087F9 /* English */,
+			);
+			name = VCANDiagnosticsController.xib;
+			sourceTree = "<group>";
+		};
+		69AF5A2915BC62D4006087F9 /* VCANEyeXYController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69AF5A2A15BC62D4006087F9 /* English */,
+			);
+			name = VCANEyeXYController.xib;
+			sourceTree = "<group>";
+		};
+		69AF5A2B15BC62D4006087F9 /* VCANSpikeController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69AF5A2C15BC62D4006087F9 /* English */,
+			);
+			name = VCANSpikeController.xib;
+			sourceTree = "<group>";
+		};
+		69AF5A2D15BC62D4006087F9 /* VCANSummaryController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69AF5A2E15BC62D4006087F9 /* English */,
+			);
+			name = VCANSummaryController.xib;
+			sourceTree = "<group>";
+		};
+		69AF5A2F15BC62D4006087F9 /* VCANXTController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69AF5A3015BC62D4006087F9 /* English */,
+			);
+			name = VCANXTController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69B8D0EA088DAADA002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_TEMP_DIR = build;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Documents/Lablib/Frameworks/LablibITC18/build/**",
+					"/Documents/Lablib/Frameworks/Lablib/build/**",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = V4CAN_Prefix.h;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OBJROOT = "/Users/Shared/Lablib-Plugins/V4CAN";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = V4CAN;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				UNSTRIPPED_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		69B8D0EB088DAADA002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_TEMP_DIR = build;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Documents/Lablib/Frameworks/LablibITC18/build/**",
+					"/Documents/Lablib/Frameworks/Lablib/build/**",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = V4CAN_Prefix.h;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OBJROOT = "/Users/Shared/Lablib-Plugins/V4CAN";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = V4CAN;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Deployment;
+		};
+		69B8D0EC088DAADA002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_TEMP_DIR = build;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Documents/Lablib/Frameworks/LablibITC18/build/**",
+					"/Documents/Lablib/Frameworks/Lablib/build/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = V4CAN_Prefix.h;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OBJROOT = "/Users/Shared/Lablib-Plugins/V4CAN";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = V4CAN;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Default;
+		};
+		69B8D0EE088DAADA002FCFD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = "";
+				SYMROOT = "$(BUILD_DIR)";
+			};
+			name = Development;
+		};
+		69B8D0EF088DAADA002FCFD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SYMROOT = "$(BUILD_DIR)";
+			};
+			name = Deployment;
+		};
+		69B8D0F0088DAADA002FCFD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Knot/Plugins/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = /Users/maunsell/Documents/Development/MTAttendNorm/;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SYMROOT = "$(BUILD_DIR)";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69B8D0E9088DAADA002FCFD4 /* Build configuration list for PBXNativeTarget "V4CAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D0EA088DAADA002FCFD4 /* Development */,
+				69B8D0EB088DAADA002FCFD4 /* Deployment */,
+				69B8D0EC088DAADA002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		69B8D0ED088DAADA002FCFD4 /* Build configuration list for PBXProject "V4CAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B8D0EE088DAADA002FCFD4 /* Development */,
+				69B8D0EF088DAADA002FCFD4 /* Deployment */,
+				69B8D0F0088DAADA002FCFD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
